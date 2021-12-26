@@ -1,0 +1,21 @@
+{
+  "name": "bakshop-ecom",
+  "version": "1.0.0",
+  "description": "bakshop-ecom",
+  "main": "index.js",
+  "scripts": {
+    "dev":"cd client && yarn start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benzkittisak/bakshop-ecom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benzkittisak/bakshop-ecom/issues"
+  },
+  "homepage": "https://github.com/benzkittisak/bakshop-ecom#readme"
+}
