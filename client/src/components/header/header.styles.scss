@@ -1,0 +1,85 @@
+@import "../../assets/styles/variables.style";
+.header-area {
+  position: relative;
+  &.header-absolute {
+    position: absolute;
+    z-index: 99;
+
+    width: 100%;
+  }
+}
+.sticky-bar.stick {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  transition: all 0.3s ease 0s;
+  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+
+  border-bottom: 0 solid #4a90e2;
+  background-color: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.06);
+
+  .center-menu-logo {
+    display: none;
+    @media #{$md-layout} {
+      display: block;
+    }
+    @media #{$xs-layout} {
+      display: block;
+    }
+  }
+
+  .header-right-wrap-white {
+    .same-style {
+      > a {
+        color: #000;
+      }
+
+      &.cart-wrap,
+      &.header-compare,
+      &.header-wishlist,
+      &.account-setting,
+      &.header-search {
+        > button,
+        & > a {
+          color: #000;
+          span {
+            &.count-style {
+              color: #fff;
+              background-color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-res-padding {
+  @media #{$md-layout} {
+    padding: 20px 0 15px;
+  }
+  @media #{$xs-layout} {
+    padding: 20px 0 15px;
+  }
+}
+
+.stick{
+  .same-style{
+    &.header-search{
+      .search-content{
+        top:166%;
+      }
+    }
+
+    &.account-setting{
+      .account-dropdown{
+        top: 166%;
+      }
+    }
+  }
+}

@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+// import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
 
+import './App.scss';
+
+// Page
+import HomePage from "./pages/home/home.component";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <BreadcrumbsProvider>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+      </Routes>
+    // </BreadcrumbsProvider>
   );
 }
 
