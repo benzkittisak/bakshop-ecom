@@ -17,6 +17,11 @@ export const selectCollectionsForDailyDeals = (urlParams) => createSelector(
     }
 )
 
+export const selectCollectionsForPreview = createSelector(
+    [selectCollections],
+    plants => Object.keys(plants).map((key) => plants[key])
+)
+
 export const selectIsCollectionsLoaded =  createSelector(
     [selectPlant],
     plants => !!plants.plants
