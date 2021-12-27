@@ -1,0 +1,44 @@
+.product-area {
+  margin-bottom: 20px;
+
+  .product-tab-list {
+    justify-content: center;
+
+    a{
+      color: rgb(119, 119, 119);
+      display: block;
+      padding: 10px 40px;
+
+      &.active{
+        background-color: none;
+      }
+      h4{
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+      }
+      
+    }
+    .nav-pills .nav-link.active , a.active
+    {
+      color: #333 !important;
+      background: unset;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      color: darkgray;
+    }
+  }
+}
+
+.pb-55 {
+  padding-bottom: 55px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
