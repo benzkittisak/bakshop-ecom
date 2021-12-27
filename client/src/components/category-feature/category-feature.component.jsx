@@ -18,7 +18,10 @@ const CategoryFeature = ({ plants }) => {
   const params = {
     navigation: true,
     slidesPerView:3,
-    spaceBetween:12
+    spaceBetween:12,
+    loop:true,
+    loopFillGroupWithBlank:true,
+    slidesPerGroup:1
   };
   return (
     <div className="feature-area">

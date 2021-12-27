@@ -4,7 +4,7 @@ const PLANTS_DATA = {
     title: "House Plants",
     routeName: "shop/houseplants",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1931143.jpg",
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daniel-frese-1055408.th.jpg",
     items: [
       {
         id: 2,
@@ -31,7 +31,7 @@ const PLANTS_DATA = {
         name: "แววมยุรา",
         new:true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/maranta-fascinator-tricolour-prayer-plant-p5078-39305_image.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/potted_maranta_leuconeura_erythroneura_prayer_plant_herringbone_plant_1500272950_051f04080.jpg",
         price: 890,
         description:
           "Maranta leuconeura ยังเป็นที่รู้จักกันในนามพืชอธิษฐานเป็นพรรณไม้ดอกในตระกูล Marantaceae ซึ่งมีถิ่นกำเนิดในป่าเขตร้อนของบราซิล มันเป็นตัวแปรยืนต้น rhizomatous เติบโตสูงถึง 30 ซม. และกว้างกับกอหนาแน่นของเอเวอร์กรีนใบรูปไข่โดดเด่นโดดเด่นแต่ละยาวถึง 12 ซม",
@@ -61,7 +61,7 @@ const PLANTS_DATA = {
         name: "ว่านหางจระเข้",
         new:true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/aloe-vera-potted-plant__0653978_pe708207_s5.webp",
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/aloe-vera-plant-2021-08-26-16-59-51-utc.md.jpg",
         price: 1834,
         description:
           "Hedera helix, ไม้เลื้อยทั่วไป, ไม้เลื้อยอังกฤษ, ไม้เลื้อยยุโรปหรือไม้เลื้อยเป็นไม้ดอกชนิดหนึ่งในสกุลไม้เลื้อยในตระกูล Araliaceae มีถิ่นกำเนิดในยุโรปและเอเชียตะวันตกส่วนใหญ่ เถาวัลย์ที่เขียวชอุ่มตลอดปี เป็นที่คุ้นเคยในสวน พื้นที่รกร้าง และพื้นที่ป่า ซึ่งเติบโตตามผนัง รั้ว ลำต้นของต้นไม้ ฯลฯ",
@@ -71,7 +71,7 @@ const PLANTS_DATA = {
         name: "ต้นแมงมุม",
         new:true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/download.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/beautiful-spider-plant-hanging-from-a-wooden-brack-2021-10-12-19-41-54-utc.md.jpg",
         price: 800,
         description:
           "เศรษฐีเรือนใน เป็นไม้ในวงศ์ Anthericaceae มีเหง้าใต้ดิน รากสีขาว อวบน้ำ ใบเป็นแถบยาวสีเขียว ขลิบเขียวตามขอบใบ ตรงกลางสีขาว ดอกสีขาว ขนาดเล็ก มีกลิ่นหอม เป็นพืชพื้นเมืองของกาบอง",
@@ -81,7 +81,7 @@ const PLANTS_DATA = {
         name: "พลูด่าง",
         new:true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/tLYw0xUUSS.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/devil-s-ivy-plant-2021-08-26-23-04-13-utc.md.jpg",
         price: 340,
         description:
           "พลูด่าง เป็นพืชดอกชนิดหนึ่งในวงศ์ Araceae ซึ่งกระจายพันธุ์อยู่ทั่วโลก ตั้งแต่ออสเตรเลีย จีน ญี่ปุ่น อินเดีย พืชชนิดนี้พบในป่าเขตร้อนทั่วโลก ในบางครั้งอาจเป็นสร้างความเสียหายทางนิเวศวิทยาด้วย พืชชนิดนี้มีหลายชื่อ",
@@ -89,6 +89,7 @@ const PLANTS_DATA = {
       {
         id: 10,
         name: "ลิ้นมังกร",
+        new:false,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/000850105_SnakePlant_1_25e1ca62-1d03-44b9-9791-7d68f3ae6864.webp",
         price: 459,
@@ -199,7 +200,7 @@ const PLANTS_DATA = {
     id:22,
     title:'Bonsais',
     routeName:'shop/bonsais',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-elina-araja-4050790.jpg',
+    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/27/small-bonsai-tree-hobbit-growing-in-a-red-flowerpo-2021-08-30-02-30-42-utc.md.jpg',
     items:[
       {
         id: 23,
