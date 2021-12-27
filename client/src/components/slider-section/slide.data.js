@@ -20,7 +20,7 @@ const SLIDE_DATA = [
     title: "เปิดร้านขายสินค้าหรอลองตกแต่งด้วยต้นไม้ดูสิ",
     type: "ต้นไม้สำหรับตกแต่งในร้านค้า",
     imageUrl:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-valeria-boltneva-827518.jpg",
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-valeria-boltneva-827518.md.jpg",
     routeName: "shop/store-plants",
   },
 ];

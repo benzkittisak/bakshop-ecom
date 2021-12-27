@@ -4,7 +4,7 @@ const PLANTS_DATA = {
     title: "House Plants",
     routeName: "shop/houseplants",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daniel-frese-1055408.th.jpg",
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daniel-frese-1055408.md.jpg",
     items: [
       {
         id: 2,
@@ -102,7 +102,7 @@ const PLANTS_DATA = {
     id:11,
     title:'Office Plants',
     routeName:'shop/officeplants',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daria-shevtsova-970089.jpg',
+    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daria-shevtsova-970089.md.jpg',
     items:[
       {
         id: 12,
@@ -129,7 +129,7 @@ const PLANTS_DATA = {
     id:14,
     title:'Graden Plants',
     routeName:'shop/gardenplants',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.jpg',
+    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.md.jpg',
     items:[
       {
         id: 15,
