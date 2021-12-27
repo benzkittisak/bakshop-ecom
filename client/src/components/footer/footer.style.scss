@@ -1,0 +1,50 @@
+@import "../../assets/styles/variables.style.scss";
+
+$font-sub: 200;
+$font-title: 400;
+$sub-text: 14px;
+$color: #313131;
+
+.copy-right {
+  p {
+    letter-spacing: 0.9px;
+    color: $color;
+    font-size: $sub-text;
+    font-weight: $font-sub;
+  }
+}
+
+.footer-widget {
+  .footer-title h3 {
+    font-size: 16px;
+    font-weight: $font-title;
+    line-height: 1;
+    margin: 0 0 16px;
+    color: $color;
+  }
+  .footer-list {
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin: 0 0 11px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          letter-spacing: 0.3px;
+          text-decoration: none;
+          color: #868686;
+          font-weight: $font-sub;
+          &:hover {
+            color: $theme-color;
+          }
+        }
+      }
+    }
+  }
+}

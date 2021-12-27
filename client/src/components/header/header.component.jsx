@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 // Components
 import NavMenu from "../nav-menu/nav-menu.component";
 import IconGroup from "../icon-group/icon-group.component";
+import WebLogo from "../web-logo/web-logo.component";
 
 import "./header.styles.scss";
 
@@ -22,7 +23,7 @@ const Header = ({layout}) => {
   }, []);
 
   const handleScroll = () => {
-    setScroll(window.screenY);
+    setScroll(window.scrollY);
   };
   return (
     <header className="header-area clearfix">
@@ -34,7 +35,7 @@ const Header = ({layout}) => {
           <div className={`${layout === 'full' ? 'container-fluid' : "container"}`}>
             <div className="row">
                 <div className="col-xl-2 col-lg-2 col-md-6 col-4">
-                    Logo
+                    <WebLogo/>
                 </div>
                 <div className="col-xl-8 col-lg-8 d-none d-lg-block">
                     <NavMenu />

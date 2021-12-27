@@ -1,0 +1,42 @@
+.support-area{
+    padding: 20px;
+}
+
+.pt-100{
+    padding-top: 3rem;
+}
+
+.pb-60{
+    padding-bottom: 2.5rem;
+}
+
+.feature-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &.mb-30{
+        margin-bottom: 30px;
+    }
+
+    .feature-icon{
+        animation-name: bounceIn;
+        animation-duration: 1s;
+    }
+
+    .feature-content{
+        display: block;
+        padding: 5px;
+        margin: 0;
+        h5{
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+}

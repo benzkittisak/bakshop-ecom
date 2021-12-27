@@ -4,7 +4,7 @@
   "description": "bakshop-ecom",
   "main": "index.js",
   "scripts": {
-    "dev":"cd client && yarn start",
+    "dev": "cd client && yarn start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/benzkittisak/bakshop-ecom/issues"
   },
-  "homepage": "https://github.com/benzkittisak/bakshop-ecom#readme"
+  "homepage": "https://github.com/benzkittisak/bakshop-ecom#readme",
+  "dependencies": {
+    "react-id-swiper": "^4.0.0"
+  }
 }
