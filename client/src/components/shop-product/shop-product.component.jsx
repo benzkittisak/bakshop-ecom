@@ -1,15 +1,15 @@
 import React from "react";
 
-import ProductGridContainer from "../product-grid/product-grid.container";
+import ProductGridList from "../product-grid-list/product-grid-list.component";
 
 import './shop-product.style.scss';
 
-const ShopProduct = ({product}) => {
+const ShopProduct = ({product , layout}) => {
 
     return (
         <div className="shop-bottom-area mt-5">
-            <div className="row">
-                <ProductGridContainer col={3} plants={product} isDisable/>
+            <div className={`row ${layout ? layout : ''}`}>
+                <ProductGridList product={product} />
             </div>
         </div>
     )

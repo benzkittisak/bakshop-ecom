@@ -1,0 +1,94 @@
+@import '../../assets/styles/variables.style.scss';
+@import '~hover.css/css/hover-min.css';
+
+.shop-list-wrap{
+
+    .product-list-image-wrap{
+        position: relative;
+        .product-img{
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                object-position: top center;
+            }
+
+            &-badges{
+                position: absolute;
+                top: 12px;
+                right: 12px;
+
+                span{
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 1;
+                    display: block;
+                    margin-bottom: 10px;
+                    padding: 3px 11px;
+                    color: white;
+                    border-radius: 3px;
+
+                    &.purple{
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .shop-list-content{
+        h3{
+            font-size: 24px;
+            margin: 0;
+            color: #010101;
+        }
+        a{
+            color: #010101;
+            text-decoration: none;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+
+        .product-list-price{
+            margin: 13px 0 22px;
+
+            span{
+                font-size: 24px;
+                line-height: 1;
+                display: inline-block;
+                color: #fe5252;
+            }
+        }
+        p{
+            font-size: 15px;
+            line-height: 28px;
+            color: #8f8f8f;
+        }
+        .shop-list-btn{
+            a,button{
+                clear: both;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1;
+                z-index: 1;
+                display: inline-block;
+                padding: 14px 32px 15px;
+                color: white;
+                border: 1px solid transparent;
+                background-color: #343538;
+                transition: 0.5s all ease-in-out;
+
+                &::before{
+                    background-color: $theme-color;
+                }
+                &:hover{
+                    border:1px solid $theme-color
+                }
+                
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ export const getIndividualCategories = (product) => {
 
 export const setActiveClassToSort = (e) => {
   const filterButtons = document.querySelectorAll(
-    ".sidebar-widget-list-left button, .sidebar-widget-tag button , .product-filter button"
+    ".sidebar-widget-list-left button, .sidebar-widget-tag button , .product-filter button , .shop-tab button"
   );
   filterButtons.forEach((item) => {
     item.classList.remove("active");

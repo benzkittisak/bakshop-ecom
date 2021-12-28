@@ -11,6 +11,8 @@ import { getFilterProduct , mergeProduct } from "../../assets/utils/product";
 import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
 import ShopSidebar from "../../components/shop-sidebar/shop-sidebar.component";
 import ShopProduct from "../../components/shop-product/shop-product.component";
+import ShopTopBar from "../../components/shop-top-bar/shop-top-bar.component";
+
 
 import "./shop.style.scss";
 
@@ -18,19 +20,34 @@ const ShopPage = ({ plants }) => {
   
     const [sortType , setSortType] = useState('');
     const [sortValue , setSortValue] = useState('');
+    const [filterSortType , setFilterSortType] = useState('');
+    const [filterSortValue , setFilterSortValue] = useState('');
     const [offset , setOffset] = useState(0);
     const [currentPlantData , setCurrentPlantData] = useState(plants);
+    const [plantsCount , setPlantsCount] = useState(0);
+    const [layout , setLayout] = useState('grid three-column')
 
     const pageLimit = 15 ;
+
     const getSortParams = (sortType , sortValue) => {
         setSortType(sortType)
         setSortValue(sortValue)
     }
 
+    const getFilterParams = (sortType , sortValue) => {
+        setFilterSortType(sortType);
+        setFilterSortValue(sortValue)
+    }
+
+    const getLayout = layout => {
+        setLayout(layout)
+    }
+
     useEffect(() => {
-        let fillterProduct = getFilterProduct(plants , sortType , sortValue);
-        const mergeFilterProductToArray = mergeProduct(fillterProduct);
-        setCurrentPlantData(mergeFilterProductToArray.slice(offset , offset+pageLimit))
+        let sortProduct = getFilterProduct(plants , sortType , sortValue);
+        const mergeSortProductToArray = mergeProduct(sortProduct);
+        setPlantsCount(mergeSortProductToArray.length)
+        setCurrentPlantData(mergeSortProductToArray.slice(offset , offset+pageLimit))
     }, [offset , plants , sortType ,sortValue])
     
     return (
@@ -48,7 +65,8 @@ const ShopPage = ({ plants }) => {
                 <ShopSidebar  product={plants} getSortParams={getSortParams} />
               </div>
               <div className="col-lg-9">
-                  <ShopProduct product={currentPlantData}/>
+                  <ShopTopBar getLayout={getLayout} getFilterParams={getFilterParams} productCount={plantsCount} sortedProductCount={currentPlantData.length}/>
+                  <ShopProduct layout={layout} product={currentPlantData}/>
               </div>
             </div>
           </div>

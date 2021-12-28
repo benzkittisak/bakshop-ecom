@@ -1,0 +1,29 @@
+.shop-bottom-area {
+  .col-xl-4 {
+    transition: 0.5s;
+  }
+  .grid {
+    .shop-list-wrap {
+      display: none;
+    }
+
+  }
+  .three-column{
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+  }
+
+  .list {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    .product-wrap {
+      display: none;
+    }
+
+    & > .col-xl-4 {
+      flex: 1 0 100%;
+      max-width: 100%;
+      transition: 0.5s;
+    }
+  }
+}

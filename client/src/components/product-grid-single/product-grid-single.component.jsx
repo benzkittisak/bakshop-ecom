@@ -8,8 +8,8 @@ const ProductGridSingle = ({ product, category , col }) => {
   const { name, imageUrl, price } = product;
 
   return (
-    <div className={`${col === 3 ? 'col-xl-4' : 'col-xl-3'}  col-md-6 col-lg-4 col-sm-6`}>
-      <div className="product-wrap mb-25">
+    <div className={`col-xl-3 col-md-6 col-lg-4 col-sm-6`}>
+      <div className="product-wrap animation_fadeInLeft mb-25">
         <div className="product-img">
           <Link to={process.env.PUBLIC_URL + "/shop/" + category + "/" + name}>
             <img src={imageUrl} className="default-img" alt="" />
