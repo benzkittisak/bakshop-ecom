@@ -1,0 +1,48 @@
+@import '../../assets/styles/variables.style.scss';
+
+h4.pro-sidebar-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.pro-sidebar-search{
+    &-form{
+        position: relative;
+        padding: 15px 0px;
+        input{
+            font-size: 14px;
+            height: 43px;
+            padding: 2px 55px 2px 18px;
+            color: black;
+            border: 1px solid #e6e6e6;
+            background:transparent none repeat scroll 0 0;
+            &:focus{
+                outline: none;
+                border-color: $theme-color;
+                border-radius: none;
+            }
+        }
+        button{
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            padding:0 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: 0.4s all ease-in-out;
+            color: black;
+            border-width: medium medium medium 1px;
+            border-style: none none none solid;
+            border-color: #a1a5aa;
+            border-image: none;
+            background: none;
+
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}

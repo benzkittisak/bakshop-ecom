@@ -7,17 +7,20 @@ import ProductGridSingle from "../product-grid-single/product-grid-single.compon
 
 import "./product-grid.style.scss";
 
-const ProductGrid = ({ category , plants }) => {
+const ProductGrid = ({ category , plants , col}) => {
   return (
     <Fragment>
       {plants.map((product) => (
-        <ProductGridSingle product={product} category={category} key={product.id} />
+        <ProductGridSingle col={col} product={product} category={category} key={product.id} />
       ))}
     </Fragment>
   );
 };
 
-const mapStateToProps = (state , ownProps) =>({
-  plants: selectCollectionsForDailyDeals(ownProps)(state)
-})
+const mapStateToProps = (state , ownProps) => {
+  if(ownProps.isDisable) return {};
+  return {
+    plants: selectCollectionsForDailyDeals(ownProps)(state)
+  }
+}
 export default connect(mapStateToProps)(ProductGrid);
