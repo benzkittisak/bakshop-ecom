@@ -1,6 +1,10 @@
-import React, { lazy, Suspense } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-// import { BreadcrumbsProvider } from "react-breadcrumbs-dynamic";
+import React, { lazy, Suspense , useEffect} from "react";
+import { Routes, Route, useLocation , Navigate } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+
+import { checkUserSession } from "./redux/user/user.actions";
+import { selectCurrentUser } from "./redux/user/user.selector";
 
 import "./App.scss";
 
@@ -11,13 +15,15 @@ const ShopPage = lazy(() => import("./pages/shop/shop.container"));
 const LoginRegisterpage = lazy(() => import('./pages/login-register/login-register.component'));
 
 // Components
-// const Spinner = lazy(() => import ("./components/spinner/spinner.component"));
 
-function App() {
+const App = ({checkCurrentUser , currentUser}) => {
   // Convert Search Params to props
   const searchParams = useLocation().search;
   const searchKeyword = new URLSearchParams(searchParams).get("search");
 
+  useEffect(() => {
+    checkCurrentUser();
+  } , [checkCurrentUser])
   return (
     // <BreadcrumbsProvider>
       <Suspense fallback={"Loading ..."}>
@@ -27,7 +33,7 @@ function App() {
             path="/search"
             element={<SearchPage params={searchKeyword} />}
           />
-          <Route path="login" element={<LoginRegisterpage/>}/>
+          <Route path="login" element={currentUser ? <Navigate to={"/account"} /> :<LoginRegisterpage/>}/>
           <Route path="/shop/*" element={<ShopPage />} />
         </Routes>
       </Suspense>
@@ -35,4 +41,11 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = createStructuredSelector({
+  currentUser:selectCurrentUser
+})
+
+const mapDispatchToProps = dispatch => ({
+  checkCurrentUser:() => dispatch(checkUserSession())
+})
+export default connect(mapStateToProps,mapDispatchToProps)(App);

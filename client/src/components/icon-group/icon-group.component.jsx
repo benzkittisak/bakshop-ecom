@@ -1,21 +1,24 @@
-import React , { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
+import { selectCurrentUser } from "../../redux/user/user.selector";
+import { signOutStart } from "../../redux/user/user.actions";
 
 import "./icon-group.style.scss";
 
-const IconGroup = () => {
-
-  const [search , setSearch] = useState('')
+const IconGroup = ({ currentUser , signOut}) => {
+  const [search, setSearch] = useState("");
 
   const handleClick = (e) => {
     e.currentTarget.nextSibling.classList.toggle("active");
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    window.location.href = process.env.PUBLIC_URL + `/search?search=${search}`
-  }
+    window.location.href = process.env.PUBLIC_URL + `/search?search=${search}`;
+  };
 
   return (
     <div className="header-right-wrap">
@@ -25,7 +28,11 @@ const IconGroup = () => {
         </button>
         <div className="search-content">
           <form onSubmit={(e) => handleSubmit(e)}>
-            <input onChange={(e) => setSearch(e.target.value)} type="text" placeholder="พิมพ์คำค้นที่คุณต้องการ" />
+            <input
+              onChange={(e) => setSearch(e.target.value)}
+              type="text"
+              placeholder="พิมพ์คำค้นที่คุณต้องการ"
+            />
             <button className="button-search">
               <i className="fal fa-search"></i>
             </button>
@@ -41,20 +48,29 @@ const IconGroup = () => {
         </button>
         <div className="account-dropdown">
           <ul>
-            <li>
-              <Link to={"/login"}>เข้าสู่ระบบ</Link>
-            </li>
-            <li>
-              <Link to={"/login"}>สมัครสมาชิก</Link>
-            </li>
-            <li>
-              <Link
-                to={"/account"}
-                className="my-account"
-              >
-                บัญชีของฉัน
-              </Link>
-            </li>
+            {currentUser ? (
+              <Fragment>
+                <li>
+                  <Link to={"/account"} className="my-account">
+                    บัญชีของฉัน
+                  </Link>
+                </li>
+                <li>
+                  <button onClick={signOut} className="logout">
+                    ออกจากระบบ
+                  </button>
+                </li>
+              </Fragment>
+            ) : (
+              <Fragment>
+                <li>
+                  <Link to={"/login"}>เข้าสู่ระบบ</Link>
+                </li>
+                <li>
+                  <Link to={"/login"}>สมัครสมาชิก</Link>
+                </li>
+              </Fragment>
+            )}
           </ul>
         </div>
       </div>
@@ -68,5 +84,12 @@ const IconGroup = () => {
   );
 };
 
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
 
-export default IconGroup;
+const mapDispatchToProps = dispatch => ({
+  signOut : () => dispatch(signOutStart())
+})
+
+export default connect(mapStateToProps , mapDispatchToProps)(IconGroup);
