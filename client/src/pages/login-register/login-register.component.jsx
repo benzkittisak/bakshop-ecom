@@ -6,7 +6,8 @@ import Nav from "react-bootstrap/Nav";
 import Layout from "../../layouts/layouts.component";
 
 import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
-import CustomButton from "../../components/custom-button/custom-button.component";
+import Login from "../../components/login/login.component";
+import Register from "../../components/register/register.componet";
 
 import "./login-register.style.scss";
 
@@ -35,70 +36,8 @@ const LoginRegisterPage = () => {
                       </Nav.Item>
                     </Nav>
                     <Tab.Content>
-                      <Tab.Pane eventKey={"login"}>
-                        <div className="login-form-container">
-                          <div className="login-register-form">
-                            <form>
-                              <input
-                                type="text"
-                                name="username"
-                                placeholder="ชื่อผู้ใช้"
-                              />
-                              <input
-                                type="password"
-                                name="password"
-                                placeholder="รหัสผ่าน"
-                              />
-                              <div className="button-container">
-                                <CustomButton
-                                  text={"เข้าสู่ระบบ"}
-                                  type="submit"
-                                />
-                                <CustomButton
-                                  text={"เข้าสู่ระบบด้วย Google"}
-                                  isGoogleSignIn
-                                  type="button"
-                                />
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey={"register"}>
-                        <div className="login-form-container">
-                          <div className="login-register-form">
-                            <form>
-                              <input
-                                type="text"
-                                name="displayName"
-                                placeholder="ชื่อบนเว็บ"
-                              />
-                              <input
-                                type="text"
-                                name="username"
-                                placeholder="ชื่อผู้ใช้"
-                              />
-                              <input
-                                type="password"
-                                name="password"
-                                placeholder="รหัสผ่าน"
-                              />
-                              <input
-                                type="password"
-                                name="confirmPassword"
-                                placeholder="ยืนยันรหัสผ่านรหัสผ่าน"
-                              />
-
-                              <div className="button-container">
-                                <CustomButton
-                                  text={"สมัครสมาชิก"}
-                                  type="submit"
-                                />
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </Tab.Pane>
+                      <Login />
+                      <Register />
                     </Tab.Content>
                   </Tab.Container>
                 </div>
