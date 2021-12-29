@@ -12,10 +12,25 @@ export const setActiveClassToSort = (e) => {
   e.currentTarget.classList.add("active");
 };
 
-export const getFilterProduct = (products, sortType, sortValue) => {
-  if (!sortValue) return products;
+export const getSortProduct = (products, sortType, sortValue) => {
+  if (!sortValue || !sortType) return mergeProduct(products);
+
   if (sortType === "category") {
-    return products.filter((product) => product.title === sortValue);
+    return mergeProduct(products.filter((product) => product.title === sortValue));
+  }
+  if(sortType === "filterSort"){
+    let sortProduct = [...products];
+    if(sortValue === "default"){
+      return sortProduct;
+    }
+    else if(sortValue === "priceHighToLow"){
+      return sortProduct.sort((a,b) => b.price - a.price);
+    }
+    else if(sortValue === "priceLowToHigh"){
+      return sortProduct.sort((a,b) => a.price - b.price);
+    }
+
+    return sortProduct;
   }
 };
 

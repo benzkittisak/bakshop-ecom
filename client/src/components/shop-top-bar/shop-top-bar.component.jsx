@@ -6,7 +6,7 @@ import "./shop-top-bar.style.scss";
 
 const ShopTopBar = ({
   getLayout,
-  getFilterSortParams,
+  getFilterParams,
   productCount,
   sortedProductCount,
 }) => {
@@ -15,7 +15,7 @@ const ShopTopBar = ({
       <div className="select-shoping-wrap">
         <div className="shop-select">
           <select
-            onChange={(e) => getFilterSortParams("filterSort", e.target.value)}
+            onChange={(e) => getFilterParams("filterSort", e.target.value)}
           >
             <option value="default">เริ่มต้น</option>
             <option value="priceHighToLow">ราคาสูงไปต่ำ</option>

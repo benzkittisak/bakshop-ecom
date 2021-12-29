@@ -7,7 +7,7 @@ import "./App.scss";
 // Page
 const HomePage = lazy(() => import("./pages/home/home.component"));
 const SearchPage = lazy(() => import("./pages/search/search.component"));
-const ShopPage = lazy(() => import("./pages/shop/shop.component"));
+const ShopPage = lazy(() => import("./pages/shop/shop.container"));
 
 // Components
 // const Spinner = lazy(() => import ("./components/spinner/spinner.component"));
