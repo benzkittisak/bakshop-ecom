@@ -94,7 +94,6 @@ const LoginRegisterPage = () => {
                                   text={"สมัครสมาชิก"}
                                   type="submit"
                                 />
-                               
                               </div>
                             </form>
                           </div>
