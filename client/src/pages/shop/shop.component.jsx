@@ -56,7 +56,6 @@ const ShopPage = ({ plants }) => {
     setCurrentPlantData(sortedProduct.slice(offset, offset + pageLimit));
   }, [offset, plants, sortType, sortValue, filterSortType, filterSortValue]);
 
-  console.log(filterSortValue);
   return (
     <Fragment>
       <MetaTags>

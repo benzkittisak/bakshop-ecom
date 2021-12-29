@@ -16,18 +16,18 @@ export const getSortProduct = (products, sortType, sortValue) => {
   if (!sortValue || !sortType) return mergeProduct(products);
 
   if (sortType === "category") {
-    return mergeProduct(products.filter((product) => product.title === sortValue));
+    return mergeProduct(
+      products.filter((product) => product.title === sortValue)
+    );
   }
-  if(sortType === "filterSort"){
+  if (sortType === "filterSort") {
     let sortProduct = [...products];
-    if(sortValue === "default"){
+    if (sortValue === "default") {
       return sortProduct;
-    }
-    else if(sortValue === "priceHighToLow"){
-      return sortProduct.sort((a,b) => b.price - a.price);
-    }
-    else if(sortValue === "priceLowToHigh"){
-      return sortProduct.sort((a,b) => a.price - b.price);
+    } else if (sortValue === "priceHighToLow") {
+      return sortProduct.sort((a, b) => b.price - a.price);
+    } else if (sortValue === "priceLowToHigh") {
+      return sortProduct.sort((a, b) => a.price - b.price);
     }
 
     return sortProduct;
