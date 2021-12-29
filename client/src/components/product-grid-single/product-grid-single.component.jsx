@@ -1,17 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+
+import { addItem } from "../../redux/cart/cart.actions";
+
 import currencyFormatter from "../../assets/utils/currency.formatter";
 
 import "./product-grid-single.style.scss";
 
-const ProductGridSingle = ({ product, category, col }) => {
+const ProductGridSingle = ({ product, category, addItem }) => {
   const { name, imageUrl, price } = product;
 
   return (
     <div className={`col-xl-3 col-md-6 col-lg-4 col-sm-6`}>
       <div className="product-wrap animation_fadeInLeft mb-25">
         <div className="product-img">
-          <Link to={process.env.PUBLIC_URL + "/shop/" + category + "/" + name}>
+          <Link to={process.env.PUBLIC_URL + "/shop/" + name}>
             <img src={imageUrl} className="default-img" alt="" />
           </Link>
           {product.new ? (
@@ -20,7 +24,7 @@ const ProductGridSingle = ({ product, category, col }) => {
 
           <div className="product-action">
             <div className="pro-same-action pro-cart">
-              <button>
+              <button onClick={() => addItem(product)}>
                 {" "}
                 <i className="fal fa-cart-plus"></i>{" "}
               </button>
@@ -52,4 +56,8 @@ const ProductGridSingle = ({ product, category, col }) => {
   );
 };
 
-export default ProductGridSingle;
+const mapDispatchToProps = dispatch => ({
+  addItem : (item) => dispatch(addItem(item))
+})
+
+export default connect(null,mapDispatchToProps)(ProductGridSingle);

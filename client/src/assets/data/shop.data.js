@@ -9,27 +9,28 @@ const PLANTS_DATA = {
       {
         id: 2,
         name: "มอนสเตอร่า ไจแอนท์",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/16/pexels-huy-phan-3125195.jpg",
         price: 2234,
         description:
           "มอนสเตอร่า (Monstera, Swiss Cheese Plant) หรือที่เรียกทั่วไปว่า พลูฉีก หรือ พลูแฉก มีถิ่นกำเนิดในทวีปอเมริกากลาง พบมากในป่าดิบชื้น เป็นต้นไม้ในวงศ์ Araceae มีชื่อทางวิทยาศาสตร์ว่า Monstera deliciosa Liebm. ลักษณะลำต้นเป็นข้อสั้น จัดอยู่ในกลุ่มไม้เลื้อย สามารถเลื้อยได้ไกล 4 เมตร มีจุดเด่นที่ใบเดี่ยวขนาดใหญ่ โคนใบเว้าลึกเป็นรูปหัวใจ ปลายใบเรียวแหลม ขอบใบหยักลึกเกือบถึงเส้นกลางใบ 5 แฉก ใบหนาผิวมัน มีทั้งสีเขียวเข้มและใบด่าง ออกดอกตามซอกใบ มีผลสีเขียว จะเปลี่ยนเป็นสีน้ำตาลเมื่อผลสุกและส่งกลิ่นแรง",
-      },
+          showImage: [],      
+        },
       {
         id: 3,
         name: "เดหลี",
-        new:true,
-        imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/8ff19ffb.jpg",
+        new: true,
+        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/8ff19ffb.jpg",
         price: 1099,
         description:
           "เป็นพืชที่มีดอกเดี่ยว monocotyledonous ประมาณ 47 ชนิดในตระกูล Araceae ถิ่นกำเนิดในเขตร้อนชื้นของอเมริกาและเอเชียตะวันออกเฉียงใต้ Spathiphyllum บางชนิดเป็นที่รู้จักกันทั่วไปว่าเป็น Spath หรือ Lily Peace พวกเขาเป็นไม้ยืนต้นเป็นต้นไม้เขียวชอุ่มตลอดปีมีใบขนาดใหญ่ 12-65 ซม. และกว้าง 3-25 ซม.",
+        showImage: [],
       },
       {
         id: 4,
         name: "แววมยุรา",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/potted_maranta_leuconeura_erythroneura_prayer_plant_herringbone_plant_1500272950_051f04080.jpg",
         price: 890,
@@ -39,7 +40,7 @@ const PLANTS_DATA = {
       {
         id: 5,
         name: "กวักมรกต",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/000680105_ZZPlant_3_39ed4a48-9e7a-469c-8147-5478128cf095.webp",
         price: 1099,
@@ -49,7 +50,7 @@ const PLANTS_DATA = {
       {
         id: 6,
         name: "ไอวี่",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/green-polyester-artificial-english-ivy-plant-withhanging-basket-by-odd-croft-green-polyester-artific-dla5bg.jpg",
         price: 599,
@@ -59,7 +60,7 @@ const PLANTS_DATA = {
       {
         id: 7,
         name: "ว่านหางจระเข้",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/aloe-vera-plant-2021-08-26-16-59-51-utc.md.jpg",
         price: 1834,
@@ -69,7 +70,7 @@ const PLANTS_DATA = {
       {
         id: 8,
         name: "ต้นแมงมุม",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/beautiful-spider-plant-hanging-from-a-wooden-brack-2021-10-12-19-41-54-utc.md.jpg",
         price: 800,
@@ -79,7 +80,7 @@ const PLANTS_DATA = {
       {
         id: 9,
         name: "พลูด่าง",
-        new:true,
+        new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/devil-s-ivy-plant-2021-08-26-23-04-13-utc.md.jpg",
         price: 340,
@@ -89,25 +90,26 @@ const PLANTS_DATA = {
       {
         id: 10,
         name: "ลิ้นมังกร",
-        new:false,
+        new: false,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/000850105_SnakePlant_1_25e1ca62-1d03-44b9-9791-7d68f3ae6864.webp",
         price: 459,
         description:
           "ลิ้นมังกร เป็นพืชในวงศ์ Asparagaceae เป็นไม้ล้มลุก มีเหง้าใต้ดิน ใบเดี่ยว สีเขียวเข้มแกมเทา อวบน้ำ ดอกช่อ สีขาวมีกลิ่นหอม เป็นพืชท้องถิ่นในแอฟริกาตะวันตกตั้งแต่ไนจีเรียถึงคองโก ใช้เป็นไม้ประดับ ใบใช้ตำละเอียด แก้พิษตะขาบ แมงป่อง ชื่อทวินามเดิม Sansevieria trifasciata ปัจจุบันจัดเป็นชื่อพ้องของลิ้นมังกร",
-      }
+      },
     ],
   },
-  officeplants:{
-    id:11,
-    title:'Office Plants',
-    routeName:'shop/officeplants',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daria-shevtsova-970089.md.jpg',
-    items:[
+  officeplants: {
+    id: 11,
+    title: "Office Plants",
+    routeName: "shop/officeplants",
+    previewImage:
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daria-shevtsova-970089.md.jpg",
+    items: [
       {
         id: 12,
         name: "กุหลาบหิน",
-        link:'shop/office-plants/Kalanchoe',
+        link: "shop/office-plants/Kalanchoe",
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/3d25edc4e2551a855b79ddde68f4dae1.jpg",
         price: 199,
@@ -123,14 +125,15 @@ const PLANTS_DATA = {
         description:
           "สำหรับ “ต้นคลาสซูล่า” ( Crassula Ovata หรือ Jade Plant) นั้นเป็นไม้อวบน้ำซึ่งสามารถเรียกว่าเป็นต้นไม้สวรรค์ ต้นใบเงินก็ได้ โดยลักษณะของต้นคลาสซูล่านั้นมีใบสีเขียวสวยงาม ใบหนาเรียบเนียน เวลาออกดอกจะออกดอกเป็นสีชมพู หรือสีขาว ลักษณะคล้ายรูปดาว ซึ่งดอกจะออกในช่วงฤดูหนาว",
       },
-    ]
+    ],
   },
-  gardenplants:{
-    id:14,
-    title:'Graden Plants',
-    routeName:'shop/gardenplants',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.md.jpg',
-    items:[
+  gardenplants: {
+    id: 14,
+    title: "Graden Plants",
+    routeName: "shop/gardenplants",
+    previewImage:
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.md.jpg",
+    items: [
       {
         id: 15,
         name: "ไผ่ฟาร์เจีย",
@@ -143,8 +146,7 @@ const PLANTS_DATA = {
       {
         id: 16,
         name: "สนบลู",
-        imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/columnars_1.jpg",
+        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/columnars_1.jpg",
         price: 1799,
         description:
           "Chamaecyparis lawsoniana หรือที่รู้จักในชื่อ Port Orford cedar หรือ Lawson cypress เป็นสายพันธุ์ของต้นสนในสกุล Chamaecyparis ตระกูล Cupressaceae มันมีถิ่นกำเนิดในโอเรกอนและแคลิฟอร์เนียทางตะวันตกเฉียงเหนือและเติบโตจากระดับน้ำทะเลถึง 1,500 เมตรในหุบเขาของเทือกเขา Klamath ซึ่งมักจะมีลำธารไหลผ่าน",
@@ -194,14 +196,15 @@ const PLANTS_DATA = {
         description:
           "Encephalartos altensteinii เป็นปรงเหมือนต้นปาล์มในตระกูล Zamiaceae มันเป็นโรคประจำถิ่นไปยังแอฟริกาใต้ ชื่อสายพันธุ์อัลเทนสไตนินี่เอกสิทธิ์อัลเทนสไตน์นายกรัฐมนตรีและผู้อุปถัมภ์ด้านวิทยาศาสตร์ของเยอรมันในศตวรรษที่ 19 มันเป็นที่รู้จักกันทั่วไปว่าเป็น breadtree, broodboom, ปรงยักษ์ตะวันออก",
       },
-    ]
+    ],
   },
-  bonsais:{
-    id:22,
-    title:'Bonsais',
-    routeName:'shop/bonsais',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/27/small-bonsai-tree-hobbit-growing-in-a-red-flowerpo-2021-08-30-02-30-42-utc.md.jpg',
-    items:[
+  bonsais: {
+    id: 22,
+    title: "Bonsais",
+    routeName: "shop/bonsais",
+    previewImage:
+      "https://i2.fpic.cc/file/img-b1/2021/12/27/small-bonsai-tree-hobbit-growing-in-a-red-flowerpo-2021-08-30-02-30-42-utc.md.jpg",
+    items: [
       {
         id: 23,
         name: "เมเปิ้ลญี่ปุ่น",
@@ -246,7 +249,7 @@ const PLANTS_DATA = {
         price: 2187,
         description:
           "บีชยุโรปหรือบีชทั่วไปเป็นต้นไม้ผลัดใบที่อยู่ในวงศ์บีช Fagaceae",
-      }, 
+      },
       {
         id: 28,
         name: "ยี่เข่ง",
@@ -274,14 +277,15 @@ const PLANTS_DATA = {
         description:
           "ศุภโชค เป็นไม้ยืนต้น พืชเขตร้อน มีถิ่นกำเนิดแถบทวีปอเมริกาใต้ เช่น ประเทศเม็กซิโก บราซิล หมู่เกาะฮาวาย นิยมนำมาถักเป็นไม้แคระกระถาง และมีความเชื่อว่าเป็นไม้มงคล ภาษาจีนเรียกว่า “เหยาเฉียนซู่” แปลว่า เรียกเงิน หรือ เขย่าเงิน",
       },
-    ]
+    ],
   },
-  orchids:{
-    id:31,
-    title:'Orchids',
-    routeName:'shop/orchids',
-    previewImage:'https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-mariola-3699859.jpg',
-    items:[
+  orchids: {
+    id: 31,
+    title: "Orchids",
+    routeName: "shop/orchids",
+    previewImage:
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-mariola-3699859.jpg",
+    items: [
       {
         id: 32,
         name: "สกุลเขากวางอ่อน",
@@ -303,8 +307,7 @@ const PLANTS_DATA = {
       {
         id: 34,
         name: "สกุลรองเท้านารี",
-        imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/17822.jpg",
+        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/17822.jpg",
         price: 699,
         description:
           "สกุลรองเท้านารี เป็นพันธุ์ไม้ประเภทกล้วยไม้ ตั้งขึ้นเมื่อ พ.ศ. 2429 โดยนักพฤกษศาสตร์ชาวเยอรมัน มาจากรากศัพท์ภาษากรีกคือ Paphia หมายถึงเทพธิดาแห่งความรักและความงาม และ pedilon หมายถึงรองเท้าของผู้หญิง ซึ่งหมายถึงลักษณะกลีบดอกที่เป็นถุงลึกคล้ายรองเท้า พบทั่วไปในเอเชียตะวันออกเฉียงใต้",
@@ -336,19 +339,19 @@ const PLANTS_DATA = {
         description:
           "Oncidium ย่อว่า Onc ในการค้าพืชสวนเป็นสกุลที่มีประมาณ 330 ชนิดของกล้วยไม้จาก subtribe Oncidiinae ของครอบครัวกล้วยไม้ ปัจจุบันมีการกระจายไปทั่วอเมริกาใต้อเมริกาใต้เม็กซิโกและหมู่เกาะอินเดียตะวันตกโดยขยายพันธุ์ไปยังฟลอริดา ชื่อสามัญของพืชในประเภทนี้ ได้แก่ กล้วยไม้เต้นรำหญิงและกล้วยไม้อาบน้ำสีทอง",
       },
-    ]
+    ],
   },
-  accessories:{
-    id:38,
-    title:'Accessories',
-    routeName:'shop/accessories',
-    previewImage:"https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-rocketmann-team-9507266.jpg",
-    items:[
+  accessories: {
+    id: 38,
+    title: "Accessories",
+    routeName: "shop/accessories",
+    previewImage:
+      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-rocketmann-team-9507266.jpg",
+    items: [
       {
         id: 39,
         name: "ถุงมือ",
-        imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/6oqqxw.jpg",
+        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/6oqqxw.jpg",
         price: 25,
         description:
           "ถุงมือสำหรับขุดดินทำสวนที่มาพร้อมกรงเล็บแข็งแรงในตัว ให้คุณสวมใส่เพื่อขุดดิน พรวนดิน หรือเตรียมดินปลูกต้นไม้ได้อย่างสะดวกรวดเร็วโดยมือไม่เลอะเทอะเปรอะเปื้อนแม้แต่น้อย! จัดการงานทำสวนให้เสร็จได้รวดเร็วขึ้นทันทีถุงมือขุดดินทำสวน",
@@ -398,8 +401,8 @@ const PLANTS_DATA = {
         description:
           "ใช้สำหรับรดน้ำพืช น้ำที่ออกจากฝักบัวจะเป็นฝอยกระจายทั่วต้นพืชทำให้พืชได้รับน้ำอย่างทั่วถึง และส่วนต่างๆ ของพืชไม่หักง่าย การใช้บัวรดน้ำ ถ้าไม่ระมัดระวังจะเสียหายง่ายที่ส่วนคอของฝักบัวจึงควรจับที่หูหิ้วหรือที่มือจับเท่านั้น",
       },
-    ]
-  }
+    ],
+  },
 };
 
 export default PLANTS_DATA;

@@ -7,12 +7,12 @@ import ProductGridSingle from "../product-grid-single/product-grid-single.compon
 
 import "./product-grid.style.scss";
 
-const ProductGrid = ({ category , plants , col}) => {
+const ProductGrid = ({ category , plants }) => {
   return (
     <Fragment>
-      {plants.map((product) => (
-        <ProductGridSingle col={col} product={product} category={category} key={product.id} />
-      ))}
+      {plants.length ? plants.map((product) => (
+        <ProductGridSingle product={product} category={category} key={product.id} />
+      )) : "ไม่พบสินค้าที่คุณต้องการ"}
     </Fragment>
   );
 };

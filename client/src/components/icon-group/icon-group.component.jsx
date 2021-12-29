@@ -5,10 +5,11 @@ import { createStructuredSelector } from "reselect";
 
 import { selectCurrentUser } from "../../redux/user/user.selector";
 import { signOutStart } from "../../redux/user/user.actions";
+import { selectCartItemsCount } from "../../redux/cart/cart.selector";
 
 import "./icon-group.style.scss";
 
-const IconGroup = ({ currentUser , signOut}) => {
+const IconGroup = ({ currentUser, signOut, countItemInCart }) => {
   const [search, setSearch] = useState("");
 
   const handleClick = (e) => {
@@ -77,7 +78,7 @@ const IconGroup = ({ currentUser , signOut}) => {
       <div className="same-style cart-wrap d-none d-lg-block">
         <button className="icon-cart" onClick={(e) => handleClick(e)}>
           <i className="fal fa-shopping-bag"></i>
-          <span className="count-style">0</span>
+          <span className="count-style">{countItemInCart}</span>
         </button>
       </div>
     </div>
@@ -86,10 +87,11 @@ const IconGroup = ({ currentUser , signOut}) => {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
+  countItemInCart: selectCartItemsCount,
 });
 
-const mapDispatchToProps = dispatch => ({
-  signOut : () => dispatch(signOutStart())
-})
+const mapDispatchToProps = (dispatch) => ({
+  signOut: () => dispatch(signOutStart()),
+});
 
-export default connect(mapStateToProps , mapDispatchToProps)(IconGroup);
+export default connect(mapStateToProps, mapDispatchToProps)(IconGroup);

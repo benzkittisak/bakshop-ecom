@@ -1,20 +1,22 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+
+import { addItem } from "../../redux/cart/cart.actions";
+
 import currencyFormatter from "../../assets/utils/currency.formatter";
 
 import "../product-grid-single/product-grid-single.style.scss";
 import "./product-grid-list-single.style.scss";
 
-const ProductGridListSingle = ({ product }) => {
+const ProductGridListSingle = ({ product  , addItem}) => {
   const { name, imageUrl, price, description } = product;
   return (
     <Fragment>
       <div className={`col-xl-4 col-sm-6`}>
         <div className="product-wrap mb-4">
           <div className="product-img">
-            <Link
-              to={process.env.PUBLIC_URL + "/shop/" + name}
-            >
+            <Link to={process.env.PUBLIC_URL + "/shop/" + name}>
               <img src={imageUrl} className="default-img" alt="" />
             </Link>
             {product.new ? (
@@ -23,7 +25,10 @@ const ProductGridListSingle = ({ product }) => {
 
             <div className="product-action">
               <div className="pro-same-action pro-cart">
-                <button> ซื้อเลย </button>
+                <button onClick={() => addItem(product)}>
+                  {" "}
+                  <i className="fal fa-cart-plus"></i>{" "}
+                </button>
               </div>
               <div className="pro-same-action pro-quickview">
                 <Link
@@ -78,9 +83,12 @@ const ProductGridListSingle = ({ product }) => {
                 </div>
                 <div className="shop-list-actions d-flex align-items-center">
                   <div className="shop-list-btn btn-hover ">
-                    <button className="animated hvr-sweep-to-right">
-                      เพิ่มลงตะกร้าสินค้า
-                    </button>
+                    <button
+                      onClick={() => addItem(product)}
+                      className="animated hvr-sweep-to-right"
+                    >
+                      <i className="fal fa-cart-plus"></i> เพิ่มลงตะกร้าสินค้า
+                    </button> 
                   </div>
                 </div>
               </div>
@@ -92,4 +100,8 @@ const ProductGridListSingle = ({ product }) => {
   );
 };
 
-export default ProductGridListSingle;
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(ProductGridListSingle);
