@@ -43,26 +43,26 @@
           background-color: $theme-color;
         }
       }
-      &.page-item{
-          .page-link{
-              color: $theme-color;
-              border: none;
+      &.page-item {
+        .page-link {
+          color: $theme-color;
+          border: none;
 
-              &:hover{
-                  color: white;
-                  background-color: $theme-color;
-              }
+          &:hover {
+            color: white;
+            background-color: $theme-color;
           }
-          &.active{
-              .page-link{
-                  border-color: $theme-color;
-                  background-color: $theme-color;
-                  box-shadow: 0 0 12px 0.8px rgba($color: black, $alpha: 0.1);
-                  &:focus{
-                      box-shadow: none;
-                  }
-              }
+        }
+        &.active {
+          .page-link {
+            border-color: $theme-color;
+            background-color: $theme-color;
+            box-shadow: 0 0 12px 0.8px rgba($color: black, $alpha: 0.1);
+            &:focus {
+              box-shadow: none;
+            }
           }
+        }
       }
     }
   }
