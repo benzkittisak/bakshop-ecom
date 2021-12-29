@@ -42,14 +42,14 @@ const IconGroup = () => {
         <div className="account-dropdown">
           <ul>
             <li>
-              <Link to={process.env.PUBLIC_URL + "login"}>เข้าสู่ระบบ</Link>
+              <Link to={"/login"}>เข้าสู่ระบบ</Link>
             </li>
             <li>
-              <Link to={process.env.PUBLIC_URL + "register"}>สมัครสมาชิก</Link>
+              <Link to={"/login"}>สมัครสมาชิก</Link>
             </li>
             <li>
               <Link
-                to={process.env.PUBLIC_URL + "account"}
+                to={"/account"}
                 className="my-account"
               >
                 บัญชีของฉัน

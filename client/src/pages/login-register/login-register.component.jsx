@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Layout from "../../layouts/layouts.component";
 
 import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
+import CustomButton from "../../components/custom-button/custom-button.component";
 
 import "./login-register.style.scss";
 
@@ -48,10 +49,16 @@ const LoginRegisterPage = () => {
                                 name="password"
                                 placeholder="รหัสผ่าน"
                               />
-                              <div className="button-box">
-                                <button type="submit">
-                                  <span>เข้าสู่ระบบ</span>
-                                </button>
+                              <div className="button-container">
+                                <CustomButton
+                                  text={"เข้าสู่ระบบ"}
+                                  type="submit"
+                                />
+                                <CustomButton
+                                  text={"เข้าสู่ระบบด้วย Google"}
+                                  isGoogleSignIn
+                                  type="button"
+                                />
                               </div>
                             </form>
                           </div>
@@ -82,8 +89,12 @@ const LoginRegisterPage = () => {
                                 placeholder="ยืนยันรหัสผ่านรหัสผ่าน"
                               />
 
-                              <div className="button-box">
-                                <button type="submit">สมัครสมาชิก</button>
+                              <div className="button-container">
+                                <CustomButton
+                                  text={"สมัครสมาชิก"}
+                                  type="submit"
+                                />
+                               
                               </div>
                             </form>
                           </div>

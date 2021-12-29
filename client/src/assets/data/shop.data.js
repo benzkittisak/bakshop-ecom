@@ -118,7 +118,7 @@ const PLANTS_DATA = {
         id: 13,
         name: "ต้นคลาสซูล่า",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/potted-jade-plant.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/29/houseplant-crassula-ovata-jade-plant-money-tree-op-2021-08-27-09-39-48-utc.md.jpg",
         price: 799,
         description:
           "สำหรับ “ต้นคลาสซูล่า” ( Crassula Ovata หรือ Jade Plant) นั้นเป็นไม้อวบน้ำซึ่งสามารถเรียกว่าเป็นต้นไม้สวรรค์ ต้นใบเงินก็ได้ โดยลักษณะของต้นคลาสซูล่านั้นมีใบสีเขียวสวยงาม ใบหนาเรียบเนียน เวลาออกดอกจะออกดอกเป็นสีชมพู หรือสีขาว ลักษณะคล้ายรูปดาว ซึ่งดอกจะออกในช่วงฤดูหนาว",
