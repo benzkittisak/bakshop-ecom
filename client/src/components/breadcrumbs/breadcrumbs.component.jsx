@@ -15,7 +15,7 @@ const Breadcrumbs = () => {
           className={`${location.pathname === breadcrumb.key ? "active" : ""}`}
           to={match.pathname}
         >
-          {breadcrumb}
+          {decodeURI(breadcrumb.props.children)}
         </Link>
       ))}
     </div>

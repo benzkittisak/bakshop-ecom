@@ -8,6 +8,7 @@ import "./App.scss";
 const HomePage = lazy(() => import("./pages/home/home.component"));
 const SearchPage = lazy(() => import("./pages/search/search.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.container"));
+const LoginRegisterpage = lazy(() => import('./pages/login-register/login-register.component'));
 
 // Components
 // const Spinner = lazy(() => import ("./components/spinner/spinner.component"));
@@ -26,6 +27,7 @@ function App() {
             path="/search"
             element={<SearchPage params={searchKeyword} />}
           />
+          <Route path="login" element={<LoginRegisterpage/>}/>
           <Route path="/shop/*" element={<ShopPage />} />
         </Routes>
       </Suspense>

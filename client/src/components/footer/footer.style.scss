@@ -5,6 +5,10 @@ $font-title: 400;
 $sub-text: 14px;
 $color: #313131;
 
+.footer{
+  padding: 20px;
+}
+
 .copy-right {
   p {
     letter-spacing: 0.9px;
@@ -12,6 +16,10 @@ $color: #313131;
     font-size: $sub-text;
     font-weight: $font-sub;
   }
+}
+
+.bg-gray{
+  background-color: #f1f1f1;
 }
 
 .footer-widget {
