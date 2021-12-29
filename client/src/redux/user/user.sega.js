@@ -28,10 +28,23 @@ export function* signInWithGoogle() {
   }
 }
 
+export function* signInWithEmail({payload:{email , password}}){
+    try {
+        const {user} = yield auth.signInWithEmailAndPassword(email , password);
+        yield getSnapshopFromUserAuth(user);
+    } catch (error) {
+        yield put(signInFailure(error))
+    }
+}
+
 export function* onGoogleSignInStart() {
   yield takeLatest(userActionTypes.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
 
+export function* onEmailSignInStart() {
+  yield takeLatest(userActionTypes.EMAIL_SIGN_IN_START, signInWithEmail);
+}
+
 export function* userSaga() {
-  yield all([call(onGoogleSignInStart)]);
+  yield all([call(onGoogleSignInStart), call(onEmailSignInStart)]);
 }
