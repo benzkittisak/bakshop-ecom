@@ -4,7 +4,7 @@ import currencyFormatter from "../../assets/utils/currency.formatter";
 
 import "./product-grid-single.style.scss";
 
-const ProductGridSingle = ({ product, category , col }) => {
+const ProductGridSingle = ({ product, category, col }) => {
   const { name, imageUrl, price } = product;
 
   return (
@@ -20,15 +20,16 @@ const ProductGridSingle = ({ product, category , col }) => {
 
           <div className="product-action">
             <div className="pro-same-action pro-cart">
-              <button
-
-              >
+              <button>
                 {" "}
-                ซื้อเลย{" "}
+                <i className="fal fa-cart-plus"></i>{" "}
               </button>
             </div>
             <div className="pro-same-action pro-quickview">
-              <Link to={process.env.PUBLIC_URL + "/shop/" + category + "/" + name} title="Quick View">
+              <Link
+                to={process.env.PUBLIC_URL + "/shop/" + category + "/" + name}
+                title="Quick View"
+              >
                 <i className="fad fa-eye" />
               </Link>
             </div>
