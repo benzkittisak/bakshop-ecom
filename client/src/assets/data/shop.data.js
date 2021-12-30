@@ -15,8 +15,21 @@ const PLANTS_DATA = {
         price: 2234,
         description:
           "มอนสเตอร่า (Monstera, Swiss Cheese Plant) หรือที่เรียกทั่วไปว่า พลูฉีก หรือ พลูแฉก มีถิ่นกำเนิดในทวีปอเมริกากลาง พบมากในป่าดิบชื้น เป็นต้นไม้ในวงศ์ Araceae มีชื่อทางวิทยาศาสตร์ว่า Monstera deliciosa Liebm. ลักษณะลำต้นเป็นข้อสั้น จัดอยู่ในกลุ่มไม้เลื้อย สามารถเลื้อยได้ไกล 4 เมตร มีจุดเด่นที่ใบเดี่ยวขนาดใหญ่ โคนใบเว้าลึกเป็นรูปหัวใจ ปลายใบเรียวแหลม ขอบใบหยักลึกเกือบถึงเส้นกลางใบ 5 แฉก ใบหนาผิวมัน มีทั้งสีเขียวเข้มและใบด่าง ออกดอกตามซอกใบ มีผลสีเขียว จะเปลี่ยนเป็นสีน้ำตาลเมื่อผลสุกและส่งกลิ่นแรง",
-          showImage: [],      
-        },
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-08-32-46-utc.md.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/houseplants-fittonia-nephrolepis-and-monstera-in-2021-08-31-13-28-45-utc.md.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-in-basket-2021-08-29-01-31-32-utc.md.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-07-13-42-utc.md.jpg"
+        ],
+
+        reviews:[
+          // {
+          //   name:"",
+          //   email:'',
+          //   detail:""
+          // }
+        ]
+      },
       {
         id: 3,
         name: "เดหลี",

@@ -15,6 +15,8 @@ export const selectCollectionsForDailyDeals = (urlParams) =>
         .filter((product) => product.new)
         .slice(0, limit);
     }
+
+    return plants[category].items.slice(0, limit);
   });
 
 export const selectCollectionsForPreview = createSelector(
@@ -43,3 +45,6 @@ export const selectSearchCollection = (searchKeyword) =>
     data.map((product) => product.map((item) => mergeArray.push(item)));
     return mergeArray;
   });
+
+export const selectCollectionsForRelated = (category) =>
+  createSelector([selectCollections], (plants) => plants[category]);
