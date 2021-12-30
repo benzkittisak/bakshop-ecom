@@ -31,7 +31,6 @@ const ProductImageGallery = ({ product }) => {
     touchRatio: 0.2,
     freeMode: true,
     slideToClickedSlide: true,
-
     modules: [Thumbs],
     onSwiper: setThumbnailSwiper,
     watchSlidesProgress: true,

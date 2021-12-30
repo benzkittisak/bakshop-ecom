@@ -38,7 +38,12 @@ const PLANTS_DATA = {
         price: 1099,
         description:
           "เป็นพืชที่มีดอกเดี่ยว monocotyledonous ประมาณ 47 ชนิดในตระกูล Araceae ถิ่นกำเนิดในเขตร้อนชื้นของอเมริกาและเอเชียตะวันออกเฉียงใต้ Spathiphyllum บางชนิดเป็นที่รู้จักกันทั่วไปว่าเป็น Spath หรือ Lily Peace พวกเขาเป็นไม้ยืนต้นเป็นต้นไม้เขียวชอุ่มตลอดปีมีใบขนาดใหญ่ 12-65 ซม. และกว้าง 3-25 ซม.",
-        showImage: [],
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/the-house-plant-lilies-or-spathiphyllum-in-a-clay-2021-11-04-22-13-36-utc.md.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/spathiphyllum-home-plant-close-up-petal-of-white-f-2021-08-29-11-16-21-utc.md.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/spathiphyllum-plant-in-a-white-pot-on-a-white-back-2021-09-02-11-47-51-utc.md.jpg",
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/three-types-of-plants-ficus-elastica-spathiphyll-2021-09-02-10-33-12-utc.md.jpg",
+        ],
       },
       {
         id: 4,
@@ -49,7 +54,14 @@ const PLANTS_DATA = {
         price: 890,
         description:
           "Maranta leuconeura ยังเป็นที่รู้จักกันในนามพืชอธิษฐานเป็นพรรณไม้ดอกในตระกูล Marantaceae ซึ่งมีถิ่นกำเนิดในป่าเขตร้อนของบราซิล มันเป็นตัวแปรยืนต้น rhizomatous เติบโตสูงถึง 30 ซม. และกว้างกับกอหนาแน่นของเอเวอร์กรีนใบรูปไข่โดดเด่นโดดเด่นแต่ละยาวถึง 12 ซม",
-      },
+        showImage:[
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/potted_maranta_leuconeura_erythroneura_prayer_plant_herringbone_plant_1500272950_051f04080.md.jpg",
+          "",
+          "",
+          "",
+          "",
+        ]
+        },
       {
         id: 5,
         name: "กวักมรกต",
