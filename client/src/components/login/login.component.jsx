@@ -42,7 +42,7 @@ const Login = ({ googleSignInStart, emailSignInStart }) => {
             <div className="button-container">
               <CustomButton text={"เข้าสู่ระบบ"} type="submit" />
               <CustomButton
-                text={"เข้าสู่ระบบด้วย Google"}
+                text={`เข้าสู่ระบบด้วย Google`}
                 isGoogleSignIn
                 onClick={googleSignInStart}
                 type="button"

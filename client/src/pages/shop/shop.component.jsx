@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import {Routes , Route , useParams} from 'react-router-dom';
+import {Routes , Route , useParams , Navigate} from 'react-router-dom';
 import MetaTags from "react-meta-tags";
 
 import Layout from "../../layouts/layouts.component";
@@ -10,7 +10,7 @@ import ProductPage from "../product/product.component";
 
 import "./shop.style.scss";
 
-const ShopPage = ({ plants }) => {
+const ShopPage = () => {
   const params = useParams();
   return (
     <Fragment>
@@ -23,6 +23,8 @@ const ShopPage = ({ plants }) => {
         <Routes>
           <Route exact path="/" element={<ShopArea/>}/>
           <Route path=":productName" element={<ProductPage params={params}/>}/>
+          <Route path="/*" element={<Navigate to="/404"/>}/>
+
         </Routes>
       </Layout>
     </Fragment>

@@ -1,17 +1,19 @@
-@import "../../assets/styles/variables.style.scss";
-.not-found-product {
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 25px;
-  height: 70vh;
-  h1{
-      padding-bottom: 20px;
-  }
-  .error-btn {
+@import '../../assets/styles/variables.style.scss';
+
+.error{
+    h1{
+        font-size: 17rem;
+        letter-spacing: 1rem;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        color:$theme-color;
+    }
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+.error-btn {
     position: relative;
     transition: all 0.3s;
     color: #fff;
@@ -34,4 +36,3 @@
       }
     }
   }
-}

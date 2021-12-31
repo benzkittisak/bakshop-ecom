@@ -13,7 +13,9 @@ export const setActiveClassToSort = (e) => {
 };
 
 export const getSortProduct = (products, sortType, sortValue) => {
-  if (!sortValue || !sortType) return mergeProduct(products);
+  if (!sortValue || !sortType) {
+    return mergeProduct(products);
+  }
 
   if (sortType === "category") {
     return mergeProduct(

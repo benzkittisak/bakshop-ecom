@@ -14,6 +14,7 @@ import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs.component";
 import Layout from "../../layouts/layouts.component";
 import CartTable from "../../components/cart-table/cart-table.component";
 import StripeButton from "../../components/strip-button/strip-button.component";
+import PaymentDemoInfo from "../../components/payment-demo-info/payment-demo-info.component";
 
 import "./cart.style.scss";
 
@@ -56,7 +57,10 @@ const CartPage = ({ cartItems, clearCart, totalPrice }) => {
                 </div>
 
                 <div className="row">
-                  <div className="col-lg-4 offset-lg-8 col-12">
+                  <div className="col-lg-8 col-12">
+                    <PaymentDemoInfo />
+                  </div>
+                  <div className="col-lg-4 col-12">
                     <div className="grand-total">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gray-cart">

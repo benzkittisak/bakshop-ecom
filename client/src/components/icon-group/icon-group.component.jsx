@@ -4,15 +4,25 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import { selectCurrentUser } from "../../redux/user/user.selector";
-import { selectCartItems } from "../../redux/cart/cart.selector";
+import {
+  selectCartItems,
+  selectCartItemsCount,
+} from "../../redux/cart/cart.selector";
+
 import { signOutStart } from "../../redux/user/user.actions";
-import { selectCartItemsCount } from "../../redux/cart/cart.selector";
+import { clearCart } from "../../redux/cart/cart.actions";
 
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 
 import "./icon-group.style.scss";
 
-const IconGroup = ({ currentUser, signOut, countItemInCart , cartItems}) => {
+const IconGroup = ({
+  currentUser,
+  signOut,
+  countItemInCart,
+  cartItems,
+  clearCart,
+}) => {
   const [search, setSearch] = useState("");
 
   const handleClick = (e) => {
@@ -60,7 +70,13 @@ const IconGroup = ({ currentUser, signOut, countItemInCart , cartItems}) => {
                   </Link>
                 </li>
                 <li>
-                  <button onClick={signOut} className="logout">
+                  <button
+                    onClick={() => {
+                      clearCart();
+                      signOut();
+                    }}
+                    className="logout"
+                  >
                     ออกจากระบบ
                   </button>
                 </li>
@@ -83,9 +99,7 @@ const IconGroup = ({ currentUser, signOut, countItemInCart , cartItems}) => {
           <i className="fal fa-shopping-bag"></i>
           <span className="count-style">{countItemInCart}</span>
         </button>
-        <CartDropdown
-         cartItems={cartItems}
-        />
+        <CartDropdown cartItems={cartItems} />
       </div>
     </div>
   );
@@ -93,12 +107,13 @@ const IconGroup = ({ currentUser, signOut, countItemInCart , cartItems}) => {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  cartItems:selectCartItems,
+  cartItems: selectCartItems,
   countItemInCart: selectCartItemsCount,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   signOut: () => dispatch(signOutStart()),
+  clearCart: () => dispatch(clearCart()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(IconGroup);

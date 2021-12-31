@@ -50,9 +50,12 @@ const ShopArea = ({ plants }) => {
       );
       sortedProduct = filterSortedProducts;
     }
+    
     setPlantsCount(sortedProduct.length);
     setCurrentPlantData(sortedProduct.slice(offset, offset + pageLimit));
+    
   }, [offset, plants, sortType, sortValue, filterSortType, filterSortValue]);
+
   return (
     <div className="shop-area pt-5 pb-5">
       <div className="container">

@@ -23,27 +23,55 @@ export const createProfileDocument = async (userAuth, additionalData) => {
     const createdAt = new Date();
 
     try {
-        await userRef.set({
-            displayName,
-            email,
-            createdAt,
-            ...additionalData
-        })
+      await userRef.set({
+        displayName,
+        email,
+        createdAt,
+        ...additionalData,
+      });
     } catch (error) {
-        console.log("error creating account " , error.message);
+      console.log("error creating account ", error.message);
     }
   }
   return userRef;
 };
 
 export const getCurrentUser = () => {
-  return new Promise((res,rej) => {
+  return new Promise((res, rej) => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       unsubscribe();
       res(userAuth);
-    } , rej);
-  })
-} 
+    }, rej);
+  });
+};
+
+export const createOrderDocument = async (userAuth, orderData) => {
+  if (!orderData) return;
+  const orderedAt = new Date();
+  let amount = 0;
+  orderData.map(({ price, quantity }, index) => {
+    amount += price * quantity;
+  });
+  const orderRef = firestore
+    .collection("orders")
+    .doc(`${userAuth.id}`)
+    .collection("my_order")
+    .doc();
+  try {
+    await orderRef.set({
+      orderNo: Date.now(),
+      date: orderedAt,
+      deliveryAddress: userAuth.address ? userAuth.address : "",
+      amount: amount,
+      status: [{ statusName: "pending" }],
+      orderItems: orderData.map((item) => item),
+    });
+
+    return true;
+  } catch (error) {
+    console.log("error adding order : ", error.message);
+  }
+};
 
 firebase.initializeApp(config);
 

@@ -9,7 +9,7 @@ const CustomButton = ({ text, isGoogleSignIn, ...otherProps }) => {
         className={`${isGoogleSignIn ? "google-button" : ""}`}
         {...otherProps}
       >
-        {text}
+        {isGoogleSignIn? <i class="fab fa-google"></i> : ' '} {text}
       </button>
     </div>
   );

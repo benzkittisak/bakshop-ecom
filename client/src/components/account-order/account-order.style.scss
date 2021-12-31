@@ -1,0 +1,104 @@
+@import '../../assets/styles/variables.style.scss';
+.account-order-nav {
+  position: relative;
+  border-bottom: 1px solid lightgray;
+  .nav-item {
+    position: relative;
+    a {
+      border-bottom: 1px solid lightgray;
+      padding: 15px 20px;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      background-color: #f8f8f8;
+
+      &.active {
+        border-bottom-width: 2px;
+        border-color: black;
+      }
+    }
+  }
+}
+
+.order-content {
+  margin: 15px 0px;
+  overflow-y: scroll;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  
+  .order-header {
+    position: relative;
+
+    h4 {
+      font-size: 15px;
+      padding: 0px 0px 5px;
+      border-bottom: 1px solid #ececec;
+    }
+  }
+  .order-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    gap: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f8f8f8;
+    margin: 10px 0;
+    .order-img {
+      img {
+        width: 70px;
+        height: 90px;
+        object-fit: cover;
+      }
+    }
+    .order-detail {
+      width: 100%;
+      .order-des {
+        position: relative;
+        justify-content: start;
+        padding: 0 0 0 20px;
+        h5 {
+          font-size: 18px;
+          padding: 0;
+          margin: 0;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          width: 300px;
+          height: 40px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0;
+          margin: 0 0 5px;
+        }
+      }
+    }
+    .order-price {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        p{
+            color: $theme-color;
+        }
+      }
+  }
+  .order-total{
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      padding: 10px;
+      h3{
+        font-size: 15px;
+      }
+      span{
+          font-size: 24px;
+          color: $theme-color;
+      }
+  }
+}

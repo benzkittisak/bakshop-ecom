@@ -15,8 +15,9 @@ const SearchPage = lazy(() => import("./pages/search/search.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.container"));
 const LoginRegisterpage = lazy(() => import('./pages/login-register/login-register.component'));
 const CartPage = lazy(() => import('./pages/cart/cart.component'));
-
-// Components
+const NotFound = lazy(() => import('./pages/not-found/not-found.component'));
+const AccountPage = lazy(() => import('./pages/account/account.component'));
+const SuccessPage = lazy(() => import('./pages/success/success.container'));
 
 const App = ({checkCurrentUser , currentUser}) => {
   // Convert Search Params to props
@@ -27,7 +28,7 @@ const App = ({checkCurrentUser , currentUser}) => {
     checkCurrentUser();
   } , [checkCurrentUser])
   return (
-    // <BreadcrumbsProvider>
+
       <Suspense fallback={"Loading ..."}>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
@@ -38,9 +39,12 @@ const App = ({checkCurrentUser , currentUser}) => {
           <Route path="login" element={currentUser ? <Navigate to={"/account"} /> :<LoginRegisterpage/>}/>
           <Route path="/shop/*" element={<ShopPage />} />
           <Route path="/cart" exact element={<CartPage/>}/>
+          <Route path="/*" element={<Navigate to="/404"/>}/>
+          <Route path="/account/*" element={<AccountPage currentUser={currentUser}/>} />
+          <Route exact path="/404" element={<NotFound/>} />
+          <Route exact path="/success" element={<SuccessPage/>} />
         </Routes>
       </Suspense>
-    // </BreadcrumbsProvider>
   );
 }
 
