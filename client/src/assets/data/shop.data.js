@@ -2,7 +2,7 @@ const PLANTS_DATA = {
   houseplants: {
     id: 1,
     title: "House Plants",
-    routeName: "shop/houseplants",
+    routeName: "shop/cat/houseplants",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daniel-frese-1055408.md.jpg",
     items: [
@@ -19,16 +19,16 @@ const PLANTS_DATA = {
           "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-08-32-46-utc.md.jpg",
           "https://i2.fpic.cc/file/img-b1/2021/12/30/houseplants-fittonia-nephrolepis-and-monstera-in-2021-08-31-13-28-45-utc.md.jpg",
           "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-in-basket-2021-08-29-01-31-32-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-07-13-42-utc.md.jpg"
+          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-07-13-42-utc.md.jpg",
         ],
 
-        reviews:[
+        reviews: [
           // {
           //   name:"",
           //   email:'',
           //   detail:""
           // }
-        ]
+        ],
       },
       {
         id: 3,
@@ -54,20 +54,23 @@ const PLANTS_DATA = {
         price: 890,
         description:
           "Maranta leuconeura ยังเป็นที่รู้จักกันในนามพืชอธิษฐานเป็นพรรณไม้ดอกในตระกูล Marantaceae ซึ่งมีถิ่นกำเนิดในป่าเขตร้อนของบราซิล มันเป็นตัวแปรยืนต้น rhizomatous เติบโตสูงถึง 30 ซม. และกว้างกับกอหนาแน่นของเอเวอร์กรีนใบรูปไข่โดดเด่นโดดเด่นแต่ละยาวถึง 12 ซม",
-        showImage:[
+        showImage: [
           "https://i2.fpic.cc/file/img-b1/2021/12/27/potted_maranta_leuconeura_erythroneura_prayer_plant_herringbone_plant_1500272950_051f04080.md.jpg",
           "",
           "",
           "",
           "",
-        ]
-        },
+        ],
+      },
       {
         id: 5,
         name: "กวักมรกต",
         new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/000680105_ZZPlant_3_39ed4a48-9e7a-469c-8147-5478128cf095.webp",
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/000680105_ZZPlant_3_39ed4a48-9e7a-469c-8147-5478128cf095.webp",
+        ],
         price: 1099,
         description:
           "Zamioculcas เป็นไม้ดอกในสกุล Araceae ประกอบด้วย Zamioculcas zamiifolia เดียว เป็นไม้ยืนต้นเขตร้อนที่มีถิ่นกำเนิดในแอฟริกาตะวันออก ตั้งแต่เคนยาตอนใต้ไปจนถึงแอฟริกาใต้ตะวันออกเฉียงเหนือ ชื่อสามัญ ได้แก่ Zanzibar gem, ZZ plant, Zuzu plant, aroid palm, eternity plant และ Emerald palm ปลูกเป็นไม้ประดับ",
@@ -78,6 +81,9 @@ const PLANTS_DATA = {
         new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/green-polyester-artificial-english-ivy-plant-withhanging-basket-by-odd-croft-green-polyester-artific-dla5bg.jpg",
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/green-polyester-artificial-english-ivy-plant-withhanging-basket-by-odd-croft-green-polyester-artific-dla5bg.jpg",
+        ],
         price: 599,
         description:
           "Hedera helix, ไม้เลื้อยทั่วไป, ไม้เลื้อยอังกฤษ, ไม้เลื้อยยุโรปหรือไม้เลื้อยเป็นไม้ดอกชนิดหนึ่งในสกุลไม้เลื้อยในตระกูล Araliaceae มีถิ่นกำเนิดในยุโรปและเอเชียตะวันตกส่วนใหญ่ เถาวัลย์ที่เขียวชอุ่มตลอดปี เป็นที่คุ้นเคยในสวน พื้นที่รกร้าง และพื้นที่ป่า ซึ่งเติบโตตามผนัง รั้ว ลำต้นของต้นไม้ ฯลฯ",
@@ -88,6 +94,9 @@ const PLANTS_DATA = {
         new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/aloe-vera-plant-2021-08-26-16-59-51-utc.md.jpg",
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/aloe-vera-plant-2021-08-26-16-59-51-utc.md.jpg",
+        ],
         price: 1834,
         description:
           "Hedera helix, ไม้เลื้อยทั่วไป, ไม้เลื้อยอังกฤษ, ไม้เลื้อยยุโรปหรือไม้เลื้อยเป็นไม้ดอกชนิดหนึ่งในสกุลไม้เลื้อยในตระกูล Araliaceae มีถิ่นกำเนิดในยุโรปและเอเชียตะวันตกส่วนใหญ่ เถาวัลย์ที่เขียวชอุ่มตลอดปี เป็นที่คุ้นเคยในสวน พื้นที่รกร้าง และพื้นที่ป่า ซึ่งเติบโตตามผนัง รั้ว ลำต้นของต้นไม้ ฯลฯ",
@@ -98,6 +107,9 @@ const PLANTS_DATA = {
         new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/beautiful-spider-plant-hanging-from-a-wooden-brack-2021-10-12-19-41-54-utc.md.jpg",
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/beautiful-spider-plant-hanging-from-a-wooden-brack-2021-10-12-19-41-54-utc.md.jpg",
+        ],
         price: 800,
         description:
           "เศรษฐีเรือนใน เป็นไม้ในวงศ์ Anthericaceae มีเหง้าใต้ดิน รากสีขาว อวบน้ำ ใบเป็นแถบยาวสีเขียว ขลิบเขียวตามขอบใบ ตรงกลางสีขาว ดอกสีขาว ขนาดเล็ก มีกลิ่นหอม เป็นพืชพื้นเมืองของกาบอง",
@@ -108,6 +120,9 @@ const PLANTS_DATA = {
         new: true,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/27/devil-s-ivy-plant-2021-08-26-23-04-13-utc.md.jpg",
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/27/devil-s-ivy-plant-2021-08-26-23-04-13-utc.md.jpg",
+        ],
         price: 340,
         description:
           "พลูด่าง เป็นพืชดอกชนิดหนึ่งในวงศ์ Araceae ซึ่งกระจายพันธุ์อยู่ทั่วโลก ตั้งแต่ออสเตรเลีย จีน ญี่ปุ่น อินเดีย พืชชนิดนี้พบในป่าเขตร้อนทั่วโลก ในบางครั้งอาจเป็นสร้างความเสียหายทางนิเวศวิทยาด้วย พืชชนิดนี้มีหลายชื่อ",
@@ -118,6 +133,8 @@ const PLANTS_DATA = {
         new: false,
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/000850105_SnakePlant_1_25e1ca62-1d03-44b9-9791-7d68f3ae6864.webp",
+        showImage:
+          ["https://i2.fpic.cc/file/img-b1/2021/12/17/000850105_SnakePlant_1_25e1ca62-1d03-44b9-9791-7d68f3ae6864.webp"],
         price: 459,
         description:
           "ลิ้นมังกร เป็นพืชในวงศ์ Asparagaceae เป็นไม้ล้มลุก มีเหง้าใต้ดิน ใบเดี่ยว สีเขียวเข้มแกมเทา อวบน้ำ ดอกช่อ สีขาวมีกลิ่นหอม เป็นพืชท้องถิ่นในแอฟริกาตะวันตกตั้งแต่ไนจีเรียถึงคองโก ใช้เป็นไม้ประดับ ใบใช้ตำละเอียด แก้พิษตะขาบ แมงป่อง ชื่อทวินามเดิม Sansevieria trifasciata ปัจจุบันจัดเป็นชื่อพ้องของลิ้นมังกร",
@@ -127,7 +144,7 @@ const PLANTS_DATA = {
   officeplants: {
     id: 11,
     title: "Office Plants",
-    routeName: "shop/officeplants",
+    routeName: "shop/cat/officeplants",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daria-shevtsova-970089.md.jpg",
     items: [
@@ -137,6 +154,8 @@ const PLANTS_DATA = {
         link: "shop/office-plants/Kalanchoe",
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/3d25edc4e2551a855b79ddde68f4dae1.jpg",
+          showImage:
+          ["https://i2.fpic.cc/file/img-b1/2021/12/17/3d25edc4e2551a855b79ddde68f4dae1.jpg"],
         price: 199,
         description:
           "กุหลาบหิน เป็นไม้ในสกุลที่ส่วนใหญ่เป็นไม้พุ่ม อวบน้ำและมีอายุอยู่ได้นานหลายปี มีถิ่นกำเนิดในมาดากัสกาแอฟริกาและเอเชีย เหมาะที่จะปลูกเป็นไม้กระถาง ต้นดั้งเดิมส่วนมากจะมีลักษณะต้นสูงเก้งก้าง ต่อมาได้มีการคัดเลือกพันธุ์ อันเนื่องมาจากการกระจายพันธุ์และการผสมพันธุ์ ทำให้ได้พันธุ์ใหม่ที่มีพุ่มต้นเตี้ยกะทัดรัด",
@@ -155,7 +174,7 @@ const PLANTS_DATA = {
   gardenplants: {
     id: 14,
     title: "Graden Plants",
-    routeName: "shop/gardenplants",
+    routeName: "shop/cat/gardenplants",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.md.jpg",
     items: [
@@ -226,7 +245,7 @@ const PLANTS_DATA = {
   bonsais: {
     id: 22,
     title: "Bonsais",
-    routeName: "shop/bonsais",
+    routeName: "shop/cat/bonsais",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/27/small-bonsai-tree-hobbit-growing-in-a-red-flowerpo-2021-08-30-02-30-42-utc.md.jpg",
     items: [
@@ -307,7 +326,7 @@ const PLANTS_DATA = {
   orchids: {
     id: 31,
     title: "Orchids",
-    routeName: "shop/orchids",
+    routeName: "shop/cat/orchids",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-mariola-3699859.jpg",
     items: [
@@ -369,7 +388,7 @@ const PLANTS_DATA = {
   accessories: {
     id: 38,
     title: "Accessories",
-    routeName: "shop/accessories",
+    routeName: "shop/cat/accessories",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-rocketmann-team-9507266.jpg",
     items: [

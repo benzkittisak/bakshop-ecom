@@ -9,9 +9,9 @@ export const setCartItemOnSignIn = (item) => ({
   payload:item
 })
 
-export const addItem = (item) => ({
+export const addItem = (item , quantity) => ({
   type: cartActionTypes.ADD_ITEM,
-  payload: item,
+  payload: {item , quantity},
 });
 
 export const removeItem = (item) => ({

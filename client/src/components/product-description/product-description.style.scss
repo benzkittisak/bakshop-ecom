@@ -22,20 +22,78 @@
   }
 
   .pro-details-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 34px;
+    gap: 30px;
+    .cart-plus-minus {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      width: 100px;
+      height: 60px;
+      padding: 0;
+      border: 1px solid #e8e8e8;
+
+      .qtyButton {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        position: absolute;
+        float: inherit;
+        width: 24px;
+        margin: 0;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        text-align: center;
+        color: #8f8f8f;
+        background: none;
+      }
+      .dec.qtyButton {
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 33px;
+        border: medium none;
+      }
+      .inc.qtyButton {
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 33px;
+        border: medium none;
+      }
+
+      input.cart-plus-minus-box {
+        font-size: 14px;
+        float: left;
+        width: 100px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #8f8f8f;
+        border: medium none;
+        background: transparent none repeat scroll 0 0;
+      }
+    }
+
     .pro-details-cart {
       position: relative;
       button {
         padding: 11px 30px;
         border: 1px solid black;
         color: white;
+        height: 60px;
         background: black;
 
         &.hvr-sweep-to-right {
           &::before {
             background-color: $theme-color;
           }
-          &:hover{
-              border-color:$theme-color;
+          &:hover {
+            border-color: $theme-color;
           }
         }
       }
