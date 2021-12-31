@@ -1,5 +1,5 @@
 {
-  "name": "bakshop-ecom",
+  "name": "bakshop-ecom-server",
   "version": "1.0.0",
   "description": "bakshop-ecom",
   "main": "index.js",
@@ -18,8 +18,8 @@
     "url": "https://github.com/benzkittisak/bakshop-ecom/issues"
   },
   "homepage": "https://github.com/benzkittisak/bakshop-ecom#readme",
-  "dependencies": {
-    "react-id-swiper": "^4.0.0",
-    "react-through": "^1.1.4"
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^6.5.1"
   }
 }

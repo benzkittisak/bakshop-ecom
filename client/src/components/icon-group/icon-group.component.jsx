@@ -4,12 +4,15 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import { selectCurrentUser } from "../../redux/user/user.selector";
+import { selectCartItems } from "../../redux/cart/cart.selector";
 import { signOutStart } from "../../redux/user/user.actions";
 import { selectCartItemsCount } from "../../redux/cart/cart.selector";
 
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
+
 import "./icon-group.style.scss";
 
-const IconGroup = ({ currentUser, signOut, countItemInCart }) => {
+const IconGroup = ({ currentUser, signOut, countItemInCart , cartItems}) => {
   const [search, setSearch] = useState("");
 
   const handleClick = (e) => {
@@ -80,6 +83,9 @@ const IconGroup = ({ currentUser, signOut, countItemInCart }) => {
           <i className="fal fa-shopping-bag"></i>
           <span className="count-style">{countItemInCart}</span>
         </button>
+        <CartDropdown
+         cartItems={cartItems}
+        />
       </div>
     </div>
   );
@@ -87,6 +93,7 @@ const IconGroup = ({ currentUser, signOut, countItemInCart }) => {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
+  cartItems:selectCartItems,
   countItemInCart: selectCartItemsCount,
 });
 

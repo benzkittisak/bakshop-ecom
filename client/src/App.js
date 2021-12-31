@@ -1,4 +1,5 @@
 import React, { lazy, Suspense , useEffect} from "react";
+
 import { Routes, Route, useLocation , Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -13,6 +14,7 @@ const HomePage = lazy(() => import("./pages/home/home.component"));
 const SearchPage = lazy(() => import("./pages/search/search.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.container"));
 const LoginRegisterpage = lazy(() => import('./pages/login-register/login-register.component'));
+const CartPage = lazy(() => import('./pages/cart/cart.component'));
 
 // Components
 
@@ -35,6 +37,7 @@ const App = ({checkCurrentUser , currentUser}) => {
           />
           <Route path="login" element={currentUser ? <Navigate to={"/account"} /> :<LoginRegisterpage/>}/>
           <Route path="/shop/*" element={<ShopPage />} />
+          <Route path="/cart" exact element={<CartPage/>}/>
         </Routes>
       </Suspense>
     // </BreadcrumbsProvider>

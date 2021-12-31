@@ -1,0 +1,18 @@
+@import '../../assets/styles/variables.style.scss';
+.stripe-button{
+    margin-top: 15px;
+    button{
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        transition: .4s ease-in-out 0s;
+        background-color: $theme-color ;
+
+        &:hover{
+            background-color: black;
+        }
+    }    
+}
