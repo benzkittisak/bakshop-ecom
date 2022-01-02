@@ -51,3 +51,33 @@ export const signUpFailure = error => ({
     type:userActionTypes.SIGN_UP_FAILURE,
     payload:error
 })
+
+export const updateDataStart = (userData) => ({
+  type:userActionTypes.UPDATE_USER_START,
+  payload:userData
+})
+
+export const updateDataSuccess = (userData) => ({
+  type:userActionTypes.UPDATE_USER_SUCCESS,
+  payload:userData
+})
+
+export const updateDataFailure = error => ({
+  type:userActionTypes.UPDATE_USER_FAILURE,
+  payload:error
+})
+
+export const updateProfileImageStart = (userData , imageFile) => ({
+  type:userActionTypes.UPDATE_USER_PROFILE_IMAGE_START,
+  payload:userData
+})
+
+export const updateProfileImageSuccess = (userData) => ({
+  type:userActionTypes.UPDATE_USER_PROFILE_IMAGE_SUCCESS,
+  payload:userData
+})
+
+export const updateProfileImageFailure = error => ({
+  type:userActionTypes.UPDATE_USER_PROFILE_IMAGE_FAILURE,
+  payload:error
+})

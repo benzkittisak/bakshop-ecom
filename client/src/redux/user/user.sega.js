@@ -8,6 +8,10 @@ import {
   signOutFailure,
   signUpFailure,
   signUpSuccess,
+  updateDataSuccess,
+  updateDataFailure,
+  updateProfileImageFailure,
+  updateProfileImageSuccess
 } from "./user.actions";
 
 import {
@@ -15,6 +19,8 @@ import {
   googleProvider,
   createProfileDocument,
   getCurrentUser,
+  updateProfileDocument,
+  updateProfileImage
 } from "../../firebase/firebase.util";
 
 export function* getSnapshopFromUserAuth(userAuth, additionalData) {
@@ -81,6 +87,26 @@ export function* signInAfterSignUp({ payload: { user, additionalData } }) {
   }
 }
 
+export function* updateDataStart({payload}){
+  try {
+    const user = yield updateProfileDocument(payload);
+    yield put(updateProfileImageSuccess(user));
+  } catch (error) {
+    yield put(updateProfileImageFailure(error))
+  }
+
+}
+
+export function* updateImageStart({payload:{userData , imageFile}}) {
+    try {
+      const user = yield call(updateProfileImage , userData , imageFile)
+      yield put(updateDataSuccess(user))
+    } catch (error) {
+      yield put(updateDataFailure(error))
+    }
+}
+
+
 export function* onGoogleSignInStart() {
   yield takeLatest(userActionTypes.GOOGLE_SIGN_IN_START, signInWithGoogle);
 }
@@ -104,6 +130,15 @@ export function* onSignUpStart() {
 export function* onSignUpSuccess() {
   yield takeLatest(userActionTypes.SIGN_UP_SUCCESS, signInAfterSignUp);
 }
+
+export function* onUpdateStart(){
+  yield takeLatest(userActionTypes.UPDATE_USER_START , updateDataStart);
+}
+
+export function* onUpdatePtofileImageStart(){
+  yield takeLatest(userActionTypes.UPDATE_USER_PROFILE_IMAGE_START , updateImageStart)
+}
+
 export function* userSaga() {
   yield all([
     call(onGoogleSignInStart),
@@ -112,5 +147,7 @@ export function* userSaga() {
     call(onSignOutStart),
     call(onSignUpStart),
     call(onSignUpSuccess),
+    call(onUpdateStart),
+    call(onUpdatePtofileImageStart)
   ]);
 }

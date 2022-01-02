@@ -1,10 +1,13 @@
 import React, { Fragment } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route , Navigate } from "react-router-dom";
 import { MetaTags } from "react-meta-tags";
 
 import Layout from "../../layouts/layouts.component";
 import ProfileImage from "../../components/profile-image/profile-image.component";
+
 import {default as AccountOrder} from "../../components/account-order/account-order.container";
+import AccountSideBar from "../../components/account-sidebar/account-sidebar.component";
+import AccountProfile from "../../components/account-profile/account-profile.component";
 
 import "./account.style.scss";
 
@@ -22,12 +25,15 @@ const AccountPage = ({ currentUser }) => {
       <Layout>
         <div className="container pt-5 pb-5">
           <div className="row">
-            <div className="col-lg-3 d-none d-lg-block">
-             <ProfileImage image={image}/>
+            <div className="col-lg-2 d-none d-lg-block">
+             <ProfileImage currentUser={currentUser} image={image}/>
+             <AccountSideBar/>
             </div>
-            <div className="col-lg-9 col-12">
+            <div className="col-lg-10 col-12">
               <Routes>
-                <Route exact path='/' element={<AccountOrder uid={id}/>} />
+                <Route exact path="/" element={<AccountProfile currentUser={currentUser}/>}/>
+                <Route exact path="/profile" element={<Navigate to={'/account/'}/>}/>
+                <Route exact path='/purchase' element={<AccountOrder uid={id}/>} />
               </Routes>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import "firebase/compat/storage";
 
 // Firebase Configuration
 const config = {
@@ -49,7 +50,7 @@ export const createOrderDocument = async (userAuth, orderData) => {
   if (!orderData) return;
   const orderedAt = new Date();
   let amount = 0;
-  orderData.map(({ price, quantity }, index) => {
+  orderData.map(({ price, quantity }) => {
     amount += price * quantity;
   });
   const orderRef = firestore
@@ -66,11 +67,69 @@ export const createOrderDocument = async (userAuth, orderData) => {
       status: [{ statusName: "pending" }],
       orderItems: orderData.map((item) => item),
     });
-
-    return true;
   } catch (error) {
     console.log("error adding order : ", error.message);
   }
+
+  return;
+};
+
+export const updateProfileDocument = async (userAuth) => {
+  if (!userAuth) return;
+  const userRef = firestore.doc(`users/${userAuth.id}`);
+  const snapShot = await userRef.get();
+  if (snapShot.exists) {
+    try {
+      let { displayName, email, phoneNumber, image } = userAuth;
+      if (!image) image = "";
+      userRef.set({
+        ...snapShot.data(),
+        displayName,
+        email,
+        phoneNumber,
+        image,
+      });
+    } catch (error) {
+      console.log("error updating data ", error.message);
+    }
+  }
+
+  return userAuth;
+};
+
+export const updateProfileImage = async (userAuth, imageFile) => {
+  if (!userAuth || !imageFile) return;
+  const userRef = firestore.doc(`users/${userAuth.id}`);
+  const snapShot = await userRef.get();
+
+  if(!imageFile) {
+    console.error('ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด');
+    return;
+  }
+
+  const uploadTask = storage.ref(`images/${userAuth.id}/${imageFile.name}`).put(imageFile);
+
+  uploadTask.on('state_changed' , (snapShot) => {
+    // console.log(snapShot);
+  } , error => {
+    console.log(error);
+  } , () => {
+    storage.ref('images').child(userAuth.id).child(imageFile.name).getDownloadURL()
+    .then(firebaseUrl => {
+      if (snapShot.exists) {
+        try {
+          userRef.set({
+            ...snapShot.data(),
+            image:firebaseUrl
+          })
+          return {...userAuth , image:firebaseUrl}
+        } catch (error) {
+          console.log("cannot updating profile image ", error.message);
+        }
+      }
+    })
+  })  
+  return userAuth
 };
 
 firebase.initializeApp(config);
@@ -78,6 +137,7 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
+export const storage = firebase.storage();
 
 googleProvider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);

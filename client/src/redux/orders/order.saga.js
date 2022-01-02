@@ -13,15 +13,10 @@ import {
   orderFetchSuccess,
 } from "./order.actions";
 
-
 export function* addOrderToFirebase({ payload: { userData, cartItems } }) {
   try {
     yield createOrderDocument(userData, cartItems);
     yield put(orderSuccess());
-    // yield all([
-    //   put(orderSuccess()),
-    //   put(clearCart())
-    // ])
   } catch (error) {
     yield put(orderFailure(error));
   }
@@ -47,10 +42,15 @@ export function* onAddOrderStart() {
   );
 }
 
+
 export function* onFetchOrderStart() {
   yield takeLatest(orderActionTypes.FETCH_ORDER_START, startFetchOrder);
 }
 
+
 export function* orderSaga() {
-  yield all([call(onAddOrderStart), call(onFetchOrderStart)]);
+  yield all([
+    call(onAddOrderStart),
+    call(onFetchOrderStart),
+  ]);
 }

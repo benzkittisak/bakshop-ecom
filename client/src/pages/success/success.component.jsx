@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect , useState } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { Link } from "react-router-dom";
@@ -8,22 +8,26 @@ import { selectCurrentUser } from "../../redux/user/user.selector";
 
 import { orderStarting } from "../../redux/orders/order.actions";
 import { checkUserSession } from "../../redux/user/user.actions";
+import { clearCart } from "../../redux/cart/cart.actions";
 
 import Layout from "../../layouts/layouts.component";
 
 import "./success.style.scss";
 
-const SuccessPage = ({ cartItems, currentUser, orderStarting }) => {
+const SuccessPage = ({ cartItems, currentUser, orderStarting , clearCart }) => {
+  
   useEffect(() => {
     if (currentUser) {
       if (window.performance) {
         if (performance.navigation.type !== 1) {
           orderStarting(currentUser, cartItems);
+          clearCart();
         }
       }
     }
     
-  }, [orderStarting, currentUser, cartItems]);
+  }, [currentUser]);
+
   return (
     <Fragment>
       <Layout>
@@ -56,6 +60,7 @@ const mapDispatchToProps = (dispatch) => ({
   orderStarting: (userData, cartItems) =>
     dispatch(orderStarting({ userData, cartItems })),
   checkUserSession: () => dispatch(checkUserSession()),
+  clearCart:() => dispatch(clearCart())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SuccessPage);
