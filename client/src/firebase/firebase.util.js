@@ -80,14 +80,16 @@ export const updateProfileDocument = async (userAuth) => {
   const snapShot = await userRef.get();
   if (snapShot.exists) {
     try {
-      let { displayName, email, phoneNumber, image } = userAuth;
+      let { displayName, email, phoneNumber, image , address } = userAuth;
       if (!image) image = "";
+      if (!address) address = "";
       userRef.set({
         ...snapShot.data(),
         displayName,
         email,
         phoneNumber,
         image,
+        address
       });
     } catch (error) {
       console.log("error updating data ", error.message);
@@ -102,6 +104,8 @@ export const updateProfileImage = async (userAuth, imageFile) => {
   const userRef = firestore.doc(`users/${userAuth.id}`);
   const snapShot = await userRef.get();
 
+  let imageUrl = "";
+
   if(!imageFile) {
     console.error('ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด');
     return;
@@ -112,24 +116,25 @@ export const updateProfileImage = async (userAuth, imageFile) => {
   uploadTask.on('state_changed' , (snapShot) => {
     // console.log(snapShot);
   } , error => {
-    console.log(error);
+    console.error(error);
   } , () => {
     storage.ref('images').child(userAuth.id).child(imageFile.name).getDownloadURL()
     .then(firebaseUrl => {
       if (snapShot.exists) {
         try {
+          imageUrl = firebaseUrl
           userRef.set({
             ...snapShot.data(),
             image:firebaseUrl
           })
           return {...userAuth , image:firebaseUrl}
         } catch (error) {
-          console.log("cannot updating profile image ", error.message);
+          console.error("cannot updating profile image ", error.message);
         }
       }
     })
   })  
-  return userAuth
+  return {...userAuth, image:imageUrl};
 };
 
 firebase.initializeApp(config);

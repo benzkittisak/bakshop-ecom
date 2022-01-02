@@ -8,6 +8,7 @@ import ProfileImage from "../../components/profile-image/profile-image.component
 import {default as AccountOrder} from "../../components/account-order/account-order.container";
 import AccountSideBar from "../../components/account-sidebar/account-sidebar.component";
 import AccountProfile from "../../components/account-profile/account-profile.component";
+import AccountAddress from "../../components/account-address/account-address.component";
 
 import "./account.style.scss";
 
@@ -15,7 +16,7 @@ const AccountPage = ({ currentUser }) => {
   if (!currentUser) {
     return (window.location.href = process.env.PUBLIC_URL + "/login");
   }
-  const { displayName, id, image } = currentUser;
+  const { id, image } = currentUser;
   return (
     <Fragment>
       <MetaTags>
@@ -33,7 +34,8 @@ const AccountPage = ({ currentUser }) => {
               <Routes>
                 <Route exact path="/" element={<AccountProfile currentUser={currentUser}/>}/>
                 <Route exact path="/profile" element={<Navigate to={'/account/'}/>}/>
-                <Route exact path='/purchase' element={<AccountOrder uid={id}/>} />
+                <Route exact path="/address" element={<AccountAddress currentUser={currentUser}/>}/>
+                <Route exact path='/purchased' element={<AccountOrder uid={id}/>} />
               </Routes>
             </div>
           </div>

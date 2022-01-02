@@ -17,6 +17,9 @@
     font-weight: 300;
   }
 }
+.bordered-right-1{
+  border-right: 1px solid lightgray;
+}
 form {
   .input-group {
     padding: 10px;
@@ -60,8 +63,20 @@ form {
 
     transition: 0.4s all ease-in-out;
 
+    &.picUpload{
+      background: black;
+
+      &:hover{
+        background-color: $theme-color;
+      }
+    }
     &:hover{
         background-color: black;
     }
+  }
+
+  img{
+    padding: 10px;
+    display: block;
   }
 }

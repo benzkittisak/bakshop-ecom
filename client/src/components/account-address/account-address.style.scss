@@ -1,0 +1,42 @@
+@import "../../assets/styles/variables.style.scss";
+
+.account-address-container {
+  position: relative;
+  padding: 10px;
+
+  .address-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+
+    button {
+      display: block;
+      padding: 10px 20px;
+      background: none;
+      border: none;
+      position: relative;
+      color: white;
+      background-color: $theme-color;
+
+      &::before {
+        background-color: black;
+      }
+    }
+  }
+  .address-data {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    label {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 5px 0;
+    }
+    button{
+        margin: 10px 0;
+    }
+  }
+}

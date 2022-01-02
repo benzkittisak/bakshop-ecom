@@ -32,23 +32,7 @@ const AccountProfile = ({ currentUser, updateData , updateImage }) => {
         return;
       }
     updateImage(currentUser , imageAsFile);
-    // if(!imageAsFile) {
-    //   console.error('ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด');
-    //   return;
-    // }
-    // const uploadTask = storage.ref(`images/${currentUser.id}/${imageAsFile.name}`).put();
-    // uploadTask.on('state_changed' , (snapShot) => {
-    //   console.log(snapShot);
-    // } , error => {
-    //   console.log(error);
-    // } , () => {
-    //   storage.ref('images').child(currentUser.id).child(imageAsFile.name).getDownloadURL()
-    //   .then(firebaseUrl => {
-    //     setImageAsUrl(firebaseUrl)
-    //     updateProfileImage(currentUser , firebaseUrl)
-    //   })
-    // })
-
+    window.location.reload();
   }
 
   const handleSubmit = (e) => {
@@ -66,9 +50,9 @@ const AccountProfile = ({ currentUser, updateData , updateImage }) => {
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col-lg-8 col-md-12 col-12">
-          <form onSubmit={handleSubmit} className="pt-5 pb-5">
+      <div className="row pt-3 pb-2">
+        <div className="col-lg-9 col-md-12 col-12 pt-5 pb-5 bordered-right-1">
+          <form onSubmit={handleSubmit} className="">
             <div className="input-group">
               <label htmlFor={displayName}>ชื่อบนเว็บ</label>
               <input
@@ -99,11 +83,11 @@ const AccountProfile = ({ currentUser, updateData , updateImage }) => {
             <button type="submit">บันทึก</button>
           </form>
         </div>
-        <div className="col-lg-4 d-none d-lg-block">
+        <div className="col-lg-3 d-none d-lg-block">
           <form onSubmit={handleFirebaseUoload}>
             <img src={image} alt="" className="img-fluid" />
-            <input onChange={handleImageAsFile} type="file" name="image" />
-            <button type="submit">บันทึก</button>
+            <input className="form-control" onChange={handleImageAsFile} type="file" name="image" />
+            <button className="picUpload" type="submit">บันทึก</button>
           </form>
         </div>
       </div>
