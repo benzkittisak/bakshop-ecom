@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import {connect} from 'react-redux';
+import { connect } from "react-redux";
+import swal from "sweetalert";
 
 import { updateDataStart } from "../../redux/user/user.actions";
 
 import "./account-address-form.style.scss";
 
-const AccountAddressForm = ({ currentUser , popup , handlePopup , updateData }) => {
+const AccountAddressForm = ({
+  currentUser,
+  popup,
+  handlePopup,
+  updateData,
+}) => {
   const [address, setAddress] = useState({
     name: "",
     phoneNumber: "",
@@ -20,14 +26,17 @@ const AccountAddressForm = ({ currentUser , popup , handlePopup , updateData }) 
     setAddress({ ...address, [name]: value });
   };
 
-  const handleSubmit = e => {
-      e.preventDefault();
-      if (!currentUser) {
-          console.error("Can't find user data for update!!");
-          return;
-      }
-      updateData({...currentUser , address:address})
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!currentUser) {
+      console.error("Can't find user data for update!!");
+      return;
+    }
+    updateData({ ...currentUser, address: address });
+    swal("สำเร็จ", "คลิกปุ่ม OK เพื่อดำเนินการต่อ", "success").then(() =>
+      window.location.reload()
+    );
+  };
 
   const {
     name,
@@ -45,7 +54,7 @@ const AccountAddressForm = ({ currentUser , popup , handlePopup , updateData }) 
         <div className="popup-header">
           <h4>เพิ่มที่อยู่</h4>
           <button onClick={handlePopup} type="button">
-              <i className="fad fa-times"></i>
+            <i className="fad fa-times"></i>
           </button>
         </div>
         <form onSubmit={handleSubmit} className="form-update-add">
@@ -147,8 +156,8 @@ const AccountAddressForm = ({ currentUser , popup , handlePopup , updateData }) 
   );
 };
 
-const mapDispatchToProps = dispatch => ({
-    updateData : (userAuth) => dispatch(updateDataStart(userAuth))
-})
+const mapDispatchToProps = (dispatch) => ({
+  updateData: (userAuth) => dispatch(updateDataStart(userAuth)),
+});
 
-export default connect(null , mapDispatchToProps)(AccountAddressForm);
+export default connect(null, mapDispatchToProps)(AccountAddressForm);

@@ -64,7 +64,7 @@ export const createOrderDocument = async (userAuth, orderData) => {
       date: orderedAt,
       deliveryAddress: userAuth.address ? userAuth.address : "",
       amount: amount,
-      status: [{ statusName: "pending" }],
+      status: { statusName: "pending" },
       orderItems: orderData.map((item) => item),
     });
   } catch (error) {
@@ -80,7 +80,7 @@ export const updateProfileDocument = async (userAuth) => {
   const snapShot = await userRef.get();
   if (snapShot.exists) {
     try {
-      let { displayName, email, phoneNumber, image , address } = userAuth;
+      let { displayName, email, phoneNumber, image, address } = userAuth;
       if (!image) image = "";
       if (!address) address = "";
       userRef.set({
@@ -89,7 +89,7 @@ export const updateProfileDocument = async (userAuth) => {
         email,
         phoneNumber,
         image,
-        address
+        address,
       });
     } catch (error) {
       console.log("error updating data ", error.message);
@@ -106,35 +106,46 @@ export const updateProfileImage = async (userAuth, imageFile) => {
 
   let imageUrl = "";
 
-  if(!imageFile) {
-    console.error('ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด');
+  if (!imageFile) {
+    console.error("ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด");
     return;
   }
 
-  const uploadTask = storage.ref(`images/${userAuth.id}/${imageFile.name}`).put(imageFile);
+  const uploadTask = storage
+    .ref(`images/${userAuth.id}/${imageFile.name}`)
+    .put(imageFile);
 
-  uploadTask.on('state_changed' , (snapShot) => {
-    // console.log(snapShot);
-  } , error => {
-    console.error(error);
-  } , () => {
-    storage.ref('images').child(userAuth.id).child(imageFile.name).getDownloadURL()
-    .then(firebaseUrl => {
-      if (snapShot.exists) {
-        try {
-          imageUrl = firebaseUrl
-          userRef.set({
-            ...snapShot.data(),
-            image:firebaseUrl
-          })
-          return {...userAuth , image:firebaseUrl}
-        } catch (error) {
-          console.error("cannot updating profile image ", error.message);
-        }
-      }
-    })
-  })  
-  return {...userAuth, image:imageUrl};
+  uploadTask.on(
+    "state_changed",
+    (snapShot) => {
+      // console.log(snapShot);
+    },
+    (error) => {
+      console.error(error);
+    },
+    () => {
+      storage
+        .ref("images")
+        .child(userAuth.id)
+        .child(imageFile.name)
+        .getDownloadURL()
+        .then((firebaseUrl) => {
+          if (snapShot.exists) {
+            try {
+              imageUrl = firebaseUrl;
+              userRef.set({
+                ...snapShot.data(),
+                image: firebaseUrl,
+              });
+              return { ...userAuth, image: firebaseUrl };
+            } catch (error) {
+              console.error("cannot updating profile image ", error.message);
+            }
+          }
+        });
+    }
+  );
+  return { ...userAuth, image: imageUrl };
 };
 
 firebase.initializeApp(config);

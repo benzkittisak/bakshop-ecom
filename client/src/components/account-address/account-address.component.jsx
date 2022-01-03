@@ -6,20 +6,28 @@ import "./account-address.style.scss";
 
 const AccountAddress = ({ currentUser }) => {
   const [popup, setPopUp] = useState(false);
+  if (!currentUser.address) {
+    currentUser = Object.assign(
+      {},
+      {
+        ...currentUser,
+        address: {
+          name: "",
+          phoneNumber: "",
+          city: "",
+          subdistrict: "",
+          province: "",
+          postNo: "",
+          addressDetail: "",
+        },
+      }
+    );
+  }
+
   const handlePopup = () => {
     setPopUp(!popup);
   };
-  const {
-    address: {
-      name,
-      phoneNumber,
-      addressDetail,
-      province,
-      city,
-      subdistrict,
-      postNo,
-    },
-  } = currentUser;
+
   return (
     <Fragment>
       <div className="account-address-container">
@@ -54,7 +62,7 @@ const AccountAddress = ({ currentUser }) => {
                       <input
                         type="text"
                         name="name"
-                        value={name}
+                        value={currentUser.address.name}
                         readOnly
                         className="form-control"
                       />
@@ -66,7 +74,7 @@ const AccountAddress = ({ currentUser }) => {
                       <input
                         type="text"
                         name="phoneNumber"
-                        value={phoneNumber}
+                        value={currentUser.address.phoneNumber}
                         readOnly
                         className="form-control"
                       />
@@ -78,7 +86,7 @@ const AccountAddress = ({ currentUser }) => {
                       <input
                         type="text"
                         name="subdistrict"
-                        value={subdistrict}
+                        value={currentUser.address.subdistrict}
                         readOnly
                         className="form-control"
                       />
@@ -90,7 +98,7 @@ const AccountAddress = ({ currentUser }) => {
                       <input
                         type="text"
                         name="city"
-                        value={city}
+                        value={currentUser.address.city}
                         readOnly
                         className="form-control"
                       />
@@ -102,7 +110,7 @@ const AccountAddress = ({ currentUser }) => {
                       <input
                         type="text"
                         name="province"
-                        value={province}
+                        value={currentUser.address.province}
                         readOnly
                         className="form-control"
                       />
@@ -114,7 +122,7 @@ const AccountAddress = ({ currentUser }) => {
                       <input
                         type="text"
                         name="postNo"
-                        value={postNo}
+                        value={currentUser.address.postNo}
                         readOnly
                         className="form-control"
                       />
@@ -127,11 +135,14 @@ const AccountAddress = ({ currentUser }) => {
                         className="form-control"
                         name="addressDetail"
                         readOnly
-                        value={addressDetail}
+                        value={currentUser.address.addressDetail}
                       />
                     </div>
                     <div className="form-group-col-md-12">
-                      <button onClick={handlePopup} className="form-control btn btn-warning">
+                      <button
+                        onClick={handlePopup}
+                        className="form-control btn btn-warning"
+                      >
                         แก้ไข
                       </button>
                     </div>

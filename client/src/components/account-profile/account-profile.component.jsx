@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import swal from 'sweetalert';
 
-import { updateDataStart , updateProfileImageStart } from "../../redux/user/user.actions";
-
+import {
+  updateDataStart,
+  updateProfileImageStart,
+} from "../../redux/user/user.actions";
 
 import "./account-profile.style.scss";
 
-const AccountProfile = ({ currentUser, updateData , updateImage }) => {
+const AccountProfile = ({ currentUser, updateData, updateImage }) => {
   const [userData, setUserData] = useState(currentUser);
-  const { displayName, phoneNumber, dateOfBirth, image } = userData;
 
-  console.log(image);
+  const { displayName, phoneNumber, dateOfBirth, image } = userData;
   // Upload Image
   const [imageAsFile, setImageAsFile] = useState("");
 
@@ -19,25 +21,28 @@ const AccountProfile = ({ currentUser, updateData , updateImage }) => {
     setUserData({ ...userData, [name]: value });
   };
 
-  const handleImageAsFile = e => {
-    const image = e.target.files[0]
-    setImageAsFile(imageFile => image)
-  }
+  const handleImageAsFile = (e) => {
+    const image = e.target.files[0];
+    setImageAsFile((imageFile) => image);
+  };
 
-  const handleFirebaseUoload = e => {
+  const handleFirebaseUoload = (e) => {
     e.preventDefault();
-    
-    if(!imageAsFile) {
-        console.error('ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด');
-        return;
-      }
-    updateImage(currentUser , imageAsFile);
-    window.location.reload();
-  }
+
+    if (!imageAsFile) {
+      console.error("ไม่พบรูปภาพ กรุณาเลือกรูปภาพก่อนอัปโหลด");
+      return;
+    }
+    updateImage(currentUser, imageAsFile);
+    swal("สำเร็จ" , "คลิกปุ่ม OK เพื่อดำเนินการต่อ" , "success")
+    .then(() => window.location.reload())
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     updateData(userData);
+    swal("แก้ไขข้อมูลสำเร็จ" , "คลิกปุ่ม OK เพื่อดำเนินการต่อ" , "success")
+    .then(() => window.location.reload())
   };
 
   return (
@@ -86,8 +91,15 @@ const AccountProfile = ({ currentUser, updateData , updateImage }) => {
         <div className="col-lg-3 d-none d-lg-block">
           <form onSubmit={handleFirebaseUoload}>
             <img src={image} alt="" className="img-fluid" />
-            <input className="form-control" onChange={handleImageAsFile} type="file" name="image" />
-            <button className="picUpload" type="submit">บันทึก</button>
+            <input
+              className="form-control"
+              onChange={handleImageAsFile}
+              type="file"
+              name="image"
+            />
+            <button className="picUpload" type="submit">
+              บันทึก
+            </button>
           </form>
         </div>
       </div>
@@ -97,7 +109,8 @@ const AccountProfile = ({ currentUser, updateData , updateImage }) => {
 
 const mapDispatchToProps = (dispatch) => ({
   updateData: (userData) => dispatch(updateDataStart(userData)),
-  updateImage:(userData , imageFile) => dispatch(updateProfileImageStart({userData , imageFile}))
+  updateImage: (userData, imageFile) =>
+    dispatch(updateProfileImageStart({ userData, imageFile })),
 });
 
 export default connect(null, mapDispatchToProps)(AccountProfile);
