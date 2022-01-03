@@ -2,6 +2,10 @@
 .account-order-nav {
   position: relative;
   border-bottom: 1px solid lightgray;
+
+  @media screen and (max-width:720px) {
+      margin: 30px 0;
+  }
   .nav-item {
     position: relative;
     a {

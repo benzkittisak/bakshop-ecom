@@ -6,7 +6,11 @@
       display: block;
       width: 100%;
       position: relative;
-  
+      @media screen and (max-width:720px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       img {
         width: 100%;
         height: 160px;

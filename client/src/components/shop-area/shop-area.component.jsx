@@ -13,7 +13,6 @@ import ShopProduct from "../shop-product/shop-product.component";
 import ShopTopBar from "../shop-top-bar/shop-top-bar.component";
 
 const ShopArea = ({ plants }) => {
-
   const [sortType, setSortType] = useState("");
   const [sortValue, setSortValue] = useState("");
   const [filterSortType, setFilterSortType] = useState("");
@@ -23,7 +22,6 @@ const ShopArea = ({ plants }) => {
   const [layout, setLayout] = useState("grid three-column");
 
   const params = useLocation();
-  
 
   // Pagination
   const [offset, setOffset] = useState(0);
@@ -45,13 +43,14 @@ const ShopArea = ({ plants }) => {
   };
 
   useEffect(() => {
-    let category = params.search.split('=')[1];
+    window.scrollTo(0, 0);
+
+    let category = params.search.split("=")[1];
     let sortedProduct = [];
     if (category && sortType === "") {
-      sortedProduct = getSortProduct(plants, 'type', category);
-    }
-    else {
-      category="";
+      sortedProduct = getSortProduct(plants, "type", category);
+    } else {
+      category = "";
       sortedProduct = getSortProduct(plants, sortType, sortValue);
     }
     let filterSortedProducts = [];
@@ -63,11 +62,18 @@ const ShopArea = ({ plants }) => {
       );
       sortedProduct = filterSortedProducts;
     }
-    
+
     setPlantsCount(sortedProduct.length);
     setCurrentPlantData(sortedProduct.slice(offset, offset + pageLimit));
-    
-  }, [offset, plants, params , sortType, sortValue, filterSortType, filterSortValue]);
+  }, [
+    offset,
+    plants,
+    params,
+    sortType,
+    sortValue,
+    filterSortType,
+    filterSortValue,
+  ]);
 
   return (
     <div className="shop-area pt-5 pb-5">

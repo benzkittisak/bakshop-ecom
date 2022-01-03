@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
@@ -15,13 +15,28 @@ import "./category-feature.style.scss";
 SwiperCore.use([Navigation]);
 
 const CategoryFeature = ({ plants }) => {
+  const getWindowWidth = () => {
+    const { innerWidth: width } = window;
+    return { width };
+  };
+
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(getWindowWidth());
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const params = {
     navigation: true,
-    slidesPerView:3,
-    spaceBetween:12,
-    loop:true,
-    loopFillGroupWithBlank:true,
-    slidesPerGroup:1
+    slidesPerView: windowWidth.width < 720 ? 1 : 3,
+    spaceBetween: 12,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    slidesPerGroup: 1,
   };
   return (
     <div className="feature-area">
@@ -31,7 +46,7 @@ const CategoryFeature = ({ plants }) => {
           <Swiper {...params} className="swiper-style">
             {plants.map((data) => (
               <SwiperSlide key={data.id}>
-                  <CategoryFeatureSingle plants={data}/>
+                <CategoryFeatureSingle plants={data} />
               </SwiperSlide>
             ))}
           </Swiper>

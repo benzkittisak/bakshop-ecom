@@ -29,6 +29,11 @@ const IconGroup = ({
     e.currentTarget.nextSibling.classList.toggle("active");
   };
 
+  const triggerMobileMenu = () => {
+    const offcanvasMobileMenu = document.querySelector('#offcanvas-mobile-menu')
+    offcanvasMobileMenu.classList.add('active');
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     window.location.href = process.env.PUBLIC_URL + `/search?search=${search}`;
@@ -54,7 +59,7 @@ const IconGroup = ({
           </form>
         </div>
       </div>
-      <div className="same-style account-setting d-none d-lg-block">
+      <div className="same-style account-setting d-block d-lg-block">
         <button
           className="account-setting-active"
           onClick={(e) => handleClick(e)}
@@ -95,12 +100,18 @@ const IconGroup = ({
           </ul>
         </div>
       </div>
-      <div className="same-style cart-wrap d-none d-lg-block">
+      <div className="same-style cart-wrap d-block d-lg-block">
         <button className="icon-cart" onClick={(e) => handleClick(e)}>
           <i className="fal fa-shopping-bag"></i>
           <span className="count-style">{countItemInCart}</span>
         </button>
         <CartDropdown cartItems={cartItems} />
+      </div>
+
+      <div className="same-style mobile-off-canvas d-block d-lg-none">
+        <button onClick={() => triggerMobileMenu()}className="mobile-aside-button">
+          <i className="fad fa-bars"></i>
+        </button>
       </div>
     </div>
   );

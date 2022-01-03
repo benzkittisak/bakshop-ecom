@@ -1,0 +1,28 @@
+@import "../../assets/styles/variables.style.scss";
+.offcanvas-navigation {
+  margin-bottom: 50px;
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      & > a {
+        font-weight: 600;
+        display: block;
+        padding: 10px 0;
+        color: #111;
+        text-decoration: none;
+
+        &:hover {
+          color: $theme-color;
+        }
+
+        @media #{$sm-layout} {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

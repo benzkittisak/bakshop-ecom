@@ -45,6 +45,11 @@
     box-shadow: 0 0 6px rgba($color: black, $alpha: 0.1);
     padding: 80px;
     text-align: left;
+    
+    @media screen and (max-width: 720px) {
+      padding: 80px 10px;
+    }
+
 
     .login-register-form {
       form {

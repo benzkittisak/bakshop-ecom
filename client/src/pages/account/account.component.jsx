@@ -26,7 +26,7 @@ const AccountPage = ({ currentUser }) => {
       <Layout>
         <div className="container pt-5 pb-5">
           <div className="row">
-            <div className="col-lg-2 d-none d-lg-block">
+            <div className="col-lg-2 d-block col-12 d-lg-block">
              <ProfileImage currentUser={currentUser} image={image}/>
              <AccountSideBar/>
             </div>

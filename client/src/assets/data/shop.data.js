@@ -373,9 +373,12 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/Ficus-Ginseng-Indian-Laurel-Large.jpg",
         price: 999,
-        showImage:[
+        showImage: [
           "https://i2.fpic.cc/file/img-b1/2021/12/17/Ficus-Ginseng-Indian-Laurel-Large.jpg",
-
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/ficus-bonsai-tree-on-old-wooden-table-2021-08-31-17-22-01-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-ficus-microcarpa-ginseng-in-white-flowe-2021-08-26-16-58-20-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-ficus-microcarpa-ginseng-in-white-flowe-2021-08-26-16-58-29-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-ficus-microcarpa-ginseng-in-white-flowe-2021-08-26-16-58-33-utc.md.jpg",
         ],
         description:
           "ไทรย้อยใบทู่ หรือ ไทรย้อย เป็นไม้ประเภทบันยัน ในสกุล Ficus ในวงศ์ Moraceae ",
@@ -386,6 +389,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/bodhi-tree-seeds.jpg",
         price: 795,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/bodhi-tree-seeds.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/9ef94a70daf8156dc296c659bc267bbf.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/bc8b43e850692d7a433d3e0d17aea2bf.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/Bodhi-Tree-1.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/s-l400.jpg",
+        ],
         description:
           "โพ หรือ โพธิ์ เป็นต้นไม้สปีชีส์หนึ่งของไทรหรือมะเดื่อ เป็นพืชพื้นเมืองของอินเดีย, เนปาล, ศรีลังกา, ตะวันตกเฉียงใต้ของจีน และอินโดจีน เป็นต้นไม้ขนาดใหญ่ผลัดใบในฤดูร้อน สูงได้ถึง 30 เมตร ลำต้นมีเส้นผ่านศูนย์กลางได้ถึง 3 เมตร",
       },
@@ -395,6 +405,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/aa35216c7934e6aa9ae7dc00ba81d096.png",
         price: 2187,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/aa35216c7934e6aa9ae7dc00ba81d096.png",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/b84436d2948e590d02cbea6157bf9aa4.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/beech-bonsai-tree-fagus-isolated-on-white-2021-08-26-18-03-03-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/beech-bonsai-tree-fagus-sylvatica-isolated-on-wh-2021-08-26-18-02-50-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/beech-bonsai-tree-fagus-sylvatica-isolated-on-wh-2021-08-26-18-02-54-utc.md.jpg",
+        ],
         description:
           "บีชยุโรปหรือบีชทั่วไปเป็นต้นไม้ผลัดใบที่อยู่ในวงศ์บีช Fagaceae",
       },
@@ -404,6 +421,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/dcfc2ecf6f125f08a55ba97c2338890f.jpg",
         price: 1587,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/dcfc2ecf6f125f08a55ba97c2338890f.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/a-pink-crape-myrtle-bush-blooming-in-a-summer-flow-2021-08-30-13-58-05-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/caucasian-woman-transplants-myrtle-plant-in-clay-p-2021-09-03-08-07-34-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/crepe-myrtle-beauty-in-nature-2021-09-01-23-44-03-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-flowers-against-a-beautiful-sky-2021-08-30-03-43-40-utc.md.jpg",
+        ],
         description:
           "ลาเกอร์สโตรเมียหรือที่เรียกกันทั่วไปว่าเครปไมร์เทิลเป็นพืชสกุลไม้ผลัดใบและป่าดิบชื้นประมาณ 50 สายพันธุ์ มีถิ่นกำเนิดในอนุทวีปอินเดีย เอเชียตะวันออกเฉียงใต้ ทางตอนเหนือของออสเตรเลีย เป็นสมาชิกของวงศ์ Lythraceae ซึ่งเรียกอีกอย่างว่าตระกูล Loosestrife",
       },
@@ -422,6 +446,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/807c978df850429527b2758235042e02.jpg",
         price: 954,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/807c978df850429527b2758235042e02.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/7db287cd495c873edeb3282834404ac1.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/80e1837153bdceb9708d0ad075c1f21e.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/338682.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/e3bfb2ae0e706697d4c12bd226c36406.jpg",
+        ],
         description:
           "ศุภโชค เป็นไม้ยืนต้น พืชเขตร้อน มีถิ่นกำเนิดแถบทวีปอเมริกาใต้ เช่น ประเทศเม็กซิโก บราซิล หมู่เกาะฮาวาย นิยมนำมาถักเป็นไม้แคระกระถาง และมีความเชื่อว่าเป็นไม้มงคล ภาษาจีนเรียกว่า “เหยาเฉียนซู่” แปลว่า เรียกเงิน หรือ เขย่าเงิน",
       },
@@ -440,6 +471,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/1b0354b8501dd97ce0d17826c795460ffdc59f97.jpg",
         price: 499,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/1b0354b8501dd97ce0d17826c795460ffdc59f97.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/phalaenopsis-hybrid-2021-08-26-16-00-22-utc-2.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/phalaenopsis-hybrid-2021-08-26-16-00-22-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/phalaenopsis-orchid-flowers-2021-09-02-08-02-03-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-phalaenopsis-orchid-blossom-2021-08-29-00-56-17-utc.md.jpg",
+        ],
         description:
           "สกุลเขากวางอ่อน หรือฟาแลนน็อปซิส เป็นสกุลของกล้วยไม้ พบได้ทั่วไปในประเทศพม่า ไทย ลาว มาเลเซีย อินโดนีเซีย ฟิลิปปินส์ และหมู่เกาะใกล้เคียงในมหาสมุทรแปซิฟิก รวมทั้งตอนเหนือของทวีปออสเตรเลีย จึงกล่าวได้ว่ามีการกระจายพันธุ์อยู่ในทวีปเอเชีย",
       },
@@ -449,6 +487,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/fejka-artificial-potted-plant-orchid-white__0748880_pe745269_s5.webp",
         price: 399,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/fejka-artificial-potted-plant-orchid-white__0748880_pe745269_s5.webp",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/orchid-2021-08-29-04-25-54-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/orchid-2021-08-29-04-34-37-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-orchid-2021-08-26-15-34-48-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/white-orchid-flower-2021-08-26-16-31-50-utc.md.jpg",
+        ],
         description:
           "กล้วยไม้ หรือ เอื้อง เป็นพืชดอกที่มีความหลากหลายมากที่สุดกลุ่มหนึ่ง โดยมีประมาณ 899 สกุล และมีประมาณ 27,000 ชนิดที่มีการยอมรับ คิดเป็น 6–11% ของพืชมีเมล็ด มีการค้นพบราว ๆ 800 ชนิดทุก ๆ ปี มีสกุลใหญ่ ๆ คือ Bulbophyllum, Epidendrum, Dendrobium และ Pleurothallis สายพันธุ์ของกล้วยไม้ที่ขึ้นและเติบโตในป่า",
       },
@@ -457,6 +502,13 @@ const PLANTS_DATA = {
         name: "สกุลรองเท้านารี",
         imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/17822.jpg",
         price: 699,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/17822.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/paphiopedilum-charlesworthii-2021-09-02-08-02-03-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/paphiopedilum-orchid-flower-or-lady-s-slipper-orch-2021-09-03-12-20-43-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/paphiopedilum-philippinense-2021-08-26-15-58-26-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/slipper-orchid-paphiopedilum-exotic-flowers-2021-08-26-15-42-42-utc.md.jpg",
+        ],
         description:
           "สกุลรองเท้านารี เป็นพันธุ์ไม้ประเภทกล้วยไม้ ตั้งขึ้นเมื่อ พ.ศ. 2429 โดยนักพฤกษศาสตร์ชาวเยอรมัน มาจากรากศัพท์ภาษากรีกคือ Paphia หมายถึงเทพธิดาแห่งความรักและความงาม และ pedilon หมายถึงรองเท้าของผู้หญิง ซึ่งหมายถึงลักษณะกลีบดอกที่เป็นถุงลึกคล้ายรองเท้า พบทั่วไปในเอเชียตะวันออกเฉียงใต้",
       },
@@ -466,6 +518,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/Orchid-Dendrobium-Singapore-TGS-1-910x1155.png",
         price: 185,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/Orchid-Dendrobium-Singapore-TGS-1-910x1155.png",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/dendrobium-orchid-hybrids-is-white-and-pink-stripe-2021-08-26-15-42-42-utc-2.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/dendrobium-orchid-hybrids-is-white-and-pink-stripe-2021-08-26-15-42-42-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/orchid-dendrobium-berry-oda-2021-08-30-20-31-34-utc.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-orchids-singapore-2021-08-30-06-40-21-utc.md.jpg",
+        ],
         description:
           "สกุลหวาย เป็นสกุลหนึ่งของพืชวงศ์กล้วยไม้ ตั้งขึ้นเมื่อ ค.ศ. 1779 โดย Peter Olof Swartz ชาวสวีเดน มาจากรากศัพท์ภาษากรีก คือ dendron และ bios หมายถึงสิ่งมีชีวิตที่อาศัยบนต้นไม้อื่น ทั่วโลกพบกล้วยไม้ที่อยู่ในสกุลนี้ถึง 900 ชนิด ในไทยพบ 184 ชนิด",
       },
@@ -475,6 +534,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/71dJNwcejYL._AC_SL1500_.jpg",
         price: 1054,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/71dJNwcejYL._AC_SL1500_.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/23db6632e7e448dea246a79195b47691.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/34c679929b4044e39905ac9781a55079.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/a2d20fd5afdd487ea0810f494cf497e0-2.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/b1d6d676e63f4facad3c1552dab91715.jpg",
+        ],
         description:
           "สกุลว่านน้ำทอง หรือ Ludisia เป็นกล้วยไม้สกุลหนึ่ง มีสมาชิกเพียงชนิดเดียวคือว่านน้ำทอง Ludisia discolor มีถิ่นกำเนิดในจีนตอนใต้, อินเดียตะวันออกเฉียงเหนือ, ไทย, เวียดนาม, ฟิลิปปินส์, มาเลเซีย, อินโดนีเซีย และพม่า",
       },
@@ -484,6 +550,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/432f23ea88218f5e47098d376c77683d.jpg",
         price: 999,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/432f23ea88218f5e47098d376c77683d.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/2020-06-20_11.13.36__30905.1592966053.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/oncidium_blanchetii.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/oncidium_compact_1.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/Oncidium-blanchetii-B.md.jpg",
+        ],
         description:
           "Oncidium ย่อว่า Onc ในการค้าพืชสวนเป็นสกุลที่มีประมาณ 330 ชนิดของกล้วยไม้จาก subtribe Oncidiinae ของครอบครัวกล้วยไม้ ปัจจุบันมีการกระจายไปทั่วอเมริกาใต้อเมริกาใต้เม็กซิโกและหมู่เกาะอินเดียตะวันตกโดยขยายพันธุ์ไปยังฟลอริดา ชื่อสามัญของพืชในประเภทนี้ ได้แก่ กล้วยไม้เต้นรำหญิงและกล้วยไม้อาบน้ำสีทอง",
       },
@@ -501,6 +574,13 @@ const PLANTS_DATA = {
         name: "ถุงมือ",
         imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/6oqqxw.jpg",
         price: 25,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/6oqqxw.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/7e35a449d5a233a42ffbdbb874babd96.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/ycjqt3.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/0200df28bac4e8c8a9bd068431510731.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/93935e47e352a38974c0cd42629102fd.jpg_720x720q80.jpg_.webp",
+        ],
         description:
           "ถุงมือสำหรับขุดดินทำสวนที่มาพร้อมกรงเล็บแข็งแรงในตัว ให้คุณสวมใส่เพื่อขุดดิน พรวนดิน หรือเตรียมดินปลูกต้นไม้ได้อย่างสะดวกรวดเร็วโดยมือไม่เลอะเทอะเปรอะเปื้อนแม้แต่น้อย! จัดการงานทำสวนให้เสร็จได้รวดเร็วขึ้นทันทีถุงมือขุดดินทำสวน",
       },
@@ -510,6 +590,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/hoss-pruning-shears.jpg",
         price: 199,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/hoss-pruning-shears.jpg",
+          "",
+          "",
+          "",
+          "",
+        ],
         description:
           "ออกแบบ และรังสรรค์กิ่งไม้ให้สวยงาม ได้รูปทรง ดูโดดเด่น และเป็นระเบียบ ไม่รกรุงรัง ด้วยกรรไกรแต่งกิ่ง ตัวช่วยอำนวยในงานเกษตร การทำความสะอาด หรือจัดสวนมีความสะดวก และรวดเร็วมากขึ้น ผ่านกระบวนการผลิตที่ได้มาตรฐาน วัสดุคุณภาพ มีความแข็งแรงทนทาน ช่วยตัดแต่งกิ่งไม้ได้ดั่งใจ อีกทั้งให้การตัดขาดได้ง่าย และฉับไว",
       },
@@ -519,6 +606,11 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/8592025_1906z_short-handled-bypass-loppers.jpg",
         price: 754,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/8592025_1906z_short-handled-bypass-loppers.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/8592025_1907z.md.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/16a0d41b15ba533f.md.png",
+        ],
         description:
           "Loppersเป็นกรรไกรชนิดหนึ่งที่ใช้สำหรับการตัดแต่งกิ่งกิ่งและกิ่งเล็ก ๆ เช่นกรรไกรตัดแต่งกิ่งที่มีด้ามยาวมาก เป็นเครื่องมือตัดสวนแบบแมนนวลที่ใหญ่ที่สุด.",
       },
@@ -528,6 +620,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening.jpg",
         price: 79,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Polished-Stainless-Steel-Prong-Hand-Weeding-Fork.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening-2.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening-3.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening.jpg",
+        ],
         description:
           "เป็นอุปกรณ์ทำสวนที่มีด้ามจับและหลายอัน (ปกติสี่อัน) สั้น ซี่ ใช้สำหรับการคลายการยกและการพลิก ดิน ในการทำสวนและการทำไร่ มันใช้คล้ายกับ จอบ แต่ในหลาย ๆ สถานการณ์มันจะเหมาะสมกว่าจอบเสียมWikipedia  site:isecosmetic.com",
       },
@@ -537,6 +636,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/9137i_hand-trowel.jpg",
         price: 125,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/9137i_hand-trowel.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/9131i_transplanter.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/9137i_hand-trowel-lifestyle.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/71n8w8wmx9l._sx466_.jpg.webp",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/GTH-SHTRHS-burgon-and-ball-rhs-endorsed-stainless-hand-trowel-03_4a2ec4f3-2b40-49de-bbe1-a8fd75a7949e_grande.jpg.webp",
+        ],
         description:
           "เหมาะสำหรับนุ่มดิน!มี Scale เฮ้าส์สำหรับ Easy และแม่นยำใช้ ปลอดภัยใช้และไม่เป็นอันตรายต่อ Root System. การออกแบบเสริม,ทนทานและไม่เสียรูปที่จับสบายและลื่นใช้กันอย่างแพร่หลายและทนทาน",
       },
@@ -546,6 +652,13 @@ const PLANTS_DATA = {
         imageUrl:
           "https://i2.fpic.cc/file/img-b1/2021/12/17/swiss-plastic-watering-can-rose.jpg",
         price: 144,
+        showImage: [
+          "https://i2.fpic.cc/file/img-b1/2021/12/17/swiss-plastic-watering-can-rose.jpg",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg-2.md.webp",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg-3.webp",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg-4.md.webp",
+          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg.md.webp",
+        ],
         description:
           "ใช้สำหรับรดน้ำพืช น้ำที่ออกจากฝักบัวจะเป็นฝอยกระจายทั่วต้นพืชทำให้พืชได้รับน้ำอย่างทั่วถึง และส่วนต่างๆ ของพืชไม่หักง่าย การใช้บัวรดน้ำ ถ้าไม่ระมัดระวังจะเสียหายง่ายที่ส่วนคอของฝักบัวจึงควรจับที่หูหิ้วหรือที่มือจับเท่านั้น",
       },

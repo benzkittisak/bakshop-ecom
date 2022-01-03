@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment , useEffect } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import { selectSearchCollection } from "../../redux/shop/shop.selector";
+import { selectIndividualProduct } from "../../redux/shop/shop.selector";
 
 import ProductImageAndDescription from "../../components/product-image-and-description/product-imgae-and-description.component";
 import ProductDescriptionTab from "../../components/product-description-tab/product-description-tab.component";
@@ -14,6 +14,9 @@ const ProductPage = ({ plant }) => {
   let { description, reviews } = Object.assign({}, ...plant);
   if (reviews === undefined) reviews = [];
 
+  useEffect(()=> {
+    window.scrollTo(0,0)
+  } , [])
   return (
     <Fragment>
       {plant.length >= 1 ? (
@@ -41,7 +44,7 @@ const ProductPage = ({ plant }) => {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  plant: selectSearchCollection(Object.values(ownProps.params).toString())(
+  plant: selectIndividualProduct(Object.values(ownProps.params).toString())(
     state
   ),
 });

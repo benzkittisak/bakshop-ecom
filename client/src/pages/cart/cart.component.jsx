@@ -57,10 +57,10 @@ const CartPage = ({ cartItems, clearCart, totalPrice }) => {
                 </div>
 
                 <div className="row">
-                  <div className="col-lg-8 col-12">
+                  <div className="col-lg-8 my-2 col-12">
                     <PaymentDemoInfo />
                   </div>
-                  <div className="col-lg-4 col-12">
+                  <div className="col-lg-4 my-2 col-12">
                     <div className="grand-total">
                       <div className="title-wrap">
                         <h4 className="cart-bottom-title section-bg-gray-cart">

@@ -1,0 +1,75 @@
+@import '../../assets/styles/variables.style.scss';
+
+.offcanvas-mobile-menu{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    width: 375px;
+    max-width: 100%;
+    height: 100vh;
+    padding-left: 60px;
+    transition: 0.5s;
+    transform: translateX(105%);
+
+    &.active{
+        transform: translateX(0);
+
+    }
+
+    &.inactive{
+        transform: translateX(calc(100% - 60px));
+    }
+}
+.offcanvas-menu-close{
+    font-size: 25px;
+    line-height: 70px;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 62px;
+    text-align: center;
+    padding: 0;
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: #343538;
+    transform: rotate(0deg);
+
+    &:hover,&:focus{
+        color: white;
+    }
+
+    i{
+        font-size: 30px;
+        line-height: 1;
+        margin-top: 12px;
+        transform: 0.3;
+        transform: rotate(0);
+
+    }
+    &:hover{
+        i{
+            transform: rotate(-90deg);
+        }
+    }
+}
+.offcanvas-wrapper{
+    overflow: auto;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 87px 0 rgba($color: black, $alpha: 0.09);
+}
+
+.offcanvas-inner-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 90px 35px 0;
+
+    @media #{$sm-layout} {
+        padding: 70px 25px;
+    }
+}

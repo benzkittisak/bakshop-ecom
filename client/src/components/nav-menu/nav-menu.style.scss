@@ -59,6 +59,9 @@
 
 .stick .logo,
 .stick .header-right-wrap {
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
   margin-top: 22px;
   @media #{$md-layout} {
     margin-top: 0;

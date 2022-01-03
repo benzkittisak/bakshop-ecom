@@ -1,13 +1,29 @@
 @import "../../assets/styles/variables.style.scss";
+
 .header-right-wrap {
   display: flex;
   justify-content: flex-end;
   margin-top: 32px;
 
+  @media #{$md-layout} {
+    margin-top: 0;
+  }
+  @media #{$xs-layout} {
+    margin-top: 23px;
+  }
   .same-style {
     position: relative;
     margin-left: 14px;
 
+    @media #{$lg-layout} {
+      margin-left: 10px;
+    }
+    @media #{$md-layout} {
+      margin-left: 15px;
+    }
+    @media #{$xs-layout} {
+      margin-left: 20px;
+    }
     > a,
     button {
       font-size: 23px;
@@ -91,7 +107,6 @@
   }
 
   .same-style.account-setting {
-    
     > a,
     button {
       font-size: 24px;
@@ -122,13 +137,30 @@
         transform: rotateX(0deg);
       }
 
+      @media #{$xs-layout} {
+        top: 100%;
+
+        margin-top: 14px;
+      }
+      @media #{$md-layout} {
+        top: 100%;
+
+        margin-top: 14px;
+      }
+      @media #{$lg-layout} {
+        left: -40px;
+      }
+      @media #{$xl-layout} {
+        left: -34px;
+      }
+
       ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
         li {
-          a , button {
-
+          a,
+          button {
             font-size: 13px;
             font-weight: 400;
             display: block;
@@ -144,35 +176,34 @@
         }
       }
     }
-
-
   }
 
-  .same-style.cart-wrap{
-      margin-left: 15px;
+  .same-style.cart-wrap {
+    margin-left: 15px;
+    position: relative;
+    button,
+    & > a {
       position: relative;
-      button , & > a{
-          position: relative;
-          display: inline-block;
-          padding: 0;
-          color: black;
-          border: none;
-          background: transparent;
+      display: inline-block;
+      padding: 0;
+      color: black;
+      border: none;
+      background: transparent;
 
-          .count-style{
-              font-size: 12px;
-              line-height: 21px;
-              position: absolute;
-              top: -9px;
-              right: -14px;
-              display: inline-block;
-              text-align: center;
-              color: white;
-              width: 21px;
-              height: 21px;
-              border-radius: 100%;
-              background: black;
-          }
+      .count-style {
+        font-size: 12px;
+        line-height: 21px;
+        position: absolute;
+        top: -9px;
+        right: -14px;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        width: 21px;
+        height: 21px;
+        border-radius: 100%;
+        background: black;
       }
+    }
   }
 }

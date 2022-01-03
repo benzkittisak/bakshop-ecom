@@ -9,6 +9,9 @@
     font-size: 18px;
     margin: 0;
     display: block;
+    @media screen and (max-width:720px) {
+      padding: 30px 0 0; 
+    }
   }
 
   span {
@@ -19,6 +22,10 @@
 }
 .bordered-right-1{
   border-right: 1px solid lightgray;
+
+  @media screen and (max-width:720px) {
+    border: none;
+  }
 }
 form {
   .input-group {
@@ -26,6 +33,11 @@ form {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    @media screen and (max-width:720px) {
+        padding: 5px;  
+    }
+
     label {
       display: block;
       text-align: right;

@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import NavMenu from "../nav-menu/nav-menu.component";
 import IconGroup from "../icon-group/icon-group.component";
 import WebLogo from "../web-logo/web-logo.component";
+import MobileMenu from "../mobile-menu/mobile-menu.component";
 
 import "./header.styles.scss";
 
@@ -45,6 +46,8 @@ const Header = ({layout}) => {
                 </div>
             </div>
           </div>
+
+        <MobileMenu />
       </div>
     </header>
   );

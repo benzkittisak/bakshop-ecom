@@ -18,6 +18,9 @@
         height: 1px;
         content: '';
         background-color: #e3e1e1;
+        @media screen and (max-width:720px) {
+          width: 40%;
+        }
     }
     }
   }
@@ -27,6 +30,10 @@
       h2{
           text-align: center;
           font-size: 23px;
+
+          @media screen and (max-width:720px) {
+            font-size: 20px;
+          }
       }
   }
   &-additional-section{

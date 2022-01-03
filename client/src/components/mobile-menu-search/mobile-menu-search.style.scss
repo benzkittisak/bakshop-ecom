@@ -1,0 +1,52 @@
+@import "../../assets/styles/variables.style.scss";
+
+.offcanvas-mobile-search-area {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: calc(100% - 60px);
+  margin-left: 60px;
+  padding: 10px;
+  background-color: #e6e6e6;
+
+  input {
+   
+    padding: 9px 25px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: #222;
+    background-color: #e6e6e6;
+
+    @media #{$sm-layout} {
+      font-size: 14px;
+      padding: 5px 15px;
+    }
+  }
+  button {
+    clear: both;
+    all: unset;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    padding: 0px;
+    transform: translateY(-50%);
+    color: #aaa;
+    border: none;
+    background: none;
+    &:hover{
+      background-color: none;
+    }
+
+    
+    i {
+      font-size: 18px;
+      line-height: 40px;
+      &:hover{
+        background-color: none;
+      }
+    }
+  }
+}

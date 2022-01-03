@@ -4,8 +4,12 @@
   &.header-absolute {
     position: absolute;
     z-index: 99;
-
     width: 100%;
+
+    @media #{$xs-layout , $md-layout} {
+      position: relative;
+      width: auto;
+    }
   }
 }
 .sticky-bar.stick {
@@ -32,33 +36,6 @@
       display: block;
     }
   }
-
-  
-
-  .header-right-wrap-white {
-    .same-style {
-      > a {
-        color: #000;
-      }
-
-      &.cart-wrap,
-      &.header-compare,
-      &.header-wishlist,
-      &.account-setting,
-      &.header-search {
-        > button,
-        & > a {
-          color: #000;
-          span {
-            &.count-style {
-              color: #fff;
-              background-color: #000;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 .header-res-padding {
@@ -66,7 +43,7 @@
     padding: 20px 0 15px;
   }
   @media #{$xs-layout} {
-    padding: 20px 0 15px;
+    // padding: 20px 0 15px;
   }
 }
 
@@ -74,9 +51,16 @@
   
   .logo{
     margin-top: 5px;
+
+    @media #{$md-layout} {
+      margin-top: 0;
+    }
+    @media #{$xs-layout} {
+      margin-top: 0;
+    }
   }
   .same-style{
-   
+    
     &.header-search{
       .search-content{
         top:166%;

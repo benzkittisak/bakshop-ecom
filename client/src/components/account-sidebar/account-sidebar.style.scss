@@ -15,6 +15,30 @@
 }
 
 .account-sidebar {
+  @media screen and (max-width:720px) {
+    display: flex; 
+    width: 100%;
+
+    .accordion{
+      display: flex;
+      width: 100%;
+      .card{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &-header{
+          border-right: 1px solid lightgray !important;
+          width: 100%;
+
+          &:last-child{
+            border: none!important;
+          }
+        }
+      }
+    }
+  }
   .accordion {
     .card {
       border: none;

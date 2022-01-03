@@ -1,0 +1,58 @@
+@import "../../assets/styles/variables.style.scss";
+
+.offcanvas-widget-area {
+  margin-top: auto;
+  margin-bottom: 35px;
+
+  @media #{$sm-layout} {
+    margin-bottom: 30px;
+  }
+}
+
+.off-canvas-contact-widget {
+  margin-bottom: 20px;
+  .header-contact-info {
+    flex-basis: 33.33%;
+
+    &__list {
+      list-style-type: none;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        i {
+          font-size: 16px;
+          margin-right: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 13px;
+          &:hover {
+            color: $theme-color;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.off-canvas-widget-social{
+    a{
+        font-size: 14px;
+        color: black;
+        margin: 0 10px;
+
+        @media #{$sm-layout}{
+            margin: 0 10px;
+        }
+
+        &:hover{
+            color: $theme-color;
+        }
+    }
+}

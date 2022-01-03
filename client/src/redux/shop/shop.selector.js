@@ -30,6 +30,24 @@ export const selectIsCollectionsLoaded = createSelector(
   (plants) => !!plants.plants
 );
 
+export const selectIndividualProduct = (keyword) => createSelector(
+  [selectCollections],
+  plants => {
+    const convertCollectionsToArray = Object.keys(plants).map(
+      (key) => plants[key]
+    );
+    const data = convertCollectionsToArray.map((plantsCollection) =>
+      plantsCollection.items.filter(
+        (item) =>
+          item.name === keyword.toLowerCase()
+      )
+    );
+    let mergeArray = [];
+    data.map((product) => product.map((item) => mergeArray.push(item)));
+    return mergeArray;
+  }
+)
+
 export const selectSearchCollection = (searchKeyword) =>
   createSelector([selectCollections], (plants) => {
     const convertCollectionsToArray = Object.keys(plants).map(

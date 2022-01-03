@@ -4,7 +4,7 @@
   "description": "bakshop-ecom",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && PORT=3001 yarn start",
+    "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "build": "cd client && npm run build",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
