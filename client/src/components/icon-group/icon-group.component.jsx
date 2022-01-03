@@ -43,11 +43,12 @@ const IconGroup = ({
         <div className="search-content">
           <form onSubmit={(e) => handleSubmit(e)}>
             <input
+
               onChange={(e) => setSearch(e.target.value)}
               type="text"
               placeholder="พิมพ์คำค้นที่คุณต้องการ"
             />
-            <button className="button-search">
+            <button className="button-search"  style={{clear:'both', margin:0}}>
               <i className="fal fa-search"></i>
             </button>
           </form>

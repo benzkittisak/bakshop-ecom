@@ -7,9 +7,9 @@ import './product-grid-list.style.scss';
 const ProductGridList =({product}) => {
     return(
         <Fragment>
-            {product.map(item => (
+            {product.length > 0 ?product.map(item => (
                 <ProductGridListSingle product={item} key={item.id} />
-            ))}
+            )) : (<h2 style={{textAlign:"center"}}>ไม่พบสินค้าที่คุณต้องการ</h2>)}
         </Fragment>
     )
 }

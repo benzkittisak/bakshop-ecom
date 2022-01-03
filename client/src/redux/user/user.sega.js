@@ -64,7 +64,16 @@ export function* isUserAuthenticated() {
 export function* signUpStarting({ payload: { email, displayName, password } }) {
   try {
     const { user } = yield auth.createUserWithEmailAndPassword(email, password);
-    yield put(signUpSuccess({ user, additionalData: { displayName } }));
+    yield put(signUpSuccess({ user, additionalData: { displayName , address:{
+      name: "",
+      phoneNumber: "",
+      addressDetail: "",
+      province: "",
+      city: "",
+      subdistrict: "",
+      postNo: "",
+      save:false
+    } } }));
   } catch (error) {
     yield put(signUpFailure(error));
   }

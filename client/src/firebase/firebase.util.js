@@ -29,6 +29,16 @@ export const createProfileDocument = async (userAuth, additionalData) => {
         email,
         createdAt,
         ...additionalData,
+        address:{
+          name: "",
+          phoneNumber: "",
+          addressDetail: "",
+          province: "",
+          city: "",
+          subdistrict: "",
+          postNo: "",
+          save:false
+        }
       });
     } catch (error) {
       console.log("error creating account ", error.message);

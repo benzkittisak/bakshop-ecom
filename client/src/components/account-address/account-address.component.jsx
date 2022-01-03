@@ -6,23 +6,6 @@ import "./account-address.style.scss";
 
 const AccountAddress = ({ currentUser }) => {
   const [popup, setPopUp] = useState(false);
-  if (!currentUser.address) {
-    currentUser = Object.assign(
-      {},
-      {
-        ...currentUser,
-        address: {
-          name: "",
-          phoneNumber: "",
-          city: "",
-          subdistrict: "",
-          province: "",
-          postNo: "",
-          addressDetail: "",
-        },
-      }
-    );
-  }
 
   const handlePopup = () => {
     setPopUp(!popup);
@@ -36,7 +19,7 @@ const AccountAddress = ({ currentUser }) => {
             <div className="col-md-12 col-lg-12">
               <div className="address-header">
                 <h3>ที่อยู่ของฉัน</h3>
-                {currentUser.address ? (
+                {currentUser.address.save ? (
                   ""
                 ) : (
                   <button
@@ -50,7 +33,7 @@ const AccountAddress = ({ currentUser }) => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row" style={{display: currentUser.address.save ? 'flex' : 'none'}}>
             <div className="col-md-12 col-lg-12">
               <div className="address-data">
                 <div className="container">

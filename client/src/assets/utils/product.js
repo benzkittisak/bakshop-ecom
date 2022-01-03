@@ -22,6 +22,38 @@ export const getSortProduct = (products, sortType, sortValue) => {
       products.filter((product) => product.title === sortValue)
     );
   }
+
+  if (sortType === "type") {
+    const sampleData = products.filter(product => product.routeName.split('/')[2].toLowerCase() === sortValue);
+    return mergeProduct(
+      sampleData.filter((product) => product)
+    );
+  }
+
+  if (sortType === "filterSort") {
+    let sortProduct = [...products];
+    if (sortValue === "default") {
+      return sortProduct;
+    } else if (sortValue === "priceHighToLow") {
+      return sortProduct.sort((a, b) => b.price - a.price);
+    } else if (sortValue === "priceLowToHigh") {
+      return sortProduct.sort((a, b) => a.price - b.price);
+    }
+
+    return sortProduct;
+  }
+};
+
+export const getSortSearchProduct = (products, sortType, sortValue) => {
+  if (!sortValue || !sortType) {
+    return(products);
+  }
+
+  if (sortType === "category") {
+    return mergeProduct(
+      products.filter((product) => product.title === sortValue)
+    );
+  }
   if (sortType === "filterSort") {
     let sortProduct = [...products];
     if (sortValue === "default") {

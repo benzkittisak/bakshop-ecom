@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 import {
   updateDataStart,
@@ -34,15 +34,21 @@ const AccountProfile = ({ currentUser, updateData, updateImage }) => {
       return;
     }
     updateImage(currentUser, imageAsFile);
-    swal("สำเร็จ" , "คลิกปุ่ม OK เพื่อดำเนินการต่อ" , "success")
-    .then(() => window.location.reload())
+    swal({
+      title: "สำเร็จ",
+      text: "คลิกปุ่ม OK เพื่อดำเนินการต่อ",
+      icon: "success",
+      timer:2000,
+      confirmButtonText:'OK'
+    }).then(() => window.location.reload());
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     updateData(userData);
-    swal("แก้ไขข้อมูลสำเร็จ" , "คลิกปุ่ม OK เพื่อดำเนินการต่อ" , "success")
-    .then(() => window.location.reload())
+    swal("แก้ไขข้อมูลสำเร็จ", "คลิกปุ่ม OK เพื่อดำเนินการต่อ", "success").then(
+      () => window.location.reload()
+    );
   };
 
   return (

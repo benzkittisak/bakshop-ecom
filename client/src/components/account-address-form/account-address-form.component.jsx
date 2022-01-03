@@ -12,15 +12,9 @@ const AccountAddressForm = ({
   handlePopup,
   updateData,
 }) => {
-  const [address, setAddress] = useState({
-    name: "",
-    phoneNumber: "",
-    addressDetail: "",
-    province: "",
-    city: "",
-    subdistrict: "",
-    postNo: "",
-  });
+  
+  const [address, setAddress] = useState(currentUser.address);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setAddress({ ...address, [name]: value });
@@ -33,9 +27,7 @@ const AccountAddressForm = ({
       return;
     }
     updateData({ ...currentUser, address: address });
-    swal("สำเร็จ", "คลิกปุ่ม OK เพื่อดำเนินการต่อ", "success").then(() =>
-      window.location.reload()
-    );
+    swal("สำเร็จ", "คลิกปุ่ม OK เพื่อดำเนินการต่อ", "success");
   };
 
   const {
@@ -46,6 +38,7 @@ const AccountAddressForm = ({
     city,
     subdistrict,
     postNo,
+    save
   } = address;
 
   return (
@@ -59,6 +52,7 @@ const AccountAddressForm = ({
         </div>
         <form onSubmit={handleSubmit} className="form-update-add">
           <div className="container">
+            <input type="hidden" name="save" value={save} />
             <div className="row">
               <div className="form-group col-md-6">
                 <label className="form-label" htmlFor="name">
