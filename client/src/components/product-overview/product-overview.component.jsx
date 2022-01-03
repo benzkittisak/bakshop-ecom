@@ -22,7 +22,7 @@ const ProductOverview = ({ category }) => {
                 <h4>สินค้ามาใหม่</h4>
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link eventKey={"bestSeller"}>
                 <h4>สินค้าขายดี</h4>
               </Nav.Link>
@@ -31,7 +31,7 @@ const ProductOverview = ({ category }) => {
               <Nav.Link eventKey={"saleItems"}>
                 <h4>สินค้าลดราคา</h4>
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
 
           <Tab.Content>
@@ -40,6 +40,11 @@ const ProductOverview = ({ category }) => {
                   <ProductGrid category={category} type="new" limit={8}/>
               </div>
             </Tab.Pane>
+            {/* <Tab.Pane eventKey={"bestSeller"}>
+              <div className="row">
+                <ProductGrid category={category} type="bestSeller" Plimit={8}/>
+              </div>
+            </Tab.Pane> */}
           </Tab.Content>
         </Tab.Container>
       </div>

@@ -16,6 +16,7 @@ export const selectCollectionsForDailyDeals = (urlParams) =>
         .slice(0, limit);
     }
 
+
     return plants[category].items.slice(0, limit);
   });
 
