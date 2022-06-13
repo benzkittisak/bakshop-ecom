@@ -4,45 +4,35 @@ const PLANTS_DATA = {
     title: "House Plants",
     routeName: "shop/cat/houseplants",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daniel-frese-1055408.md.jpg",
+      "https://sv1.picz.in.th/images/2022/06/13/V4DZVV.md.jpg",
     items: [
       {
         id: 2,
         name: "มอนสเตอร่า ไจแอนท์",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/16/pexels-huy-phan-3125195.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4wb0S.jpg",
         price: 2234,
         description:
           "มอนสเตอร่า (Monstera, Swiss Cheese Plant) หรือที่เรียกทั่วไปว่า พลูฉีก หรือ พลูแฉก มีถิ่นกำเนิดในทวีปอเมริกากลาง พบมากในป่าดิบชื้น เป็นต้นไม้ในวงศ์ Araceae มีชื่อทางวิทยาศาสตร์ว่า Monstera deliciosa Liebm. ลักษณะลำต้นเป็นข้อสั้น จัดอยู่ในกลุ่มไม้เลื้อย สามารถเลื้อยได้ไกล 4 เมตร มีจุดเด่นที่ใบเดี่ยวขนาดใหญ่ โคนใบเว้าลึกเป็นรูปหัวใจ ปลายใบเรียวแหลม ขอบใบหยักลึกเกือบถึงเส้นกลางใบ 5 แฉก ใบหนาผิวมัน มีทั้งสีเขียวเข้มและใบด่าง ออกดอกตามซอกใบ มีผลสีเขียว จะเปลี่ยนเป็นสีน้ำตาลเมื่อผลสุกและส่งกลิ่นแรง",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-08-32-46-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/houseplants-fittonia-nephrolepis-and-monstera-in-2021-08-31-13-28-45-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-in-basket-2021-08-29-01-31-32-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/monstera-monkey-mask-2021-09-02-07-13-42-utc.md.jpg",
-        ],
-
-        reviews: [
-          // {
-          //   name:"",
-          //   email:'',
-          //   detail:""
-          // }
+          "https://sv1.picz.in.th/images/2022/06/13/V4wjZn.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4woyW.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4wA92.jpg",
         ],
       },
       {
         id: 3,
         name: "เดหลี",
         new: true,
-        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/8ff19ffb.jpg",
+        imageUrl: "https://sv1.picz.in.th/images/2022/06/13/V4waTz.jpg",
         price: 1099,
         description:
           "เป็นพืชที่มีดอกเดี่ยว monocotyledonous ประมาณ 47 ชนิดในตระกูล Araceae ถิ่นกำเนิดในเขตร้อนชื้นของอเมริกาและเอเชียตะวันออกเฉียงใต้ Spathiphyllum บางชนิดเป็นที่รู้จักกันทั่วไปว่าเป็น Spath หรือ Lily Peace พวกเขาเป็นไม้ยืนต้นเป็นต้นไม้เขียวชอุ่มตลอดปีมีใบขนาดใหญ่ 12-65 ซม. และกว้าง 3-25 ซม.",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/the-house-plant-lilies-or-spathiphyllum-in-a-clay-2021-11-04-22-13-36-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/spathiphyllum-home-plant-close-up-petal-of-white-f-2021-08-29-11-16-21-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/spathiphyllum-plant-in-a-white-pot-on-a-white-back-2021-09-02-11-47-51-utc.md.jpg",
-          "https://i2.fpic.cc/file/img-b1/2021/12/30/three-types-of-plants-ficus-elastica-spathiphyll-2021-09-02-10-33-12-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4wVyq.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4w8cf.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V4wr0b.jpg",
         ],
       },
       {
@@ -50,16 +40,14 @@ const PLANTS_DATA = {
         name: "แววมยุรา",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/potted_maranta_leuconeura_erythroneura_prayer_plant_herringbone_plant_1500272950_051f04080.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4KLWI.jpg",
         price: 890,
         description:
           "Maranta leuconeura ยังเป็นที่รู้จักกันในนามพืชอธิษฐานเป็นพรรณไม้ดอกในตระกูล Marantaceae ซึ่งมีถิ่นกำเนิดในป่าเขตร้อนของบราซิล มันเป็นตัวแปรยืนต้น rhizomatous เติบโตสูงถึง 30 ซม. และกว้างกับกอหนาแน่นของเอเวอร์กรีนใบรูปไข่โดดเด่นโดดเด่นแต่ละยาวถึง 12 ซม",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/potted_maranta_leuconeura_erythroneura_prayer_plant_herringbone_plant_1500272950_051f04080.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/artificial-maranta-plant-in-flower-pot-on-white-ba-2021-08-26-16-33-53-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/calathea-makoyana-leaves-isolated-on-background-mo-2021-09-02-06-42-33-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/calathea-makoyana-pot-by-a-white-wall-2021-09-02-06-06-07-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/variegated-ornamental-tricolor-calathea-maranta-pl-2021-08-31-08-53-33-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4KGnZ.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4KeKP.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4KI3l.jpg",
         ],
       },
       {
@@ -67,13 +55,11 @@ const PLANTS_DATA = {
         name: "กวักมรกต",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/000680105_ZZPlant_3_39ed4a48-9e7a-469c-8147-5478128cf095.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4cPIb.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/000680105_ZZPlant_3_39ed4a48-9e7a-469c-8147-5478128cf095.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/green-potted-plant-zamioculcas-and-alarm-clock-tim-2021-09-30-18-38-17-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/relaxing-time-at-comfort-green-interior-loft-house-2021-09-01-21-42-14-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/trendy-houseplant-zamioculcas-in-a-white-plastic-p-2021-12-09-04-54-17-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/zamioculcas-zamiifolia-plant-in-white-flower-pot-s-2021-08-31-05-39-16-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4c2wf.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4cCoa.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4cuJq.jpg",
         ],
         price: 1099,
         description:
@@ -84,13 +70,12 @@ const PLANTS_DATA = {
         name: "ไอวี่",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/green-polyester-artificial-english-ivy-plant-withhanging-basket-by-odd-croft-green-polyester-artific-dla5bg.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4QjcE.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/green-polyester-artificial-english-ivy-plant-withhanging-basket-by-odd-croft-green-polyester-artific-dla5bg.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/green-ivy-hedera-helix-in-stylish-handmade-macra-2021-09-03-00-56-37-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/green-ivy-hedera-helix-in-stylish-handmade-macra-2021-09-03-04-10-44-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/green-sprigs-of-common-ivy-hedera-helix-on-the-ta-2021-11-28-18-37-35-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/young-sprig-of-common-ivy-hedera-helix-rooted-in-2021-11-28-18-37-35-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4QoyV.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4QATQ.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4j1h9.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4jtJD.jpg"
         ],
         price: 599,
         description:
@@ -101,13 +86,11 @@ const PLANTS_DATA = {
         name: "ว่านหางจระเข้",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/aloe-vera-plant-2021-08-26-16-59-51-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4l7Wq.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/aloe-vera-plant-2021-08-26-16-59-51-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/aloe-vera-in-a-pot-2021-09-03-14-02-13-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/aloe-vera-plant-and-multicolor-vases-2021-10-21-23-21-14-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/aloe-vera-plant-in-a-multicolor-background-2021-12-09-08-45-45-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/woman-holding-aloe-vera-plant-2021-08-29-08-48-45-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4ld6a.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4jMzb.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4jFXJ.jpg",
         ],
         price: 1834,
         description:
@@ -118,13 +101,11 @@ const PLANTS_DATA = {
         name: "ต้นแมงมุม",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/beautiful-spider-plant-hanging-from-a-wooden-brack-2021-10-12-19-41-54-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4lfaZ.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/beautiful-spider-plant-hanging-from-a-wooden-brack-2021-10-12-19-41-54-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/baby-spider-plants-hanging-2021-09-01-01-37-28-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/spider-plant-in-gold-pot-in-macrame-hanger-on-soli-2021-08-30-19-32-24-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/spider-plants-hanging-from-the-pot-2021-08-30-14-58-59-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/spider-plants-hanging-indoor-minimalist-interior-2021-08-30-08-58-31-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4lkzI.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4ltWe.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4lwKl.webp",
         ],
         price: 800,
         description:
@@ -135,13 +116,11 @@ const PLANTS_DATA = {
         name: "พลูด่าง",
         new: true,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/devil-s-ivy-plant-2021-08-26-23-04-13-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4luda.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/27/devil-s-ivy-plant-2021-08-26-23-04-13-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/a-pothos-houseplant-devil-s-ivy-and-a-wooden-sig-2021-08-30-13-37-02-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/devil-s-ivy-or-money-plants-crawling-and-hanging-f-2021-08-30-08-13-06-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/devils-ivy-green-indoor-plants-2021-08-30-08-13-45-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/money-plants-or-devil-s-ivy-in-a-clear-giant-glass-2021-09-02-13-34-47-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4l6Zq.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4lnsz.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4lrm8.jpg",
         ],
         price: 340,
         description:
@@ -152,13 +131,11 @@ const PLANTS_DATA = {
         name: "ลิ้นมังกร",
         new: false,
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/000850105_SnakePlant_1_25e1ca62-1d03-44b9-9791-7d68f3ae6864.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4oqBu.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/000850105_SnakePlant_1_25e1ca62-1d03-44b9-9791-7d68f3ae6864.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/decorative-sansevieria-plant-on-wooden-table-in-li-2021-08-29-01-22-56-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplants-on-the-table-2021-12-22-16-06-43-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/sansevieria-trifasciata-in-flowerpot-2021-08-30-20-31-45-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/stylish-green-plant-sansevieria-in-straw-pot-on-ba-2021-08-29-04-26-54-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4oRT8.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4oQG0.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4o5qZ.jpg",
         ],
         price: 459,
         description:
@@ -178,13 +155,11 @@ const PLANTS_DATA = {
         name: "กุหลาบหิน",
         link: "shop/office-plants/Kalanchoe",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/3d25edc4e2551a855b79ddde68f4dae1.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4D21q.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/3d25edc4e2551a855b79ddde68f4dae1.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/close-up-view-of-gardeners-arranging-flowers-in-gr-2021-09-03-05-18-34-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/close-up-view-of-pink-kalanchoe-flowers-in-flowerp-2021-08-29-21-08-03-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/kalanchoe-plant-in-a-pot-in-hand-2021-08-29-08-41-26-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/kalanchoe-plant-with-yellow-flowers-kalanchoe-blo-2021-12-09-19-38-00-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4DPMa.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4DA6f.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4DDRb.jpg",
         ],
         price: 199,
         description:
@@ -194,14 +169,12 @@ const PLANTS_DATA = {
         id: 13,
         name: "ต้นคลาสซูล่า",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/29/houseplant-crassula-ovata-jade-plant-money-tree-op-2021-08-27-09-39-48-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4AYPW.jpg",
         price: 799,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/29/houseplant-crassula-ovata-jade-plant-money-tree-op-2021-08-27-09-39-48-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-crassula-ovata-jade-plant-money-tree-2021-08-31-23-11-49-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-crassula-ovata-jade-plant-money-tree-in-2021-08-26-16-58-00-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-crassula-ovata-jade-plant-money-tree-op-2021-08-27-09-54-21-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/jade-plant-in-pot-2021-12-09-11-39-11-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4A7Wn.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Aze2.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4AN31.jpg",
         ],
         description:
           "สำหรับ “ต้นคลาสซูล่า” ( Crassula Ovata หรือ Jade Plant) นั้นเป็นไม้อวบน้ำซึ่งสามารถเรียกว่าเป็นต้นไม้สวรรค์ ต้นใบเงินก็ได้ โดยลักษณะของต้นคลาสซูล่านั้นมีใบสีเขียวสวยงาม ใบหนาเรียบเนียน เวลาออกดอกจะออกดอกเป็นสีชมพู หรือสีขาว ลักษณะคล้ายรูปดาว ซึ่งดอกจะออกในช่วงฤดูหนาว",
@@ -210,7 +183,7 @@ const PLANTS_DATA = {
   },
   gardenplants: {
     id: 14,
-    title: "Graden Plants",
+    title: "Garden Plants",
     routeName: "shop/cat/gardenplants",
     previewImage:
       "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.md.jpg",
@@ -219,13 +192,12 @@ const PLANTS_DATA = {
         id: 15,
         name: "ไผ่ฟาร์เจีย",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/2156802359815cc0439ebc1cd44019fc.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4s0DW.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/2156802359815cc0439ebc1cd44019fc.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/5c737cfa-b6f0-4ad0-9a86-89eb564fc322_1_201_a.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/8e1c077a-af7d-40ed-8e7e-00e4cf7fff28_1_201_a.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/fargesia-murielae-bamboo-p170-6016_medium.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/fam-clump.gif.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4s7J2.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4sz5y.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4sYh1.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4s4VD.jpg",
         ],
         price: 799,
         description:
@@ -234,14 +206,13 @@ const PLANTS_DATA = {
       {
         id: 16,
         name: "สนบลู",
-        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/columnars_1.jpg",
+        imageUrl: "https://sv1.picz.in.th/images/2022/06/13/V4sueW.jpg",
         price: 1799,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/columnars_1.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/beautiful-branch-of-coniferous-tree-2021-08-29-03-01-49-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/blue-spruce-tree-branches-in-winter-christmas-gre-2021-11-11-19-28-11-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/fresh-green-pine-leaves-2021-08-29-17-32-47-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/green-thuja-trees-alley-road-coniferous-plant-2021-09-02-22-22-46-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4snk2.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4s8Xy.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4srO1.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4sVzD.jpg",
         ],
         description:
           "Chamaecyparis lawsoniana หรือที่รู้จักในชื่อ Port Orford cedar หรือ Lawson cypress เป็นสายพันธุ์ของต้นสนในสกุล Chamaecyparis ตระกูล Cupressaceae มันมีถิ่นกำเนิดในโอเรกอนและแคลิฟอร์เนียทางตะวันตกเฉียงเหนือและเติบโตจากระดับน้ำทะเลถึง 1,500 เมตรในหุบเขาของเทือกเขา Klamath ซึ่งมักจะมีลำธารไหลผ่าน",
@@ -250,14 +221,12 @@ const PLANTS_DATA = {
         id: 17,
         name: "อะกาเว",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/agave-americana-1.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4sM40.jpg",
         price: 569,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/agave-americana-1.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/agave-americana-2021-08-26-17-16-08-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/agave-plant-in-arizona-tropical-pattern-2021-08-29-23-21-28-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/aloe-plant-succulent-plant-in-arizona-2021-09-03-16-57-01-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/get-the-point-agave-americana-agave-cactus-in-t-2021-09-02-14-16-36-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42Wxu.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4sFaR.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4sm3z.jpg",
         ],
         description:
           "Agave Americana มีชื่อสามัญว่า Century plant, maguey หรือ American aloe เป็นไม้ดอกในวงศ์ Asparagaceae มีถิ่นกำเนิดในเม็กซิโกและสหรัฐอเมริกาในเท็กซัส มีการปลูกทั่วโลกเพื่อเป็นไม้ประดับ และได้รับการแปลงสัญชาติในหลายภูมิภาค รวมถึงบางส่วนของหมู่เกาะอินเดียตะวันตก อเมริกาใต้ ลุ่มน้ำเมดิเตอร์เรเนียน แอฟริกา อินเดีย จีน ไทย",
@@ -266,14 +235,14 @@ const PLANTS_DATA = {
         id: 18,
         name: "ดอกกุหลาบ",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-nubia-navarro-nubikini-1517358.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42zee.jpg",
         price: 129,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-nubia-navarro-nubikini-1517358.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/bouquet-of-red-roses-2021-08-26-16-26-15-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/red-rose-flower-2021-08-26-16-24-28-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/rose-2021-08-26-23-01-56-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/rose-2021-08-26-23-01-57-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42N3l.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42Bbk.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42fav.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42k4E.jpg",
+
         ],
         description:
           "กุหลาบ คือดอกไม้ในสกุล Rosa ในวงศ์ Rosaceae ที่ได้รับความนิยมปลูกมากที่สุดชนิดหนึ่งของโลกที่มีต้นกำเนิดจากทวีปเอเชีย ผู้คนนิยมปลูกเพื่อความสวยงาม ตกแต่งสวน, ประดับตกแต่งบ้าน, ประดับสถานที่, ปลูกเพื่อการพาณิชย์ อาทิ เพื่อนำไปสกัดน้ำหอม นำไปทำเป็นส่วนประกอบของสปา เป็นต้น",
@@ -282,14 +251,11 @@ const PLANTS_DATA = {
         id: 19,
         name: "ปาล์มชาแมรอปส์",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/chamaerops-humilis.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V42Vjl.jpg",
         price: 1599,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/chamaerops-humilis.png",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/1581584468.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Chamaerops_humilis_fruits.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Chamaerops_humilis_argentea1.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/5CHHUBU99.md.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V42Xvk.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V42pNv.jpg",
         ],
         description:
           "ปาล์มชาแมรอปส์ เป็นปาล์มชนิดเดียวในสกุล Chamaerops มีถิ่นกำเนิดในบริเวณเมดิเตอร์เรเนียน นิยมปลูกเป็นไม้ประดับ ใบอ่อนสามารถรับประทานได้ และนำมาทำของใช้ได้ และมีการใช้พืชชนิดนี้ในการแพทย์ท้องถิ่นของแอลจีเรีย",
@@ -298,14 +264,12 @@ const PLANTS_DATA = {
         id: 20,
         name: "สือชังผู่",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Acorus-gramineus-Ogon-March.3-1-e1556837564151-scaled.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Cz79.jpg",
         price: 80,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Acorus-gramineus-Ogon-March.3-1-e1556837564151-scaled.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Acorus_gramineus.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/ACORUS-WOGON_3888x.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/image.php.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/PL130507Optimized.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CS8D.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4C4cJ.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CN2b.webp",
         ],
         description:
           "สือชังผู่ ในภาษาจีนกลางหรือเจียะเซียงผู้ในภาษาจีนแต้จิ๋ว ชื่อวิทยาศาสตร์: Acorus gramineus เป็นพืชท้องถิ่นของญี่ปุ่นและเอเชียตะวันออก ชอบขึ้นในที่ชื้นแฉะ อยู่ในวงศ์ Acoraceae ด้านนอกเป็นสีเทาหรือสีน้ำตาล ด้านในเป็นสีเหลืองอมขาวอ่อนๆ ในตำรายาจีนเป็นยาขับเสมหะ ทำให้จิตใจสงบ",
@@ -314,14 +278,13 @@ const PLANTS_DATA = {
         id: 21,
         name: "ต้นปรงป่า",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/91C6AE6B9561AA0FB56FE9E88F697597.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CL58.jpg",
         price: 3500,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/91C6AE6B9561AA0FB56FE9E88F697597.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/800wm-2.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/800wm.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Encephalartos_altensteinii_kz3.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Encephalartos_altensteinii00.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CeVR.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CyY0.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CFiu.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4CIuZ.jpg",
         ],
         description:
           "Encephalartos altensteinii เป็นปรงเหมือนต้นปาล์มในตระกูล c มันเป็นโรคประจำถิ่นไปยังแอฟริกาใต้ ชื่อสายพันธุ์อัลเทนสไตนินี่เอกสิทธิ์อัลเทนสไตน์นายกรัฐมนตรีและผู้อุปถัมภ์ด้านวิทยาศาสตร์ของเยอรมันในศตวรรษที่ 19 มันเป็นที่รู้จักกันทั่วไปว่าเป็น breadtree, broodboom, ปรงยักษ์ตะวันออก",
@@ -339,13 +302,12 @@ const PLANTS_DATA = {
         id: 23,
         name: "เมเปิ้ลญี่ปุ่น",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/japanese-maple-bonsai-tree.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V46xNk.jpg",
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/japanese-maple-bonsai-tree.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/2ae65b8bec5dc9b3e5200848195e1460--bonsai-art-bonsai-trees.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/131d51b8e236f6bb780b3370bfae7e2a.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/maple1.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/MAY21_Bonsai_02.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V46ipl.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V46c9t.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V46gbe.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V46QQv.jpg",
         ],
         price: 2799,
         description:
@@ -355,14 +317,12 @@ const PLANTS_DATA = {
         id: 24,
         name: "ต้นหนวดปลาหมึกแคระ",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/KaraRileySchefflera-RECIRC-cdce731067d449d4b4a17e8505ef9f24.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V466c9.jpg",
         price: 1399,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/KaraRileySchefflera-RECIRC-cdce731067d449d4b4a17e8505ef9f24.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/d39bbe9e5e6d5ae47ffe2db0bd9e9d6a.png.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Dwarf_Umbrella_Tree_Schefflera_arboricola.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/fd19570wh.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Schefflera_arboricola_vrugte_a_Pretoria.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V46u0D.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V462ry.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V46nsJ.jpg",
         ],
         description:
           "Schefflera arboricola เป็นไม้ดอกในวงศ์ Araliaceae มีถิ่นกำเนิดในไต้หวันและไหหลำ ชื่อสามัญของมันคือต้นไม้ร่มแคระเนื่องจากมีลักษณะคล้ายกับต้นไม้ร่มรุ่นเล็กนั่นคือ Schefflera actinophylla",
@@ -371,14 +331,12 @@ const PLANTS_DATA = {
         id: 25,
         name: "ไทรย้อยใบทู่",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Ficus-Ginseng-Indian-Laurel-Large.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V46ITP.jpg",
         price: 999,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Ficus-Ginseng-Indian-Laurel-Large.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/ficus-bonsai-tree-on-old-wooden-table-2021-08-31-17-22-01-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-ficus-microcarpa-ginseng-in-white-flowe-2021-08-26-16-58-20-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-ficus-microcarpa-ginseng-in-white-flowe-2021-08-26-16-58-29-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/houseplant-ficus-microcarpa-ginseng-in-white-flowe-2021-08-26-16-58-33-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V46yyI.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V46Mlt.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nWve.jpg",
         ],
         description:
           "ไทรย้อยใบทู่ หรือ ไทรย้อย เป็นไม้ประเภทบันยัน ในสกุล Ficus ในวงศ์ Moraceae ",
@@ -387,14 +345,13 @@ const PLANTS_DATA = {
         id: 26,
         name: "โพ",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/bodhi-tree-seeds.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nqfq.jpg",
         price: 795,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/bodhi-tree-seeds.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/9ef94a70daf8156dc296c659bc267bbf.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/bc8b43e850692d7a433d3e0d17aea2bf.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Bodhi-Tree-1.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/s-l400.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4n55z.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nQGa.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nxof.jpg",
+
         ],
         description:
           "โพ หรือ โพธิ์ เป็นต้นไม้สปีชีส์หนึ่งของไทรหรือมะเดื่อ เป็นพืชพื้นเมืองของอินเดีย, เนปาล, ศรีลังกา, ตะวันตกเฉียงใต้ของจีน และอินโดจีน เป็นต้นไม้ขนาดใหญ่ผลัดใบในฤดูร้อน สูงได้ถึง 30 เมตร ลำต้นมีเส้นผ่านศูนย์กลางได้ถึง 3 เมตร",
@@ -403,14 +360,11 @@ const PLANTS_DATA = {
         id: 27,
         name: "บีชยุโรป",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/aa35216c7934e6aa9ae7dc00ba81d096.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nCfe.jpg",
         price: 2187,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/aa35216c7934e6aa9ae7dc00ba81d096.png",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/b84436d2948e590d02cbea6157bf9aa4.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/beech-bonsai-tree-fagus-isolated-on-white-2021-08-26-18-03-03-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/beech-bonsai-tree-fagus-sylvatica-isolated-on-wh-2021-08-26-18-02-50-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/beech-bonsai-tree-fagus-sylvatica-isolated-on-wh-2021-08-26-18-02-54-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nrSv.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4n6Vk.jpg",
         ],
         description:
           "บีชยุโรปหรือบีชทั่วไปเป็นต้นไม้ผลัดใบที่อยู่ในวงศ์บีช Fagaceae",
@@ -419,14 +373,13 @@ const PLANTS_DATA = {
         id: 28,
         name: "ยี่เข่ง",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/dcfc2ecf6f125f08a55ba97c2338890f.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4neV2.jpg",
         price: 1587,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/dcfc2ecf6f125f08a55ba97c2338890f.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/a-pink-crape-myrtle-bush-blooming-in-a-summer-flow-2021-08-30-13-58-05-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/caucasian-woman-transplants-myrtle-plant-in-clay-p-2021-09-03-08-07-34-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/crepe-myrtle-beauty-in-nature-2021-09-01-23-44-03-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-flowers-against-a-beautiful-sky-2021-08-30-03-43-40-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nLEW.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nJhg.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4npDS.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4nvJn.jpg",
         ],
         description:
           "ลาเกอร์สโตรเมียหรือที่เรียกกันทั่วไปว่าเครปไมร์เทิลเป็นพืชสกุลไม้ผลัดใบและป่าดิบชื้นประมาณ 50 สายพันธุ์ มีถิ่นกำเนิดในอนุทวีปอินเดีย เอเชียตะวันออกเฉียงใต้ ทางตอนเหนือของออสเตรเลีย เป็นสมาชิกของวงศ์ Lythraceae ซึ่งเรียกอีกอย่างว่าตระกูล Loosestrife",
@@ -435,7 +388,7 @@ const PLANTS_DATA = {
         id: 29,
         name: "Buxus",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-raphael-brasileiro-7366943.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4riRv.png",
         price: 459,
         description:
           "Buxus เป็นสกุลประมาณเจ็ดสิบชนิดในตระกูล Buxaceae ชื่อสามัญ ได้แก่ กล่องหรือไม้บ็อกซ์วูด",
@@ -444,14 +397,12 @@ const PLANTS_DATA = {
         id: 30,
         name: "ศุภโชค",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/807c978df850429527b2758235042e02.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4rm3P.webp",
         price: 954,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/807c978df850429527b2758235042e02.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/7db287cd495c873edeb3282834404ac1.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/80e1837153bdceb9708d0ad075c1f21e.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/338682.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/e3bfb2ae0e706697d4c12bd226c36406.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4rJPZ.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4rGKu.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4rvd0.jpg",
         ],
         description:
           "ศุภโชค เป็นไม้ยืนต้น พืชเขตร้อน มีถิ่นกำเนิดแถบทวีปอเมริกาใต้ เช่น ประเทศเม็กซิโก บราซิล หมู่เกาะฮาวาย นิยมนำมาถักเป็นไม้แคระกระถาง และมีความเชื่อว่าเป็นไม้มงคล ภาษาจีนเรียกว่า “เหยาเฉียนซู่” แปลว่า เรียกเงิน หรือ เขย่าเงิน",
@@ -469,14 +420,12 @@ const PLANTS_DATA = {
         id: 32,
         name: "สกุลเขากวางอ่อน",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/1b0354b8501dd97ce0d17826c795460ffdc59f97.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48Dvt.jpg",
         price: 499,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/1b0354b8501dd97ce0d17826c795460ffdc59f97.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/phalaenopsis-hybrid-2021-08-26-16-00-22-utc-2.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/phalaenopsis-hybrid-2021-08-26-16-00-22-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/phalaenopsis-orchid-flowers-2021-09-02-08-02-03-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-phalaenopsis-orchid-blossom-2021-08-29-00-56-17-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48Osu.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48byZ.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48l9I.jpg",
         ],
         description:
           "สกุลเขากวางอ่อน หรือฟาแลนน็อปซิส เป็นสกุลของกล้วยไม้ พบได้ทั่วไปในประเทศพม่า ไทย ลาว มาเลเซีย อินโดนีเซีย ฟิลิปปินส์ และหมู่เกาะใกล้เคียงในมหาสมุทรแปซิฟิก รวมทั้งตอนเหนือของทวีปออสเตรเลีย จึงกล่าวได้ว่ามีการกระจายพันธุ์อยู่ในทวีปเอเชีย",
@@ -485,14 +434,12 @@ const PLANTS_DATA = {
         id: 33,
         name: "กล้วยไม้",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/fejka-artificial-potted-plant-orchid-white__0748880_pe745269_s5.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V48VlS.jpg",
         price: 399,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/fejka-artificial-potted-plant-orchid-white__0748880_pe745269_s5.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/orchid-2021-08-29-04-25-54-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/orchid-2021-08-29-04-34-37-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-orchid-2021-08-26-15-34-48-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/white-orchid-flower-2021-08-26-16-31-50-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48HTQ.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48pBg.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V48vqW.jpg",
         ],
         description:
           "กล้วยไม้ หรือ เอื้อง เป็นพืชดอกที่มีความหลากหลายมากที่สุดกลุ่มหนึ่ง โดยมีประมาณ 899 สกุล และมีประมาณ 27,000 ชนิดที่มีการยอมรับ คิดเป็น 6–11% ของพืชมีเมล็ด มีการค้นพบราว ๆ 800 ชนิดทุก ๆ ปี มีสกุลใหญ่ ๆ คือ Bulbophyllum, Epidendrum, Dendrobium และ Pleurothallis สายพันธุ์ของกล้วยไม้ที่ขึ้นและเติบโตในป่า",
@@ -500,14 +447,13 @@ const PLANTS_DATA = {
       {
         id: 34,
         name: "สกุลรองเท้านารี",
-        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/17822.jpg",
+        imageUrl: "https://sv1.picz.in.th/images/2022/06/13/V4Htqe.jpg",
         price: 699,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/17822.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/paphiopedilum-charlesworthii-2021-09-02-08-02-03-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/paphiopedilum-orchid-flower-or-lady-s-slipper-orch-2021-09-03-12-20-43-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/paphiopedilum-philippinense-2021-08-26-15-58-26-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/slipper-orchid-paphiopedilum-exotic-flowers-2021-08-26-15-42-42-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4H3GP.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HklI.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HhtZ.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HBFu.jpg",
         ],
         description:
           "สกุลรองเท้านารี เป็นพันธุ์ไม้ประเภทกล้วยไม้ ตั้งขึ้นเมื่อ พ.ศ. 2429 โดยนักพฤกษศาสตร์ชาวเยอรมัน มาจากรากศัพท์ภาษากรีกคือ Paphia หมายถึงเทพธิดาแห่งความรักและความงาม และ pedilon หมายถึงรองเท้าของผู้หญิง ซึ่งหมายถึงลักษณะกลีบดอกที่เป็นถุงลึกคล้ายรองเท้า พบทั่วไปในเอเชียตะวันออกเฉียงใต้",
@@ -516,14 +462,12 @@ const PLANTS_DATA = {
         id: 35,
         name: "สกุลหวาย",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Orchid-Dendrobium-Singapore-TGS-1-910x1155.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HMME.jpg",
         price: 185,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Orchid-Dendrobium-Singapore-TGS-1-910x1155.png",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/dendrobium-orchid-hybrids-is-white-and-pink-stripe-2021-08-26-15-42-42-utc-2.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/dendrobium-orchid-hybrids-is-white-and-pink-stripe-2021-08-26-15-42-42-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/orchid-dendrobium-berry-oda-2021-08-30-20-31-34-utc.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/pink-orchids-singapore-2021-08-30-06-40-21-utc.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HFRk.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HyYl.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4HIuv.jpg",
         ],
         description:
           "สกุลหวาย เป็นสกุลหนึ่งของพืชวงศ์กล้วยไม้ ตั้งขึ้นเมื่อ ค.ศ. 1779 โดย Peter Olof Swartz ชาวสวีเดน มาจากรากศัพท์ภาษากรีก คือ dendron และ bios หมายถึงสิ่งมีชีวิตที่อาศัยบนต้นไม้อื่น ทั่วโลกพบกล้วยไม้ที่อยู่ในสกุลนี้ถึง 900 ชนิด ในไทยพบ 184 ชนิด",
@@ -532,14 +476,12 @@ const PLANTS_DATA = {
         id: 36,
         name: "สกุลว่านน้ำทอง",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/71dJNwcejYL._AC_SL1500_.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Vh61.jpg",
         price: 1054,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/71dJNwcejYL._AC_SL1500_.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/23db6632e7e448dea246a79195b47691.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/34c679929b4044e39905ac9781a55079.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/a2d20fd5afdd487ea0810f494cf497e0-2.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/b1d6d676e63f4facad3c1552dab91715.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VkMy.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VTA9.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VtLJ.jpg",
         ],
         description:
           "สกุลว่านน้ำทอง หรือ Ludisia เป็นกล้วยไม้สกุลหนึ่ง มีสมาชิกเพียงชนิดเดียวคือว่านน้ำทอง Ludisia discolor มีถิ่นกำเนิดในจีนตอนใต้, อินเดียตะวันออกเฉียงเหนือ, ไทย, เวียดนาม, ฟิลิปปินส์, มาเลเซีย, อินโดนีเซีย และพม่า",
@@ -548,14 +490,13 @@ const PLANTS_DATA = {
         id: 37,
         name: "สกุลออนซิเดียม",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/432f23ea88218f5e47098d376c77683d.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Vjat.jpg",
         price: 999,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/432f23ea88218f5e47098d376c77683d.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/2020-06-20_11.13.36__30905.1592966053.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/oncidium_blanchetii.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/oncidium_compact_1.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Oncidium-blanchetii-B.md.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VbOP.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Voze.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VDxl.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VsWv.jpg",
         ],
         description:
           "Oncidium ย่อว่า Onc ในการค้าพืชสวนเป็นสกุลที่มีประมาณ 330 ชนิดของกล้วยไม้จาก subtribe Oncidiinae ของครอบครัวกล้วยไม้ ปัจจุบันมีการกระจายไปทั่วอเมริกาใต้อเมริกาใต้เม็กซิโกและหมู่เกาะอินเดียตะวันตกโดยขยายพันธุ์ไปยังฟลอริดา ชื่อสามัญของพืชในประเภทนี้ ได้แก่ กล้วยไม้เต้นรำหญิงและกล้วยไม้อาบน้ำสีทอง",
@@ -572,14 +513,14 @@ const PLANTS_DATA = {
       {
         id: 39,
         name: "ถุงมือ",
-        imageUrl: "https://i2.fpic.cc/file/img-b1/2021/12/17/6oqqxw.jpg",
+        imageUrl: "https://sv1.picz.in.th/images/2022/06/13/V4VLm9.jpg",
         price: 25,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/6oqqxw.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/7e35a449d5a233a42ffbdbb874babd96.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/ycjqt3.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/0200df28bac4e8c8a9bd068431510731.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/93935e47e352a38974c0cd42629102fd.jpg_720x720q80.jpg_.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VJPD.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Vm3J.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4Vybb.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VFpf.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4VM4a.jpg",
         ],
         description:
           "ถุงมือสำหรับขุดดินทำสวนที่มาพร้อมกรงเล็บแข็งแรงในตัว ให้คุณสวมใส่เพื่อขุดดิน พรวนดิน หรือเตรียมดินปลูกต้นไม้ได้อย่างสะดวกรวดเร็วโดยมือไม่เลอะเทอะเปรอะเปื้อนแม้แต่น้อย! จัดการงานทำสวนให้เสร็จได้รวดเร็วขึ้นทันทีถุงมือขุดดินทำสวน",
@@ -588,28 +529,25 @@ const PLANTS_DATA = {
         id: 40,
         name: "กรรไกรตัดแต่งกิ่ง",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/hoss-pruning-shears.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XSZR.jpg",
         price: 199,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/hoss-pruning-shears.jpg",
-          "",
-          "",
-          "",
-          "",
+          "https://sv1.picz.in.th/images/2022/06/13/V4X7d8.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XYs0.png",
+
         ],
         description:
           "ออกแบบ และรังสรรค์กิ่งไม้ให้สวยงาม ได้รูปทรง ดูโดดเด่น และเป็นระเบียบ ไม่รกรุงรัง ด้วยกรรไกรแต่งกิ่ง ตัวช่วยอำนวยในงานเกษตร การทำความสะอาด หรือจัดสวนมีความสะดวก และรวดเร็วมากขึ้น ผ่านกระบวนการผลิตที่ได้มาตรฐาน วัสดุคุณภาพ มีความแข็งแรงทนทาน ช่วยตัดแต่งกิ่งไม้ได้ดั่งใจ อีกทั้งให้การตัดขาดได้ง่าย และฉับไว",
       },
       {
         id: 41,
-        name: "กรรไกรตัดแต่งกิ่ง",
+        name: "Loppers",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/8592025_1906z_short-handled-bypass-loppers.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XkNt.jpg",
         price: 754,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/8592025_1906z_short-handled-bypass-loppers.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/8592025_1907z.md.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/16a0d41b15ba533f.md.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XfpP.png",
+          "https://sv1.picz.in.th/images/2022/06/13/V4X3Qe.jpg",
         ],
         description:
           "Loppersเป็นกรรไกรชนิดหนึ่งที่ใช้สำหรับการตัดแต่งกิ่งกิ่งและกิ่งเล็ก ๆ เช่นกรรไกรตัดแต่งกิ่งที่มีด้ามยาวมาก เป็นเครื่องมือตัดสวนแบบแมนนวลที่ใหญ่ที่สุด.",
@@ -618,14 +556,11 @@ const PLANTS_DATA = {
         id: 42,
         name: "ส้อมสวน",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XXvI.jpg",
         price: 79,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Polished-Stainless-Steel-Prong-Hand-Weeding-Fork.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening-2.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening-3.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/Garden-Tools-Q235-Carbon-Steel-Mini-Fork-for-Gardening.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XrF0.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4XVlZ.jpg",
         ],
         description:
           "เป็นอุปกรณ์ทำสวนที่มีด้ามจับและหลายอัน (ปกติสี่อัน) สั้น ซี่ ใช้สำหรับการคลายการยกและการพลิก ดิน ในการทำสวนและการทำไร่ มันใช้คล้ายกับ จอบ แต่ในหลาย ๆ สถานการณ์มันจะเหมาะสมกว่าจอบเสียมWikipedia  site:isecosmetic.com",
@@ -634,14 +569,12 @@ const PLANTS_DATA = {
         id: 43,
         name: "เกรียงมือ",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/9137i_hand-trowel.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4aRw0.jpg",
         price: 125,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/9137i_hand-trowel.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/9131i_transplanter.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/9137i_hand-trowel-lifestyle.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/71n8w8wmx9l._sx466_.jpg.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/GTH-SHTRHS-burgon-and-ball-rhs-endorsed-stainless-hand-trowel-03_4a2ec4f3-2b40-49de-bbe1-a8fd75a7949e_grande.jpg.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4acC8.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4aZiz.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4agIR.webp",
         ],
         description:
           "เหมาะสำหรับนุ่มดิน!มี Scale เฮ้าส์สำหรับ Easy และแม่นยำใช้ ปลอดภัยใช้และไม่เป็นอันตรายต่อ Root System. การออกแบบเสริม,ทนทานและไม่เสียรูปที่จับสบายและลื่นใช้กันอย่างแพร่หลายและทนทาน",
@@ -650,14 +583,13 @@ const PLANTS_DATA = {
         id: 44,
         name: "บัวรดน้ำ",
         imageUrl:
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/swiss-plastic-watering-can-rose.jpg",
-        price: 144,
+          "https://sv1.picz.in.th/images/2022/06/13/V4pCPR.jpg",
+        price: 89,
         showImage: [
-          "https://i2.fpic.cc/file/img-b1/2021/12/17/swiss-plastic-watering-can-rose.jpg",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg-2.md.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg-3.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg-4.md.webp",
-          "https://i3.fpic.cc/file/img-b1/2022/01/03/swiss-plastic-watering-can-rose.jpg.md.webp",
+          "https://sv1.picz.in.th/images/2022/06/13/V4p2K8.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4pum0.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4pn3u.jpg",
+          "https://sv1.picz.in.th/images/2022/06/13/V4p8aI.webp",
         ],
         description:
           "ใช้สำหรับรดน้ำพืช น้ำที่ออกจากฝักบัวจะเป็นฝอยกระจายทั่วต้นพืชทำให้พืชได้รับน้ำอย่างทั่วถึง และส่วนต่างๆ ของพืชไม่หักง่าย การใช้บัวรดน้ำ ถ้าไม่ระมัดระวังจะเสียหายง่ายที่ส่วนคอของฝักบัวจึงควรจับที่หูหิ้วหรือที่มือจับเท่านั้น",

@@ -12,7 +12,7 @@
 
 .feature-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 
     &.mb-30{
@@ -22,11 +22,21 @@
     .feature-icon{
         animation-name: bounceIn;
         animation-duration: 1s;
+        display: block;
+        text-align: center;
+        img{
+            margin:0 auto;
+            max-width: 50%;
+            width: 25%;
+            text-align: center;
+            display: block;
+        }
     }
 
     .feature-content{
         display: block;
         padding: 5px;
+        text-align: center;
         margin: 0;
         h5{
             font-size: 18px;

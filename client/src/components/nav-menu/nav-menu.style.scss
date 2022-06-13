@@ -28,7 +28,7 @@
           line-height: 94px;
           text-decoration: none;
           display: inline-block;
-            transition: 200ms ease-in-out;
+          transition: 200ms ease-in-out;
           letter-spacing: 0.8px;
 
           color: #555252;
@@ -47,10 +47,9 @@
       }
     }
   }
- 
 }
 
-.stick .main-menu nav ul{
+.stick .main-menu nav ul {
   margin: 0;
 }
 .stick .main-menu nav ul li a {
@@ -59,18 +58,15 @@
 
 .stick .logo,
 .stick .header-right-wrap {
-  height: 100%;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 22px;
+
   @media #{$md-layout} {
+    height: 100%;
     margin-top: 0;
   }
   @media #{$xs-layout} {
-    margin-top: 0;
-  }
-  @media #{$md-layout} {
-    margin-top: 0;
+    margin-top: 22px;
   }
 }
 .stick .header-right-wrap .same-style.cart-wrap .shopping-cart-content,

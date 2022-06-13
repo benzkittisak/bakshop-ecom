@@ -1,25 +1,25 @@
 const FEATURE_ICON_DATA = [
   {
     id: 1,
-    image: "https://i2.fpic.cc/file/img-b1/2021/12/27/support-1.png",
+    image: "https://sv1.picz.in.th/images/2022/06/13/V43kYf.md.png",
     title: "จัดส่งฟรี",
     subtitle: "เราจัดส่งฟรีทุก ๆ คำสั่งซื้อ",
   },
   {
     id: 2,
-    image: "https://i2.fpic.cc/file/img-b1/2021/12/27/support-2.png",
+    image: "https://sv1.picz.in.th/images/2022/06/13/V43QRt.md.png",
     title: "Support 24/7",
     subtitle: "ศูนย์ช่วยเหลือตลอด 24 ชั่วโมง",
   },
   {
     id: 3,
-    image: "https://i2.fpic.cc/file/img-b1/2021/12/27/support-3.png",
+    image: "https://sv1.picz.in.th/images/2022/06/13/V43ODv.md.png",
     title: "ยินดีคืนเงิน",
     subtitle: "หากไม่พอใจในสินค้าเรายินดีคืนเงิน",
   },
   {
     id: 4,
-    image: "https://i2.fpic.cc/file/img-b1/2021/12/27/support-4.png",
+    image: "https://sv1.picz.in.th/images/2022/06/13/V43sRn.md.png",
     title: "ส่วนลดพิเศษ",
     subtitle: "มีส่วนลดพิเศษมากมายให้คุณ",
   },

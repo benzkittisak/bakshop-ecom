@@ -11,6 +11,7 @@ import AccountProfile from "../../components/account-profile/account-profile.com
 import AccountAddress from "../../components/account-address/account-address.component";
 
 import "./account.style.scss";
+import NotFound from "../not-found/not-found.component";
 
 const AccountPage = ({ currentUser }) => {
   if (!currentUser) {
@@ -36,6 +37,7 @@ const AccountPage = ({ currentUser }) => {
                 <Route exact path="/profile" element={<Navigate to={'/account/'}/>}/>
                 <Route exact path="/address" element={<AccountAddress currentUser={currentUser}/>}/>
                 <Route exact path='/purchased' element={<AccountOrder uid={id}/>} />
+                <Route exact path="*" element={<Navigate to="/404" />} />
               </Routes>
             </div>
           </div>
