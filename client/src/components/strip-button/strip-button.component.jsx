@@ -14,9 +14,9 @@ const StripeButton = ({ currentUser, children, type, cartItems }) => {
     }
     axios({
       url: "/create-checkout-session",
-      method: "post",
+      method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-type": "application/json",
       },
       data: cartItems,
     })
@@ -25,9 +25,9 @@ const StripeButton = ({ currentUser, children, type, cartItems }) => {
         return res.data.then((json) => Promise.reject(json));
       })
       .then(({ url }) => {
-        window.location.href = url;
+        window.open(url , '_blank')
       })
-      .catch((error) => console.log(error.error));
+      .catch((err) => console.log(err.error));
   };
 
   return (

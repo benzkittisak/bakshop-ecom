@@ -1,33 +1,32 @@
-// Stripe Payment Server
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const path = require("path");
+const path = require('path');
 const compression = require("compression");
 
 require("dotenv").config();
 
 const PORT = process.env.PORT || 6000;
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-
 const app = express();
+
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(compression());
 app.use(express.static("public"));
 
 app.listen(PORT, () => {
-  console.log("connected to port ", PORT);
+  console.log("Connected to port 6000");
 });
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client/build")));
-  app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"));
-  });
+
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(__dirname , 'client/build')))
+  app.get('*' , function(req,res){
+    res.sendFile(path.join(__dirname , 'client/build' , 'index.html'))
+  })
 }
-app.get("/", (req, res) => {
-  return res.json({ message: "Hellloooooo" });
-});
+
 app.post("/create-checkout-session", async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.create({
@@ -49,8 +48,7 @@ app.post("/create-checkout-session", async (req, res) => {
       success_url: `${process.env.SERVER_URL}/success`,
       cancel_url: `${process.env.SERVER_URL}/cancel`,
     });
+
     res.json({ url: session.url });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
+  } catch (err) {}
 });
