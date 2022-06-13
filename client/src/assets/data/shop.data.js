@@ -148,7 +148,7 @@ const PLANTS_DATA = {
     title: "Office Plants",
     routeName: "shop/cat/officeplants",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-daria-shevtsova-970089.md.jpg",
+      "https://sv1.picz.in.th/images/2022/06/13/V4myj1.md.jpg",
     items: [
       {
         id: 12,
@@ -186,7 +186,7 @@ const PLANTS_DATA = {
     title: "Garden Plants",
     routeName: "shop/cat/gardenplants",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-scott-webb-1048035.md.jpg",
+      "https://sv1.picz.in.th/images/2022/06/13/V4y98Z.md.jpg",
     items: [
       {
         id: 15,
@@ -296,7 +296,7 @@ const PLANTS_DATA = {
     title: "Bonsais",
     routeName: "shop/cat/bonsais",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/27/small-bonsai-tree-hobbit-growing-in-a-red-flowerpo-2021-08-30-02-30-42-utc.md.jpg",
+      "https://sv1.picz.in.th/images/2022/06/13/V4yKye.md.jpg",
     items: [
       {
         id: 23,
@@ -414,7 +414,7 @@ const PLANTS_DATA = {
     title: "Orchids",
     routeName: "shop/cat/orchids",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-mariola-3699859.jpg",
+      "https://sv1.picz.in.th/images/2022/06/13/V4y57Q.md.jpg",
     items: [
       {
         id: 32,
@@ -505,10 +505,10 @@ const PLANTS_DATA = {
   },
   accessories: {
     id: 38,
-    title: "Accessories",
-    routeName: "shop/cat/accessories",
+    title: "Tools",
+    routeName: "shop/cat/tools",
     previewImage:
-      "https://i2.fpic.cc/file/img-b1/2021/12/17/pexels-rocketmann-team-9507266.jpg",
+      "https://sv1.picz.in.th/images/2022/06/13/V4yrFa.md.jpg",
     items: [
       {
         id: 39,
